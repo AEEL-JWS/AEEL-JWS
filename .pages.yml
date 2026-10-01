@@ -2,8 +2,9 @@ media:
   input: public/images
   output: /images
   rename: safe
-  categories: [image]
-
+  categories:
+    - image
+    - document
 content:
   - name: research
     label: Research
@@ -12,84 +13,673 @@ content:
     format: yaml-frontmatter
     filename: "{primary}.md"
     view:
-      fields: [title, eyebrow, order]
+      fields:
+        - title
+        - eyebrow
+        - order
       primary: title
-      sort: [order, title]
+      sort:
+        - order
       default:
         sort: order
         order: asc
     fields:
-      - { name: title, label: Title, type: string, required: true }
-      - { name: eyebrow, label: Short label, type: string }
-      - { name: summary, label: Summary, type: text, required: true }
-      - { name: order, label: Display order, type: number }
-      - { name: featured, label: Feature on home, type: boolean }
-      - { name: image, label: Image, type: image }
-      - { name: body, label: Full description, type: rich-text }
-
-  - name: publications
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: eyebrow
+        label: Short label
+        type: string
+      - name: summary
+        label: Summary
+        type: text
+        required: true
+      - name: order
+        label: Display order
+        type: number
+      - name: featured
+        label: Feature on home
+        type: boolean
+      - name: image
+        label: Image
+        type: image
+      - name: body
+        label: Full description
+        type: rich-text
+  - name: members
+    label: Members
+    type: group
+    items:
+      - name: professor
+        label: Professor
+        type: file
+        path: src/data/professor.json
+        format: json
+        fields:
+          - name: image
+            label: Profile image
+            type: image
+          - name: englishName
+            label: English name
+            type: string
+          - name: koreanName
+            label: Korean name
+            type: string
+          - name: hanjaName
+            label: Chinese-character name
+            type: string
+          - name: degree
+            label: Degree or title
+            type: string
+          - name: position
+            label: Position
+            type: string
+          - name: department
+            label: Department
+            type: string
+          - name: institution
+            label: Institution
+            type: string
+          - name: email
+            label: Email
+            type: string
+          - name: phone
+            label: Phone
+            type: string
+          - name: fax
+            label: Fax
+            type: string
+          - name: office
+            label: Office
+            type: string
+          - name: biography
+            label: Short biography
+            type: text
+          - name: googleScholar
+            label: Google Scholar URL
+            type: string
+          - name: orcid
+            label: ORCID URL
+            type: string
+          - name: researcherProfile
+            label: Researcher profile URL
+            type: string
+          - name: universityProfile
+            label: University profile URL
+            type: string
+          - name: education
+            label: Education · Add item
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{degree} · {institution}"
+            fields:
+              - name: degree
+                label: Degree
+                type: string
+              - name: field
+                label: Field
+                type: string
+              - name: institution
+                label: Institution
+                type: string
+              - name: location
+                label: Location
+                type: string
+              - name: year
+                label: Year
+                type: number
+              - name: order
+                label: Display order
+                type: number
+          - name: experience
+            label: Professional experience · Add item
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{position} · {institution}"
+            fields:
+              - name: institution
+                label: Institution
+                type: string
+              - name: department
+                label: Department or organization
+                type: string
+              - name: position
+                label: Position
+                type: string
+              - name: location
+                label: Location
+                type: string
+              - name: startYear
+                label: Start year
+                type: number
+              - name: endYear
+                label: End year
+                type: number
+              - name: present
+                label: Present
+                type: boolean
+              - name: order
+                label: Display order
+                type: number
+          - name: awards
+            label: Honors and awards · Add item
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                label: Award title
+                type: string
+              - name: organization
+                label: Organization
+                type: string
+              - name: year
+                label: Year
+                type: number
+              - name: description
+                label: Description
+                type: text
+              - name: order
+                label: Display order
+                type: number
+          - name: activities
+            label: Academic activities · Add item
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{role}"
+            fields:
+              - name: role
+                label: Activity or role
+                type: string
+              - name: organization
+                label: Organization
+                type: string
+              - name: startYear
+                label: Start year
+                type: number
+              - name: endYear
+                label: End year
+                type: number
+              - name: present
+                label: Present
+                type: boolean
+              - name: description
+                label: Description
+                type: text
+              - name: order
+                label: Display order
+                type: number
+      - name: people
+        label: Researchers
+        type: collection
+        path: src/content/people
+        exclude:
+          - jae-won-shim.md
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - name
+            - role
+            - order
+          primary: name
+          sort:
+            - order
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: role
+            label: Position
+            type: string
+            required: true
+          - name: degree
+            label: Degree
+            type: string
+          - name: program
+            label: Program
+            type: string
+          - name: researchArea
+            label: Research area
+            type: string
+          - name: interests
+            label: Research interests
+            type: text
+          - name: introduction
+            label: Short introduction
+            type: text
+          - name: keywords
+            label: Research keywords
+            type: text
+          - name: email
+            label: Email
+            type: string
+          - name: image
+            label: Portrait
+            type: image
+          - name: link
+            label: External link
+            type: string
+          - name: order
+            label: Display order
+            type: number
+      - name: alumni
+        label: Alumni
+        type: collection
+        path: src/content/alumni
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - name
+            - graduationYear
+            - order
+          primary: name
+          sort:
+            - graduationYear
+          default:
+            sort: graduationYear
+            order: asc
+        fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: degree
+            label: Degree
+            type: string
+          - name: previousPosition
+            label: Previous position
+            type: string
+          - name: graduationYear
+            label: Graduation year
+            type: number
+          - name: currentAffiliation
+            label: Current affiliation
+            type: string
+          - name: currentPosition
+            label: Current position
+            type: string
+          - name: image
+            label: Portrait
+            type: image
+          - name: link
+            label: External link
+            type: string
+          - name: order
+            label: Display order
+            type: number
+  - name: publication_group
     label: Publications
-    type: collection
-    path: src/content/publications
-    format: yaml-frontmatter
-    filename: "{primary}.md"
-    view:
-      fields: [title, journal, year, featured]
-      primary: title
-      sort: [year, title]
-      default:
-        sort: year
-        order: desc
+    type: group
+    items:
+      - name: publications
+        label: Papers
+        type: collection
+        path: src/content/publications
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - title
+            - journal
+            - year
+            - featured
+          primary: title
+          sort:
+            - year
+          default:
+            sort: year
+            order: desc
+        fields:
+          - name: title
+            label: Paper title
+            type: string
+            required: true
+          - name: authors
+            label: Authors
+            type: text
+          - name: journal
+            label: Journal
+            type: string
+            required: true
+          - name: year
+            label: Year
+            type: number
+            required: true
+          - name: volume
+            label: Volume
+            type: string
+          - name: issue
+            label: Issue
+            type: string
+          - name: pages
+            label: Pages or article number
+            type: string
+          - name: doi
+            label: DOI URL
+            type: string
+          - name: link
+            label: Article URL
+            type: string
+          - name: area
+            label: Research area
+            type: string
+          - name: publicationType
+            label: Publication type
+            type: string
+          - name: image
+            label: Cover image
+            type: image
+          - name: featured
+            label: Feature on home
+            type: boolean
+          - name: order
+            label: Display order
+            type: number
+      - name: patents
+        label: Patents
+        type: collection
+        path: src/content/patents
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - title
+            - country
+            - status
+            - order
+          primary: title
+          sort:
+            - order
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: title
+            label: Patent title
+            type: string
+            required: true
+          - name: inventors
+            label: Inventors
+            type: text
+          - name: country
+            label: Country
+            type: string
+          - name: number
+            label: Patent or application number
+            type: string
+          - name: applicationDate
+            label: Application date
+            type: date
+          - name: registrationDate
+            label: Registration date
+            type: date
+          - name: status
+            label: Status
+            type: string
+          - name: link
+            label: Link
+            type: string
+          - name: order
+            label: Display order
+            type: number
+      - name: conferences
+        label: Conferences
+        type: collection
+        path: src/content/conferences
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - title
+            - conference
+            - date
+            - order
+          primary: title
+          sort:
+            - date
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            label: Presentation title
+            type: string
+            required: true
+          - name: authors
+            label: Authors
+            type: text
+          - name: conference
+            label: Conference name
+            type: string
+          - name: location
+            label: Location
+            type: string
+          - name: date
+            label: Date
+            type: date
+            required: true
+          - name: presentationType
+            label: Presentation type
+            type: select
+            options:
+              values:
+                - Oral
+                - Poster
+                - Invited
+                - Keynote
+          - name: link
+            label: Link
+            type: string
+          - name: order
+            label: Display order
+            type: number
+  - name: board
+    label: Board
+    type: group
+    items:
+      - name: notices
+        label: Notices
+        type: collection
+        path: src/content/notices
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - title
+            - date
+            - pinned
+          primary: title
+          sort:
+            - date
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: date
+            label: Date
+            type: date
+            required: true
+          - name: category
+            label: Category
+            type: string
+          - name: author
+            label: Author
+            type: string
+          - name: attachment
+            label: Attachment
+            type: file
+          - name: pinned
+            label: Pinned
+            type: boolean
+          - name: body
+            label: Content
+            type: rich-text
+      - name: news
+        label: News
+        type: collection
+        path: src/content/news
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - title
+            - date
+            - category
+          primary: title
+          sort:
+            - date
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            label: Headline
+            type: string
+            required: true
+          - name: date
+            label: Date
+            type: date
+            required: true
+          - name: category
+            label: Category
+            type: string
+          - name: summary
+            label: Summary
+            type: text
+            required: true
+          - name: image
+            label: Thumbnail
+            type: image
+          - name: link
+            label: External link
+            type: string
+          - name: featured
+            label: Featured
+            type: boolean
+          - name: body
+            label: Full story
+            type: rich-text
+      - name: gallery
+        label: Gallery
+        type: collection
+        path: src/content/gallery
+        format: yaml-frontmatter
+        filename: "{primary}.md"
+        view:
+          fields:
+            - title
+            - date
+            - order
+          primary: title
+          sort:
+            - date
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            label: Album title
+            type: string
+            required: true
+          - name: date
+            label: Date
+            type: date
+            required: true
+          - name: category
+            label: Category
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: cover
+            label: Cover image
+            type: image
+          - name: order
+            label: Display order
+            type: number
+          - name: photos
+            label: Photos · Add image
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{caption}"
+            fields:
+              - name: image
+                label: Photo
+                type: image
+              - name: caption
+                label: Caption
+                type: text
+  - name: contact
+        label: Contact & Recruitment
+    type: file
+    path: src/data/contact.json
+    format: json
     fields:
-      - { name: title, label: Paper title, type: string, required: true }
-      - { name: authors, label: Authors, type: text }
-      - { name: journal, label: Journal, type: string, required: true }
-      - { name: year, label: Year, type: number, required: true }
-      - { name: doi, label: DOI URL, type: string }
-      - { name: link, label: Article URL, type: string }
-      - { name: area, label: Research area, type: string }
-      - { name: featured, label: Feature on home, type: boolean }
-      - { name: image, label: Cover or graphical abstract, type: image }
-
-  - name: people
-    label: People
-    type: collection
-    path: src/content/people
-    format: yaml-frontmatter
-    filename: "{primary}.md"
-    view:
-      fields: [name, role, order]
-      primary: name
-      sort: [order, name]
-      default:
-        sort: order
-        order: asc
-    fields:
-      - { name: name, label: Name, type: string, required: true }
-      - { name: role, label: Role, type: string, required: true }
-      - { name: interests, label: Research interests, type: text }
-      - { name: email, label: Email, type: string }
-      - { name: image, label: Portrait, type: image }
-      - { name: order, label: Display order, type: number }
-
-  - name: news
-    label: News
-    type: collection
-    path: src/content/news
-    format: yaml-frontmatter
-    filename: "{primary}.md"
-    view:
-      fields: [title, date, category]
-      primary: title
-      sort: [date, title]
-      default:
-        sort: date
-        order: desc
-    fields:
-      - { name: title, label: Headline, type: string, required: true }
-      - { name: date, label: Date, type: date, required: true }
-      - { name: category, label: Category, type: string }
-      - { name: summary, label: Summary, type: text, required: true }
-      - { name: image, label: Image, type: image }
-      - { name: link, label: External or original link, type: string }
-      - { name: body, label: Full story, type: rich-text }
+      - name: labName
+        label: Lab name
+        type: string
+      - name: institution
+        label: Institution
+        type: string
+      - name: professor
+        label: Professor or lab contact
+        type: string
+      - name: email
+        label: Email
+        type: string
+      - name: phone
+        label: Phone
+        type: string
+      - name: fax
+        label: Fax
+        type: string
+      - name: building
+        label: Building
+        type: string
+      - name: room
+        label: Room
+        type: string
+      - name: address
+        label: Address
+        type: text
+      - name: recruitmentIntro
+        label: Recruitment introduction
+        type: text
+      - name: recruitmentInstructions
+        label: How to apply
+        type: text
+      - name: opportunities
+        label: Join us opportunities · Add item
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Opportunity
+            type: string
+          - name: description
+            label: Description
+            type: text

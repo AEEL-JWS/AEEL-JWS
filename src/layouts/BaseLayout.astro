@@ -1,78 +1,45 @@
 ---
 import { pageUrl, assetUrl } from '../lib/links';
+import contact from '../data/contact.json';
 import '../styles/global.css';
+import '../styles/extended.css';
 
-interface Props {
-  title: string;
-  description?: string;
-  active?: string;
-}
-
+interface Props { title: string; description?: string; active?: string; }
 const { title, description = 'Advanced Electronic Device & Energy Conversion System Lab at Korea University.', active = '' } = Astro.props;
-const nav = [
-  ['Home', ''],
-  ['Research', 'research'],
-  ['Publications', 'publications'],
-  ['People', 'people'],
-  ['News', 'news'],
-  ['Join Us', 'join-us'],
+const groups = [
+  { label: 'Members', path: 'members', children: [['Professor','members/professor'],['Researchers','members/researchers'],['Alumni','members/alumni']] },
+  { label: 'Publications', path: 'publications', children: [['Papers','publications/papers'],['Patents','publications/patents'],['Conferences','publications/conferences']] },
+  { label: 'Board', path: 'board', children: [['Notices','board/notices'],['News','board/news'],['Gallery','board/gallery']] },
 ];
 ---
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#111d31" />
-    <link rel="icon" type="image/svg+xml" href={assetUrl('/favicon.svg')} />
-    <meta name="description" content={description} />
-    <title>{title} | AEEL</title>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href={pageUrl()} aria-label="AEEL home">
-          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-          <span class="brand-copy"><strong>AEEL</strong><small>KOREA UNIVERSITY</small></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-          {nav.map(([label, path]) => <a href={pageUrl(path)} class:list={[{ active: active === path }]} aria-current={active === path ? 'page' : undefined}>{label}</a>)}
-        </nav>
-      </div>
-    </header>
-    <main id="main"><slot /></main>
-    <footer class="site-footer">
-      <div class="shell footer-main">
-        <div>
-          <a class="footer-brand" href={pageUrl()}>AEEL<span>.</span></a>
-          <p>Advanced Electronic Device &<br />Energy Conversion System Lab.</p>
-          <p class="footer-muted">Korea University · Seoul, Republic of Korea</p>
-        </div>
-        <div class="footer-links">
-          <div><strong>Explore</strong><a href={pageUrl('research')}>Research</a><a href={pageUrl('publications')}>Publications</a><a href={pageUrl('people')}>People</a></div>
-          <div><strong>Connect</strong><a href={pageUrl('news')}>News</a><a href={pageUrl('join-us')}>Join Us</a><a href="mailto:jwshim19@korea.ac.kr">Email the lab</a></div>
-        </div>
-      </div>
-      <div class="shell footer-bottom"><span>© {new Date().getFullYear()} AEEL, Korea University.</span><span>Exploring what devices can become.</span></div>
-    </footer>
-    <script>
-      const button = document.querySelector<HTMLButtonElement>('.menu-toggle');
-      const nav = document.querySelector<HTMLElement>('.primary-nav');
-      button?.addEventListener('click', () => {
-        const open = button.getAttribute('aria-expanded') !== 'true';
-        button.setAttribute('aria-expanded', String(open));
-        button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-        nav?.classList.toggle('is-open', open);
-      });
-      nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-        nav.classList.remove('is-open');
-        button?.setAttribute('aria-expanded', 'false');
-      }));
-    </script>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#111d31" />
+  <link rel="icon" type="image/svg+xml" href={assetUrl('/favicon.svg')} /><meta name="description" content={description} /><title>{title} | AEEL</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="shell header-inner">
+  <a class="brand" href={pageUrl()} aria-label="AEEL home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-copy"><strong>AEEL</strong><small>KOREA UNIVERSITY</small></span></a>
+  <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+    <a class:list={['nav-link',{active:active===''}]} href={pageUrl()} aria-current={active===''?'page':undefined}>Home</a>
+    <a class:list={['nav-link',{active:active==='research'}]} href={pageUrl('research')} aria-current={active==='research'?'page':undefined}>Research</a>
+    {groups.map(group => <div class:list={['nav-group',{active:active===group.path}]} data-nav-group>
+      <div class="nav-group-head"><a class="nav-link" href={pageUrl(group.path)} aria-current={active===group.path?'page':undefined}>{group.label}</a><button class="nav-expand" type="button" aria-label={`Expand ${group.label} submenu`} aria-expanded="false" aria-controls={`submenu-${group.path}`}>⌄</button></div>
+      <div class="nav-dropdown" id={`submenu-${group.path}`}>{group.children.map(([label,path]) => <a href={pageUrl(path)}>{label}</a>)}</div>
+    </div>)}
+    <a class:list={['nav-link','nav-contact',{active:active==='contact'}]} href={pageUrl('contact')} aria-current={active==='contact'?'page':undefined}>Contact</a>
+  </nav>
+</div></header>
+<main id="main"><slot /></main>
+<footer class="site-footer"><div class="shell footer-main"><div><a class="footer-brand" href={pageUrl()}>AEEL<span>.</span></a><p>{contact.labName}.</p><p class="footer-muted">{contact.institution} · Seoul, Republic of Korea</p></div><div class="footer-links"><div><strong>Explore</strong><a href={pageUrl('research')}>Research</a><a href={pageUrl('members')}>Members</a><a href={pageUrl('publications/papers')}>Publications</a></div><div><strong>Connect</strong><a href={pageUrl('board/news')}>News</a><a href={pageUrl('contact')}>Contact & Join Us</a><a href={`mailto:${contact.email}`}>Email the lab</a></div></div></div><div class="shell footer-bottom"><span>© {new Date().getFullYear()} AEEL, Korea University.</span><span>Exploring what devices can become.</span></div></footer>
+<script>
+const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+const nav = document.querySelector<HTMLElement>('.primary-nav');
+toggle?.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open?'Close menu':'Open menu'); nav?.classList.toggle('is-open',open); });
+document.querySelectorAll<HTMLButtonElement>('.nav-expand').forEach(button => button.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') !== 'true'; document.querySelectorAll<HTMLButtonElement>('.nav-expand').forEach(other => {other.setAttribute('aria-expanded','false');other.closest('.nav-group')?.classList.remove('is-expanded')}); button.setAttribute('aria-expanded',String(open)); button.closest('.nav-group')?.classList.toggle('is-expanded',open); }));
+document.addEventListener('keydown', event => {if(event.key==='Escape'){nav?.classList.remove('is-open');toggle?.setAttribute('aria-expanded','false');document.querySelectorAll<HTMLButtonElement>('.nav-expand').forEach(button=>{button.setAttribute('aria-expanded','false');button.closest('.nav-group')?.classList.remove('is-expanded')})}});
+</script>
+</body></html>

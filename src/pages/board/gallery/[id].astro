@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import {getCollection} from 'astro:content';
+import {assetUrl,pageUrl} from '../../../lib/links';
+export async function getStaticPaths(){return (await getCollection('gallery')).map(item=>({params:{id:item.id},props:{item}}))}
+const {item}=Astro.props;
+const photos=item.data.photos.length?item.data.photos:(item.data.cover?[{image:item.data.cover,caption:''}]:[]);
+---
+<BaseLayout title={item.data.title} active="board"><section class="page-hero"><div class="shell page-heading"><span class="eyebrow">Board / Gallery · {item.data.date.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</span><h1>{item.data.title}</h1>{item.data.description&&<p>{item.data.description}</p>}</div></section><section class="section"><div class="shell"><div class="gallery-photo-grid">{photos.map((photo,index)=><button class="gallery-photo" type="button" data-photo={index} aria-label={`View photo ${index+1} of ${photos.length}`}><img src={assetUrl(photo.image)} alt={photo.caption||`${item.data.title} photo ${index+1}`} loading="lazy"/>{photo.caption&&<span>{photo.caption}</span>}</button>)}</div>{!photos.length&&<p class="empty-state">Photos will appear here when added to this album.</p>}<a class="text-link article-back" href={pageUrl('board/gallery')}>Back to gallery</a></div></section>
+<dialog class="lightbox" aria-label="Gallery image viewer"><button class="lightbox-close" type="button" aria-label="Close image">×</button><button class="lightbox-prev" type="button" aria-label="Previous image">‹</button><figure><img alt="" /><figcaption></figcaption></figure><button class="lightbox-next" type="button" aria-label="Next image">›</button><span class="lightbox-count"></span></dialog>
+<script define:vars={{photos:photos.map(photo=>({src:assetUrl(photo.image),caption:photo.caption||''}))}}>
+const dialog=document.querySelector('.lightbox');const img=dialog?.querySelector('img');const caption=dialog?.querySelector('figcaption');const count=dialog?.querySelector('.lightbox-count');let current=0;let startX=0;
+function show(index){if(!dialog||!img||!photos.length)return;current=(index+photos.length)%photos.length;img.src=photos[current].src;img.alt=photos[current].caption||'Gallery photo '+(current+1);if(caption)caption.textContent=photos[current].caption||'';if(count)count.textContent=(current+1)+' / '+photos.length;}
+document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>{show(Number(button.getAttribute('data-photo')));dialog?.showModal()}));
+dialog?.querySelector('.lightbox-close')?.addEventListener('click',()=>dialog.close());dialog?.querySelector('.lightbox-prev')?.addEventListener('click',()=>show(current-1));dialog?.querySelector('.lightbox-next')?.addEventListener('click',()=>show(current+1));
+dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});dialog?.addEventListener('keydown',event=>{if(event.key==='ArrowLeft')show(current-1);if(event.key==='ArrowRight')show(current+1)});dialog?.addEventListener('touchstart',event=>{startX=event.changedTouches[0].screenX},{passive:true});dialog?.addEventListener('touchend',event=>{const diff=event.changedTouches[0].screenX-startX;if(Math.abs(diff)>45)show(current+(diff<0?1:-1))},{passive:true});
+</script></BaseLayout>

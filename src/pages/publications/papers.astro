@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHero from '../../components/SectionHero.astro';
+import PublicationItem from '../../components/PublicationItem.astro';
+import {publicationTabs} from '../../lib/navigation';
+import {getCollection} from 'astro:content';
+const papers=(await getCollection('publications')).sort((a,b)=>b.data.year-a.data.year||a.data.order-b.data.order||a.data.title.localeCompare(b.data.title));
+const years=[...new Set(papers.map(item=>item.data.year))];
+const journals=[...new Set(papers.map(item=>item.data.journal))].sort();
+---
+<BaseLayout title="Papers" active="publications"><SectionHero section="Publications / Papers" title="Ideas, tested and shared." intro="Peer-reviewed research from AEEL across electronic devices, photonics, and energy systems." tabs={publicationTabs}/><section class="section"><div class="shell"><div class="filter-bar"><label for="paper-search">Search papers</label><input id="paper-search" type="search" placeholder="Search title, author, keyword or year" /><label for="journal-filter">Journal</label><select id="journal-filter"><option value="">All journals</option>{journals.map(journal=><option value={journal}>{journal}</option>)}</select></div><div>{years.map(year=><section class="publication-year-group" data-year-group><h2 class="year-heading">{year}</h2><div class="publication-list">{papers.filter(item=>item.data.year===year).map(item=><PublicationItem item={item.data}/>)}</div></section>)}</div><p id="no-results" class="empty-state" hidden>No papers match your search.</p></div></section><script>
+const search=document.querySelector<HTMLInputElement>('#paper-search');const journal=document.querySelector<HTMLSelectElement>('#journal-filter');const cards=[...document.querySelectorAll<HTMLElement>('[data-publication]')];function filter(){const q=search?.value.trim().toLowerCase()||'';const j=journal?.value||'';let visible=0;cards.forEach(card=>{const show=(card.dataset.search||'').includes(q)&&(!j||card.dataset.journal===j);card.hidden=!show;if(show)visible++});document.querySelectorAll<HTMLElement>('[data-year-group]').forEach(group=>group.hidden=!group.querySelector('[data-publication]:not([hidden])'));const empty=document.querySelector<HTMLElement>('#no-results');if(empty)empty.hidden=visible>0}search?.addEventListener('input',filter);journal?.addEventListener('change',filter);
+</script></BaseLayout>

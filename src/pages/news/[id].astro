@@ -1,19 +1,7 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection, render } from 'astro:content';
-import { pageUrl, assetUrl } from '../../lib/links';
-export async function getStaticPaths() {
-  return (await getCollection('news')).map(item => ({ params: { id: item.id }, props: { item } }));
-}
-const { item } = Astro.props;
-const { Content } = await render(item);
+import {getCollection} from 'astro:content';
+import {pageUrl} from '../../lib/links';
+export async function getStaticPaths(){return (await getCollection('news')).map(item=>({params:{id:item.id},props:{item}}))}
+const {item}=Astro.props;
+return Astro.redirect(pageUrl('board/news/'+item.id),301);
 ---
-<BaseLayout title={item.data.title} active="news" description={item.data.summary}>
-  <section class="page-hero"><div class="shell page-heading"><span class="eyebrow">{item.data.category} · {item.data.date.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</span><h1>{item.data.title}</h1><p>{item.data.summary}</p></div></section>
-  <article class="shell content-article">
-    {item.data.image && <img class="article-image" src={assetUrl(item.data.image)} alt="" />}
-    <div class="prose"><Content /></div>
-    {item.data.link && <p><a class="text-link" href={item.data.link} target="_blank" rel="noopener noreferrer">Read original source</a></p>}
-    <a class="text-link article-back" href={pageUrl('news')}>Back to news</a>
-  </article>
-</BaseLayout>

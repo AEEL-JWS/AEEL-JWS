@@ -2,55 +2,18 @@ import { defineCollection } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
-const research = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/research' }),
-  schema: z.object({
-    title: z.string(),
-    eyebrow: z.string().optional(),
-    summary: z.string(),
-    order: z.coerce.number().default(99),
-    image: z.string().optional(),
-    featured: z.boolean().default(false),
-  }),
-});
+const md = <T extends z.ZodObject<z.ZodRawShape>>(base: string, schema: T) => defineCollection({ loader: glob({ pattern: '**/*.md', base }), schema });
+const text = z.string().optional();
+const order = z.coerce.number().default(99);
 
-const publications = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/publications' }),
-  schema: z.object({
-    title: z.string(),
-    authors: z.string().optional(),
-    journal: z.string(),
-    year: z.coerce.number(),
-    doi: z.string().optional(),
-    link: z.string().optional(),
-    area: z.string().optional(),
-    featured: z.boolean().default(false),
-    image: z.string().optional(),
-  }),
-});
+const research = md('./src/content/research', z.object({ title: z.string(), eyebrow: text, summary: z.string(), order, image: text, featured: z.boolean().default(false) }));
+const publications = md('./src/content/publications', z.object({ title: z.string(), authors: text, journal: z.string(), year: z.coerce.number(), volume: text, issue: text, pages: text, doi: text, link: text, area: text, publicationType: text, featured: z.boolean().default(false), image: text, order }));
+const people = md('./src/content/people', z.object({ name: z.string(), role: z.string(), degree: text, program: text, researchArea: text, interests: text, introduction: text, keywords: text, email: text, image: text, link: text, order }));
+const alumni = md('./src/content/alumni', z.object({ name: z.string(), degree: text, previousPosition: text, graduationYear: z.coerce.number().optional(), currentAffiliation: text, currentPosition: text, image: text, link: text, order }));
+const patents = md('./src/content/patents', z.object({ title: z.string(), inventors: text, country: text, number: text, applicationDate: z.coerce.date().optional(), registrationDate: z.coerce.date().optional(), status: text, link: text, order }));
+const conferences = md('./src/content/conferences', z.object({ title: z.string(), authors: text, conference: text, location: text, date: z.coerce.date(), presentationType: z.enum(['Oral','Poster','Invited','Keynote']).optional(), link: text, order }));
+const notices = md('./src/content/notices', z.object({ title: z.string(), date: z.coerce.date(), category: text, attachment: text, pinned: z.boolean().default(false), author: text }));
+const news = md('./src/content/news', z.object({ title: z.string(), date: z.coerce.date(), category: z.string().default('Lab news'), summary: z.string(), image: text, link: text, featured: z.boolean().default(false) }));
+const gallery = md('./src/content/gallery', z.object({ title: z.string(), date: z.coerce.date(), category: text, description: text, cover: text, photos: z.array(z.object({ image: z.string(), caption: text })).default([]), order }));
 
-const people = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/people' }),
-  schema: z.object({
-    name: z.string(),
-    role: z.string(),
-    interests: z.string().optional(),
-    email: z.string().optional(),
-    image: z.string().optional(),
-    order: z.coerce.number().default(99),
-  }),
-});
-
-const news = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/news' }),
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    category: z.string().default('Lab news'),
-    summary: z.string(),
-    image: z.string().optional(),
-    link: z.string().optional(),
-  }),
-});
-
-export const collections = { research, publications, people, news };
+export const collections = { research, publications, people, alumni, patents, conferences, notices, news, gallery };

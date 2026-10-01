@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHero from '../../components/SectionHero.astro';
+import ResearcherCard from '../../components/ResearcherCard.astro';
+import {memberTabs} from '../../lib/navigation';
+import {getCollection} from 'astro:content';
+const people=(await getCollection('people')).filter(p=>!/professor|principal investigator/i.test(p.data.role)).sort((a,b)=>a.data.order-b.data.order);
+---
+<BaseLayout title="Researchers" active="members"><SectionHero section="Members / Researchers" title="Curiosity in company." intro="Researchers building new knowledge across materials, devices, and systems." tabs={memberTabs}/><section class="section"><div class="shell"><div class="section-head"><div><span class="eyebrow">Our team</span><h2>Researchers</h2></div></div><div class="people-grid">{people.map(person=><ResearcherCard person={person.data}/>)}</div></div></section></BaseLayout>

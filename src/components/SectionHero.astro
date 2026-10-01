@@ -1,0 +1,7 @@
+---
+import { pageUrl } from '../lib/links';
+interface Props { section: string; title: string; intro: string; tabs?: [string,string][]; }
+const {section,title,intro,tabs=[]}=Astro.props;
+---
+<section class="page-hero"><div class="shell page-heading"><span class="eyebrow">{section}</span><h1>{title}</h1><p>{intro}</p></div></section>
+{tabs.length>0 && <nav class="section-tabs" aria-label={`${section} pages`}><div class="shell">{tabs.map(([label,path]) => <a href={pageUrl(path)} aria-current={Astro.url.pathname===pageUrl(path)?'page':undefined}>{label}</a>)}</div></nav>}

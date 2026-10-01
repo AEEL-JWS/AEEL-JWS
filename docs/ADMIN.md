@@ -1,28 +1,34 @@
 # AEEL 홈페이지 관리 방법
 
-## 논문, 연구원, 연구 주제, 소식 관리
+[Pages CMS 관리 화면](https://app.pagescms.org/aeel-jws/aeel-jws/main)에 GitHub 계정으로 로그인합니다. 다른 컴퓨터에서도 같은 주소를 사용할 수 있습니다. 편집자는 `AEEL-JWS/AEEL-JWS` 저장소에 대한 쓰기 권한이 있어야 합니다.
 
-1. [Pages CMS 관리 화면](https://app.pagescms.org/aeel-jws/aeel-jws/main/collection/publications)에 접속해 GitHub 계정으로 로그인합니다.
-2. 왼쪽에서 **Publications**(논문), **People**(연구원), **Research**(연구 주제), **News**(소식) 중 하나를 고릅니다.
-3. 새 항목은 **Add an entry**, 기존 항목 수정은 **Edit**, 삭제는 항목 오른쪽의 **⋮ → Delete**를 누릅니다.
-4. **Save**를 누르면 GitHub 저장소에 저장되고, GitHub Pages가 홈페이지를 다시 배포합니다. 반영에는 몇 분이 걸릴 수 있습니다.
+왼쪽 메뉴는 홈페이지와 비슷하게 구성했습니다.
 
-다른 컴퓨터에서도 같은 주소로 접속할 수 있습니다. 편집자는 `AEEL-JWS/AEEL-JWS` 저장소에 대한 GitHub 쓰기 권한이 있어야 합니다. Pages CMS 앱은 이 저장소에만 접근하도록 설정했습니다. 업로드한 이미지는 저장소의 `public/images`에 들어갑니다.
+- **Research**: 연구 주제
+- **Members → Professor**: 심재원 교수님 사진, 연락처, 학력·경력·수상·활동
+- **Members → Researchers / Alumni**: 구성원과 졸업생
+- **Publications → Papers / Patents / Conferences**: 연구 성과
+- **Board → Notices / News / Gallery**: 공지, 소식, 사진 앨범
+- **Contact & Recruitment**: 위치, 연락처, 지원 안내
 
-## 현재 주소와 최종 도메인
+목록형 메뉴에서는 **Add**로 새 항목을 만들고, 항목을 열어 **Edit**하거나 메뉴에서 **Delete**할 수 있습니다. 제목 등 필수 항목을 입력한 뒤 **Save**를 누르세요. 저장 내용은 GitHub에 반영되고 GitHub Pages가 자동 배포합니다. 배포에는 몇 분이 걸릴 수 있습니다.
 
-- 임시 홈페이지: <https://aeel-jws.github.io/AEEL-JWS/>
-- 최종 희망 주소: `AEEL.korea.ac.kr`
+Professor와 Contact는 하나의 파일을 편집하는 메뉴입니다. Professor의 Education / Professional Experience / Honors & Awards / Activities에서 **Add item**을 눌러 반복 항목을 추가할 수 있습니다. **Display order** 숫자가 작은 항목이 먼저 표시됩니다. Professor 사진은 **Profile image** 필드에서 바꿀 수 있습니다.
 
-연구실에서 새 사이트의 내용과 디자인을 검수한 뒤 학교 담당자가 `AEEL.korea.ac.kr`의 DNS를 설정해야 합니다. 그때 GitHub Pages의 사용자 지정 도메인과 Astro 배포 주소를 함께 변경합니다. 현재 사용 중인 `shimgrp.korea.ac.kr`은 변경하지 않았습니다.
+Gallery에서 **Add**로 앨범을 만든 후 **Photos · Add image**를 반복해 사진과 캡션을 추가합니다. Cover image를 지정하지 않으면 첫 번째 사진이 표지로 사용됩니다. 업로드한 이미지와 공지 첨부 파일은 저장소의 `public/images`에 저장됩니다.
 
-초기 내용은 [기존 AEEL 홈페이지](https://shimgrp.korea.ac.kr/)에서 확인한 자료를 바탕으로 작성한 초안입니다. 명단과 논문 정보 등을 연구실에서 검수해 주세요. 확인에 사용한 링크는 [`CONTENT_SOURCES.md`](../CONTENT_SOURCES.md)에 모았습니다.
+Researchers에서 졸업생을 Alumni로 옮길 때는 Alumni에 정보를 새로 등록하고 확인한 다음 기존 Researchers 항목을 삭제하세요. Pages CMS는 두 컬렉션 사이의 자동 이동 기능은 제공하지 않습니다.
+
+현재 임시 주소는 <https://aeel-jws.github.io/AEEL-JWS/>입니다. 최종 희망 주소 `AEEL.korea.ac.kr`은 새 사이트 검수 후 학교 DNS와 GitHub Pages 설정을 함께 변경해야 합니다. 기존 `shimgrp.korea.ac.kr`은 변경하지 않았습니다.
+
+초기 콘텐츠 출처는 [CONTENT_SOURCES.md](../CONTENT_SOURCES.md)에 정리했습니다. 신규 메뉴 중 기존 자료가 확인되지 않은 카테고리는 빈 상태로 두었습니다.
 
 ## 개발자를 위한 로컬 실행
 
 ```sh
 pnpm install
 pnpm dev
+pnpm check
 pnpm build
 ```
 

@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
-const owner = process.env.GITHUB_REPOSITORY_OWNER || 'example';
+const owner = process.env.GITHUB_REPOSITORY_OWNER || 'aeel-jws';
 
 export default defineConfig({
   site: process.env.SITE_URL || `https://${owner}.github.io`,

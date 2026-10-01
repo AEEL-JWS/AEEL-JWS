@@ -1,0 +1,27 @@
+{
+  "labName": "Advanced Electronic Device & Energy Conversion System Lab",
+  "institution": "Korea University",
+  "professor": "Professor Jae Won Shim",
+  "email": "jwshim19@korea.ac.kr",
+  "phone": "+82-2-3290-3224",
+  "fax": "+82-2-921-0544",
+  "building": "Engineering Building",
+  "room": "420",
+  "address": "145 Anam-ro, Seongbuk-gu, Seoul, Republic of Korea",
+  "recruitmentIntro": "The lab welcomes inquiries from applicants interested in postdoctoral research, graduate study, and undergraduate research leading toward graduate study.",
+  "recruitmentInstructions": "Introduce yourself, your research interests, and the kind of project you hope to pursue. Attach your CV if appropriate.",
+  "opportunities": [
+    {
+      "title": "Postdoctoral researchers",
+      "description": "Research positions in advanced electronic devices, photonics, and energy conversion."
+    },
+    {
+      "title": "Graduate students",
+      "description": "MS / PhD integrated or PhD programs."
+    },
+    {
+      "title": "Undergraduate researchers",
+      "description": "Graduate linked research opportunities."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHero from '../../components/SectionHero.astro';
+import {boardTabs} from '../../lib/navigation';
+import {pageUrl} from '../../lib/links';
+---
+<BaseLayout title="Board" active="board"><SectionHero section="Board" title="Life at AEEL." intro="Announcements, research news, and moments from the lab." tabs={boardTabs}/><section class="section"><div class="shell link-card-grid">{boardTabs.map(([label,path],i)=><a class="link-card surface-card" href={pageUrl(path)}><span class="card-kicker">0{i+1} / BOARD</span><h2>{label}</h2><span class="text-link">Explore</span></a>)}</div></section></BaseLayout>

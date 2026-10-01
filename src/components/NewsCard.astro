@@ -1,0 +1,6 @@
+---
+import { pageUrl, assetUrl } from '../lib/links';
+interface Props { id:string; item:{title:string;date:Date;category:string;summary:string;image?:string};}
+const {id,item}=Astro.props;
+---
+<a class="news-card surface-card" href={pageUrl(`board/news/${id}`)}><div class="news-card-image">{item.image?<img src={assetUrl(item.image)} alt="" loading="lazy" />:<span aria-hidden="true">AEEL / NEWS</span>}</div><div class="news-card-copy"><span class="card-kicker">{item.category} · {item.date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}</span><h3>{item.title}</h3><p>{item.summary}</p><span class="text-link">Read story</span></div></a>
