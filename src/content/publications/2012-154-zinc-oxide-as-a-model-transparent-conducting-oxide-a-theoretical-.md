@@ -3,6 +3,7 @@ title: "Zinc Oxide as a Model Transparent Conducting Oxide: A Theoretical and Ex
 authors: "Hong Li, Laura K. Schirra, Jaewon Shim, Hyeunseok Cheun, Bernard Kippelen, Oliver L. A. Monti, and Jean-Luc Bredas"
 journal: "Chemistry of Materials"
 year: 2012
+bibliography: "24(15), 3044–3055"
 doi: "https://doi.org/10.1021/cm301596x"
 link: "https://doi.org/10.1021/cm301596x"
 featured: false

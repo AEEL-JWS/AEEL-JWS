@@ -3,6 +3,7 @@ title: "Transparent resistive switching memory using aluminum oxide on a flexibl
 authors: "Seung-Won Yeom, Sang-Chul Shin, Tan-Young Kim, Hyeon Jun Ha, Yun-Hi Lee, Jae Won Shim* and Byeong-Kwon Ju*"
 journal: "Nanotechnology"
 year: 2016
+bibliography: "27, 07LT01–07LT07"
 doi: "https://doi.org/10.1088/0957-4484/27/7/07LT01"
 link: "https://doi.org/10.1088/0957-4484/27/7/07LT01"
 featured: false

@@ -4,4 +4,4 @@ import SectionHero from '../components/SectionHero.astro';
 import {publicationTabs} from '../lib/navigation';
 import {pageUrl} from '../lib/links';
 ---
-<BaseLayout title="Publications" active="publications"><SectionHero section="Publications" title="Research in the record." intro="Peer-reviewed papers, intellectual property, and conference presentations." tabs={publicationTabs}/><section class="section"><div class="shell link-card-grid">{publicationTabs.map(([label,path],i)=><a class="link-card surface-card" href={pageUrl(path)}><span class="card-kicker">0{i+1} / PUBLICATIONS</span><h2>{label}</h2><span class="text-link">Explore</span></a>)}</div></section></BaseLayout>
+<BaseLayout title="Publications" active="publications"><SectionHero section="Publications" title="Publications" intro="Research outputs from the AEEL group." tabs={publicationTabs}/><section class="section"><div class="shell link-card-grid">{publicationTabs.map(([label,path],i)=><a class="link-card surface-card" href={pageUrl(path)}><span class="card-kicker">0{i+1} / PUBLICATIONS</span><h2>{label}</h2><span class="text-link">Explore</span></a>)}</div></section></BaseLayout>

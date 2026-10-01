@@ -3,6 +3,7 @@ title: "Intermediate Layer-Assisted Trap Density Reduction in Low-Power Optoelec
 authors: "Min Jong Lee, Tae Hyuk Kim, Sang Heon Lee, Seunghyun Oh, Muhammad Asghar Khan, Gyeong Min Lee, Young Kyun Choi, Soyeon Lee, Hyungju Ahn, Soong Ju Oh, Jiwoong Yang, and Jae Won Shim*"
 journal: "Advanced Functional Materials"
 year: 2025
+bibliography: "35, 22, 2421080"
 doi: "https://doi.org/10.1002/adfm.202421080"
 link: "https://doi.org/10.1002/adfm.202421080"
 featured: false

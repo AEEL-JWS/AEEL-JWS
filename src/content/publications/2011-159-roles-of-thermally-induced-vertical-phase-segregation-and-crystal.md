@@ -3,6 +3,7 @@ title: "Roles of thermally-induced vertical phase segregation and crystallizatio
 authors: "Hyeunseok Cheun, John D. Berrigan, Yinhua Zhou, Mathieu Fenoll, Jaewon Shim, Canek Fuentes-Hernandez, Kenneth H. Sandhage, and Bernard Kippelen"
 journal: "Energy & Environmental Science"
 year: 2011
+bibliography: "4(9), 3456–3460"
 doi: "https://doi.org/10.1039/C1EE01316E"
 link: "https://doi.org/10.1039/C1EE01316E"
 featured: false

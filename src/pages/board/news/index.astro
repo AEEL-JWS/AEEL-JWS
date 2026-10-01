@@ -6,4 +6,4 @@ import {boardTabs} from '../../../lib/navigation';
 import {getCollection} from 'astro:content';
 const news=(await getCollection('news')).sort((a,b)=>b.data.date.getTime()-a.data.date.getTime());
 ---
-<BaseLayout title="News" active="board"><SectionHero section="Board / News" title="From inside the lab." intro="Discover recent papers, milestones, and stories from our research group." tabs={boardTabs}/><section class="section"><div class="shell"><div class="section-head"><div><span class="eyebrow">Latest updates</span><h2>Lab news</h2></div></div><div class="news-card-grid">{news.map(item=><NewsCard id={item.id} item={item.data}/>)}</div></div></section></BaseLayout>
+<BaseLayout title="News" active="board"><SectionHero section="Board / News" title="News" intro="Recent research highlights, publications, awards, and lab updates." tabs={boardTabs}/><section class="section"><div class="shell"><div class="section-head"><div><span class="eyebrow">Latest updates</span><h2>Lab news</h2></div></div><div class="news-card-grid">{news.map(item=><NewsCard id={item.id} item={item.data}/>)}</div></div></section></BaseLayout>

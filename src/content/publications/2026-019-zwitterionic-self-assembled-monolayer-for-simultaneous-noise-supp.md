@@ -3,6 +3,7 @@ title: "Zwitterionic Self-Assembled Monolayer for Simultaneous Noise Suppression
 authors: "Jiyoung Shin†, Gyeong Min Lee†,Juyeon Shin, Jaewoong Kim, Tae Hyuk Kim, Do Yeon Kim, Kyeounghak Kim*, Jae Won Shim*, and In Hwan Jung*"
 journal: "Advanced Functional Materials"
 year: 2026
+bibliography: "36, 39, e24099"
 doi: "https://doi.org/10.1002/adfm.202524099"
 link: "https://doi.org/10.1002/adfm.202524099"
 featured: false

@@ -3,6 +3,7 @@ title: "Cosensitization of Metal-Based Dyes for High-Performance Dye-Sensitized 
 authors: "Muhammad Ahsan Saeed, Hyeong Cheol Kang, Kicheon Yoo, and Francis Kwaku Asiam, Jae-Joon Lee*, Jae Won Shim*"
 journal: "Dyes and Pigments"
 year: 2021
+bibliography: "194, 109624"
 doi: "https://doi.org/10.1016/j.dyepig.2021.109624"
 link: "https://doi.org/10.1016/j.dyepig.2021.109624"
 featured: false

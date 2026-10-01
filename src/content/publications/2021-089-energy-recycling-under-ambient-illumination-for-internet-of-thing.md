@@ -3,6 +3,7 @@ title: "Energy Recycling under Ambient Illumination for Internet-of-Things using
 authors: "Young-Jun You, Muhammad Ahsan Saeed, Shafidah Shafian, Jisoo Kim, Sang Hyeon Kim, Sung Hyeon Kim, Kyungkon Kim*, and Jae Won Shim*"
 journal: "Nanotechnology"
 year: 2021
+bibliography: "32, 465401"
 doi: "https://doi.org/10.1088/1361-6528/ac13e7"
 link: "https://doi.org/10.1088/1361-6528/ac13e7"
 featured: false

@@ -51,14 +51,27 @@ def replace_collection(collection: str):
 
 
 publication_book = load_workbook(WORKBOOKS / "AEEL_164_publications_CMS_DOI_master.xlsx", read_only=True, data_only=True)
-cover_by_order = {row[0]: row[10].title() for row in list(publication_book["Master Audit"].values)[1:] if isinstance(row[10], str) and "cover" in row[10].lower()}
+audit_by_order = {row[0]: row for row in list(publication_book["Master Audit"].values)[1:]}
+cover_by_order = {order: row[10].title() for order, row in audit_by_order.items() if isinstance(row[10], str) and "cover" in row[10].lower()}
 papers = rows("AEEL_164_publications_CMS_DOI_master.xlsx")
 assert len(papers) == 164 and len({r[0].casefold() for r in papers}) == 164
+assert len(audit_by_order) == len(papers)
 replace_collection("publications")
 for index, row in enumerate(papers, 1):
     title, authors, journal, year, doi, link, area, featured, image = row
+    audit = audit_by_order[index]
+    assert audit[4] == title and audit[1] == year
+    bibliography = str(audit[3]).strip().rstrip(".") if audit[3] is not None else None
+    if bibliography:
+        bibliography = re.sub(r"(?<=[A-Za-z0-9])\s*-\s*(?=[A-Za-z0-9])", "–", bibliography)
+        bibliography = re.sub(r"^(\d+)\((\d+)\)\s+", r"\1, \2, ", bibliography)
+        bibliography = re.sub(r"^(\d+)[:.]\s*(\d+)", r"\1, \2", bibliography)
+        bibliography = re.sub(r"^(\d+)\s+(\d+)", r"\1, \2", bibliography)
+        bibliography = re.sub(r"(,\s*\d+)\s+(e\d+)$", r"\1, \2", bibliography)
+    status = audit[10] if audit[10] in {"Accepted", "In press", "Early View", "ASAP"} else None
     write("publications", f"{year}-{index:03d}-{slug(title)[:65]}.md", {
         "title": title, "authors": authors, "journal": journal, "year": year,
+        "bibliography": bibliography, "status": status,
         "doi": doi, "link": link, "area": area, "featured": bool(featured),
         "image": image, "coverType": cover_by_order.get(index), "order": index,
     })

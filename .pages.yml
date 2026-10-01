@@ -399,6 +399,12 @@ content:
           - name: pages
             label: Pages or article number
             type: string
+          - name: bibliography
+            label: Existing citation details (volume, issue, pages or article number)
+            type: string
+          - name: status
+            label: Publication status (Accepted / In press / Early View / ASAP)
+            type: string
           - name: doi
             label: DOI URL
             type: string

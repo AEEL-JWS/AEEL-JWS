@@ -3,6 +3,7 @@ title: "Tailoring Opto-electrical Properties of Ultra-thin Indium Tin Oxide Film
 authors: "†Yong Woon Kim, †Ji Soo Goo (†These authors contributed equally to this work.), Tae Ho Lee, Byeong Ryong Lee, Sang-Chul Shin, Hyeok Kim, Jae Won Shim*, and Tae Geun Kim*"
 journal: "Journal of Power Sources"
 year: 2019
+bibliography: "424, 165–175"
 doi: "https://doi.org/10.1016/j.jpowsour.2019.03.116"
 link: "https://doi.org/10.1016/j.jpowsour.2019.03.116"
 featured: false

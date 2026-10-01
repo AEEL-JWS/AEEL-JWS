@@ -8,6 +8,7 @@
 .editorial-kicker{display:flex;align-items:center;gap:12px;margin-bottom:17px}
 .editorial-kicker span{width:34px;height:1px;background:#a10f32}
 .editorial-lab-name{font:600 clamp(20px,2.2vw,30px)/1.2 Georgia,serif;letter-spacing:-.03em;margin:0 0 20px;color:#1d2024}
+.editorial-hero-pi{font:800 12px/1.4 Manrope,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#a10f32;margin:0 0 20px}
 .editorial-hero h1{font:400 clamp(47px,4.7vw,66px)/1.04 Georgia,'Times New Roman',serif;letter-spacing:-.055em;margin:0 0 25px}
 .editorial-hero h1 em{font-style:normal}
 .editorial-hero-description{font:400 15px/1.7 'DM Sans',Arial,sans-serif;max-width:495px;color:#414c57;margin-bottom:30px}
@@ -23,7 +24,7 @@
 .editorial-overline::before{content:'';width:27px;height:2px;background:#a10d31}
 .editorial-view-all{color:#9d1233;font-size:12px;font-weight:800;white-space:nowrap;padding-bottom:8px}
 .editorial-view-all span{font-size:17px;margin-left:8px}
-.editorial-research{background:#fff}
+.editorial-research{background:#fff;padding-bottom:65px}
 .editorial-research-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
 .editorial-research-card{position:relative;display:block;min-height:350px;overflow:hidden;background:#d9e2e8;color:#fff}
 .editorial-card-photo,.editorial-card-shade{position:absolute;inset:0}
@@ -47,7 +48,7 @@
 .editorial-paper-card h3{font:600 14px/1.48 'DM Sans',Arial,sans-serif;letter-spacing:-.01em;margin:0 0 12px;overflow-wrap:anywhere}
 .editorial-paper-card>a{color:#9d1733;font-size:11px;font-weight:800}
 .editorial-paper-card>a span{margin-left:4px}
-.editorial-updates{background:#fff}
+.editorial-updates{background:#fff;border-top:1px solid #eceeef;padding-top:72px}
 .editorial-updates-grid{display:grid;grid-template-columns:1.13fr .89fr 1fr;gap:42px}
 .editorial-column-heading{display:flex;align-items:center;justify-content:space-between;min-height:37px;border-top:2px solid #a3193b;margin-bottom:15px}
 .editorial-column-heading h3{font:700 13px/1 Manrope,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;margin:11px 0}
@@ -73,6 +74,7 @@
 .editorial-banner-content .editorial-overline{color:#fff}
 .editorial-banner-content h2{font:400 clamp(38px,4.7vw,62px)/1.05 Georgia,serif;letter-spacing:-.045em;margin:17px 0}
 .editorial-banner-content p{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;max-width:310px;line-height:1.5}
+.editorial-banner-content .editorial-banner-pi{font-size:13px;letter-spacing:.03em;text-transform:none;margin:12px 0 0;color:#fff}
 .editorial-banner-content a{font-size:12px;font-weight:800;align-self:start;border-bottom:1px solid #ffffff9c;padding-bottom:5px;margin-top:9px}
 @media(max-width:1050px){.editorial-hero-copy{max-width:56%}.editorial-hero h1{font-size:clamp(43px,5.2vw,62px)}.editorial-research-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.editorial-research-card{min-height:345px}.editorial-paper-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.editorial-updates-grid{gap:22px}}
 @media(max-width:720px){.editorial-hero{height:auto;min-height:0;display:flex;flex-direction:column}.editorial-hero-inner{order:0;padding-top:55px;padding-bottom:43px}.editorial-hero-copy{max-width:100%;padding:0}.editorial-hero h1{font-size:clamp(43px,10vw,63px)}.editorial-lab-name{font-size:23px}.editorial-hero-description{font-size:14px}.editorial-hero-image{position:relative;order:1;inset:auto;height:290px;width:100%}.editorial-hero-image::after{display:none}.editorial-hero-caption{bottom:15px;color:#fff}.editorial-section{padding:68px 0}.editorial-section-heading{align-items:start;flex-direction:column;gap:11px}.editorial-section-heading h2{font-size:clamp(36px,8vw,48px)}.editorial-research-grid{grid-template-columns:1fr 1fr}.editorial-research-card{min-height:330px}.editorial-paper-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}.editorial-paper-card{flex:0 0 205px;scroll-snap-align:start}.editorial-updates-grid{grid-template-columns:1fr;gap:33px}.editorial-column-heading-spacer{min-height:22px}.editorial-bottom-banner{height:350px}.editorial-bottom-banner>img{object-position:64% center}}

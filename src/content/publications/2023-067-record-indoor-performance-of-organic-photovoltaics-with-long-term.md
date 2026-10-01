@@ -3,6 +3,7 @@ title: "Record Indoor Performance of Organic Photovoltaics with Long-Term Stabil
 authors: "Tae Hyuk Kim, Na Won Park, Muhammad Ahsan Saeed, Sang Young Jeong, Han Young Woo, JaeHong Park*, and Jae Won Shim*"
 journal: "Nano Energy"
 year: 2023
+bibliography: "112, 108429"
 doi: "https://doi.org/10.1016/j.nanoen.2023.108429"
 link: "https://doi.org/10.1016/j.nanoen.2023.108429"
 featured: false

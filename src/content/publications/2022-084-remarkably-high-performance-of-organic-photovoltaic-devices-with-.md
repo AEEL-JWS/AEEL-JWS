@@ -3,6 +3,7 @@ title: "Remarkably High Performance of Organic Photovoltaic Devices with 3,9-bis
 authors: "Muhammad Ahsan Saeed, Sun Cheng, Swarup Biswas, Sang Hyeon Kim, Soon-Ki Kwon, Hyeok Kim*, Yun-Hi Kim*, Jae Won Shim*"
 journal: "Journal of Power Sources"
 year: 2022
+bibliography: "518, 230782"
 doi: "https://doi.org/10.1016/j.jpowsour.2021.230782"
 link: "https://doi.org/10.1016/j.jpowsour.2021.230782"
 featured: false

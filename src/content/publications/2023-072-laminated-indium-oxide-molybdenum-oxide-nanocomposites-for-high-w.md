@@ -3,6 +3,7 @@ title: "Laminated indium-oxide/molybdenum-oxide nanocomposites for high-work-fun
 authors: "Jae Jin Chung, Tae Hyuk Kim, Muhammad Ahsan Saeed, and Jae Won Shim*"
 journal: "Applied Surface Science"
 year: 2023
+bibliography: "610, 1, 155526"
 doi: "https://doi.org/10.1016/j.apsusc.2022.155526"
 link: "https://doi.org/10.1016/j.apsusc.2022.155526"
 featured: false

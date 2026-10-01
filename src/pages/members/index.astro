@@ -4,4 +4,4 @@ import SectionHero from '../../components/SectionHero.astro';
 import {memberTabs} from '../../lib/navigation';
 import {pageUrl} from '../../lib/links';
 ---
-<BaseLayout title="Members" active="members"><SectionHero section="Members" title="People behind the progress." intro="Meet the faculty, researchers, and alumni who shape AEEL." tabs={memberTabs}/><section class="section"><div class="shell link-card-grid">{memberTabs.map(([label,path],i)=><a class="link-card surface-card" href={pageUrl(path)}><span class="card-kicker">0{i+1} / MEMBERS</span><h2>{label}</h2><span class="text-link">Explore</span></a>)}</div></section></BaseLayout>
+<BaseLayout title="Members" active="members"><SectionHero section="Members" title="Members" intro="Meet the faculty, researchers, and alumni of AEEL." tabs={memberTabs}/><section class="section"><div class="shell link-card-grid">{memberTabs.map(([label,path],i)=><a class="link-card surface-card" href={pageUrl(path)}><span class="card-kicker">0{i+1} / MEMBERS</span><h2>{label}</h2><span class="text-link">Explore</span></a>)}</div></section></BaseLayout>

@@ -3,6 +3,7 @@ title: "Molecular Spacer Engineering of Carbazole–Phosphonic Acid SAMs: Probin
 authors: "Hee Chun Kim,† Ji Hyeon Lee,† Tae Hyuk Kim, Min Jong Lee, Eun Soo Shim, Seunghwan Bae, Hyungju Ahn, Han Jung Park, Nak-Seung Patrick Hyun, Jea Woong Jo,* and Jae Won Shim*"
 journal: "Chemical Engineering Journal"
 year: 2026
+bibliography: "527, 171902"
 doi: "https://doi.org/10.1016/j.cej.2025.171902"
 link: "https://doi.org/10.1016/j.cej.2025.171902"
 featured: false

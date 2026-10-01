@@ -3,6 +3,7 @@ title: "Enhancing the Performance of Indoor Organic Photovoltaics through Precis
 authors: "Soyoung Kim†, Seon Joong Kim†, Gayoung Ham, Ji-Eun Jeong, Donghwa Lee, Eunho Lee, Hyungju Ahn, Hyojung Cha*, Jae Won Shim*, and Wonho Lee*"
 journal: "Journal of Materials Chemistry A"
 year: 2024
+bibliography: "12, 2685–2696"
 doi: "https://doi.org/10.1039/D3TA06624J"
 link: "https://doi.org/10.1039/D3TA06624J"
 featured: false

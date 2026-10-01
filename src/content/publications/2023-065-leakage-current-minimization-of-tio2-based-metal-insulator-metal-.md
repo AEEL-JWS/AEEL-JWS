@@ -3,6 +3,7 @@ title: "Leakage current minimization of TiO2-based metal-insulator-metal capacit
 authors: "Jae Jin Chung, Seon Joong Kim, and Jae Won Shim*"
 journal: "IEEE Transactions on Electron Devices"
 year: 2023
+bibliography: "70, 8, 4315–4319"
 doi: "https://doi.org/10.1109/TED.2023.3287812"
 link: "https://doi.org/10.1109/TED.2023.3287812"
 featured: false

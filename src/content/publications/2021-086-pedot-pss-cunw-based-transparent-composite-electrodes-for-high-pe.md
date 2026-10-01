@@ -3,6 +3,7 @@ title: "PEDOT:PSS: CuNW-based Transparent Composite Electrodes for High-Performa
 authors: "Muhammad Ahsan Saeed, Sang Hyeon Kim, Kyungnae Baek, Jerome K. Hyun, Sae Youn Lee*, Jae Won Shim*"
 journal: "Applied Surface Science"
 year: 2021
+bibliography: "567, 150852"
 doi: "https://doi.org/10.1016/j.apsusc.2021.150852"
 link: "https://doi.org/10.1016/j.apsusc.2021.150852"
 featured: false

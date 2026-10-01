@@ -3,6 +3,7 @@ title: "Effect of Interface Roughness on Electrical Properties of Ag Cathode and
 authors: "Jeong-Woo Park, Sung-Jin Lim, Ji Soo Goo, and Jae Won Shim*"
 journal: "Journal of Nanoscience and Nanotechnology"
 year: 2017
+bibliography: "17, 9120–9124"
 doi: "https://doi.org/10.1166/jnn.2017.13905"
 link: "https://doi.org/10.1166/jnn.2017.13905"
 featured: false
