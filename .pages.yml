@@ -1,3 +1,4 @@
+# AEEL content editor configuration
 media:
   input: public/images
   output: /images
