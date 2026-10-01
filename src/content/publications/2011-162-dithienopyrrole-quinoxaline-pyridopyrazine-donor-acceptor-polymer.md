@@ -1,0 +1,10 @@
+---
+title: "Dithienopyrrole-quinoxaline/pyridopyrazine donor-acceptor polymers: synthesis and electrochemical, optical, charge-transport, and photovoltaic properties"
+authors: "Xuan Zhang, Jae Won Shim, Shree Prakash Tiwari, Qing Zhang, Joseph E. Norton, Pei-Tzu Wu, Stephen Barlow, Samson A. Jenekhe, Bernard Kippelen, Jean-Luc Bredas, and Seth R. Marder"
+journal: "Journal of Materials Chemistry"
+year: 2011
+doi: "https://doi.org/10.1039/C0JM04290K"
+link: "https://doi.org/10.1039/C0JM04290K"
+featured: false
+order: 162
+---

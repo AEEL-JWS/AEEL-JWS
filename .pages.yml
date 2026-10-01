@@ -249,6 +249,9 @@ content:
             label: Position
             type: string
             required: true
+          - name: affiliation
+            label: Joint affiliation (KIST / KETI)
+            type: string
           - name: degree
             label: Degree
             type: string
@@ -273,6 +276,12 @@ content:
           - name: image
             label: Portrait
             type: image
+          - name: sourceImageUrl
+            label: Original image URL (reference)
+            type: string
+          - name: active
+            label: Show on site
+            type: boolean
           - name: link
             label: External link
             type: string
@@ -301,6 +310,9 @@ content:
             label: Name
             type: string
             required: true
+          - name: category
+            label: Category (Postdoc / Ph.D. Course / M.S. Course)
+            type: string
           - name: degree
             label: Degree
             type: string
@@ -310,12 +322,27 @@ content:
           - name: graduationYear
             label: Graduation year
             type: number
+          - name: graduationMonth
+            label: Graduation month
+            type: string
+          - name: currentStatus
+            label: Current status
+            type: string
           - name: currentAffiliation
             label: Current affiliation
             type: string
           - name: currentPosition
             label: Current position
             type: string
+          - name: currentOrganization
+            label: Current organization
+            type: string
+          - name: currentText
+            label: Original current status text
+            type: string
+          - name: active
+            label: Show on site
+            type: boolean
           - name: image
             label: Portrait
             type: image
@@ -383,6 +410,9 @@ content:
             type: string
           - name: publicationType
             label: Publication type
+            type: string
+          - name: coverType
+            label: Cover feature (Front Cover / Back Cover)
             type: string
           - name: image
             label: Cover image
@@ -524,6 +554,24 @@ content:
           - name: category
             label: Category
             type: string
+          - name: sourceTitle
+            label: Original title (reference)
+            type: string
+          - name: sourceUrl
+            label: Original notice URL
+            type: string
+          - name: legacyViews
+            label: Original view count
+            type: number
+          - name: image
+            label: Image
+            type: image
+          - name: featured
+            label: Feature on home
+            type: boolean
+          - name: active
+            label: Show on site
+            type: boolean
           - name: author
             label: Author
             type: string

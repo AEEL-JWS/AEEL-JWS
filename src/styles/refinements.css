@@ -1,0 +1,33 @@
+:root{color:#202125;background:#fff}
+.site-header{border-bottom:1px solid #e8e8e8}
+.header-inner{height:66px}
+.brand-copy{display:flex;flex-direction:row;align-items:center;gap:15px}
+.brand-copy strong{font:700 28px/1 Arial,sans-serif;letter-spacing:-.06em;color:#970b2b}
+.brand-copy small{border-left:1px solid #d9d9d9;padding-left:15px;margin:0;font:700 7px/1.38 Arial,sans-serif;letter-spacing:.09em;color:#6a6970}
+.primary-nav{gap:25px}
+.primary-nav .nav-link,.primary-nav .nav-contact:last-child{position:relative;font-size:12px;font-weight:600;color:#2c3038;background:none;border:0;border-radius:0;padding:22px 0}
+.primary-nav .nav-link:hover,.primary-nav .nav-link.active,.primary-nav .nav-link[aria-current="page"],.primary-nav .nav-contact:last-child:hover{color:#980b2d;background:none}
+.primary-nav .nav-link.active::after,.primary-nav .nav-link[aria-current="page"]::after,.nav-group.active>.nav-group-head .nav-link::after{content:'';height:2px;position:absolute;left:0;right:0;bottom:14px;background:#a01031}
+.nav-expand{font-size:14px}
+.nav-dropdown{top:calc(100% - 6px)}
+.person-photo{aspect-ratio:3/4;height:auto;overflow:hidden}
+.person-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.person-card{min-width:0}
+.person-card h3,.publication-row h3,.news-item h3{overflow-wrap:anywhere}
+.publication-authors{overflow-wrap:anywhere}
+.publication-links{display:flex;gap:8px;align-items:center;justify-content:end;flex-wrap:wrap}
+.publication-links a{display:inline-block;padding:9px 12px;border:1px solid #d8dce1;color:#8d1532;font-size:11px;font-weight:800;white-space:nowrap}
+.publication-links a:hover{border-color:#8d1532;background:#fff8f9}
+.alumni-group{margin-bottom:58px}
+.alumni-group .year-heading{font-family:Georgia,serif;font-weight:400;letter-spacing:-.03em}
+.alumni-card{align-items:start}
+.alumni-card h3{margin:5px 0 9px}
+.alumni-card .alumni-date{font-size:12px;color:#9b1733;font-weight:700;margin-bottom:10px}
+.alumni-card .alumni-destination{font-size:14px;color:#364354}
+.notice-list .news-item{grid-template-columns:130px 1fr auto}
+.notice-list .pill{display:inline-block;margin-bottom:5px;background:#f5ebed;color:#8d1532}
+.notice-load-more{display:block;margin:32px auto 0;padding:13px 28px;border:1px solid #ad2945;background:#fff;color:#9d1733;font-size:13px;font-weight:800}
+.notice-load-more:hover{background:#9d1733;color:#fff}
+.notice-detail-link{display:inline-flex;gap:8px;margin-top:18px;color:#9d1733;font-weight:800}
+@media(max-width:950px){.primary-nav{gap:13px}.brand-copy small{max-width:175px}}
+@media(max-width:720px){.header-inner{height:64px}.brand-copy strong{font-size:26px}.brand-copy small{font-size:6px}.primary-nav{top:64px}.primary-nav .nav-link,.primary-nav .nav-contact:last-child{padding:13px}.primary-nav .nav-link.active::after,.primary-nav .nav-link[aria-current="page"]::after,.nav-group.active>.nav-group-head .nav-link::after{bottom:7px}.notice-list .news-item{grid-template-columns:1fr auto}.notice-list .news-date{grid-column:1/-1}.publication-links{justify-content:start;grid-column:1/-1}.alumni-card{padding:20px}}

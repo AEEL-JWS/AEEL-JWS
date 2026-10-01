@@ -1,0 +1,10 @@
+---
+title: "High-efficiency (over 33 %) indoor organic photovoltaics with band-aligned and defect-suppressed interlayers"
+authors: "Tae Hyuk Kim, Jae Jin Chung, Muhammad Ahsan Saeed, Sae Youn Lee & Jae Won Shim*"
+journal: "Applied Surface Science"
+year: 2023
+doi: "https://doi.org/10.1016/j.apsusc.2022.155558"
+link: "https://doi.org/10.1016/j.apsusc.2022.155558"
+featured: false
+order: 73
+---

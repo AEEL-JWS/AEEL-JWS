@@ -1,0 +1,10 @@
+---
+title: "Surface functionalized electrolyte-gated perovskite transistors with enhanced performance via insulating polymer additive"
+authors: "Vivian Nketia-Yawson, Jae Won Shim*, Benjamin Nketia-Yawson*, and Jea Woong Jo*"
+journal: "Applied Surface Science"
+year: 2023
+doi: "https://doi.org/10.1016/j.apsusc.2023.158297"
+link: "https://doi.org/10.1016/j.apsusc.2023.158297"
+featured: false
+order: 63
+---

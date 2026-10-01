@@ -4,6 +4,8 @@ import SectionHero from '../../components/SectionHero.astro';
 import ResearcherCard from '../../components/ResearcherCard.astro';
 import {memberTabs} from '../../lib/navigation';
 import {getCollection} from 'astro:content';
-const people=(await getCollection('people')).filter(p=>!/professor|principal investigator/i.test(p.data.role)).sort((a,b)=>a.data.order-b.data.order);
+const people=(await getCollection('people')).filter(p=>p.data.active).sort((a,b)=>a.data.order-b.data.order);
+const researchers=people.filter(p=>p.data.role!=='Administrative Associate');
+const staff=people.filter(p=>p.data.role==='Administrative Associate');
 ---
-<BaseLayout title="Researchers" active="members"><SectionHero section="Members / Researchers" title="Curiosity in company." intro="Researchers building new knowledge across materials, devices, and systems." tabs={memberTabs}/><section class="section"><div class="shell"><div class="section-head"><div><span class="eyebrow">Our team</span><h2>Researchers</h2></div></div><div class="people-grid">{people.map(person=><ResearcherCard person={person.data}/>)}</div></div></section></BaseLayout>
+<BaseLayout title="Researchers" active="members"><SectionHero section="Members / Researchers" title="Curiosity in company." intro="Researchers building new knowledge across materials, devices, and systems." tabs={memberTabs}/><section class="section"><div class="shell"><div class="section-head"><div><span class="eyebrow">Our team</span><h2>Researchers</h2></div></div><div class="people-grid">{researchers.map(person=><ResearcherCard person={person.data}/>)}</div>{staff.length>0&&<div class="people-section"><div class="section-head"><div><span class="eyebrow">Lab operations</span><h2>Administrative Associate</h2></div></div><div class="people-grid">{staff.map(person=><ResearcherCard person={person.data}/>)}</div></div>}</div></section></BaseLayout>
