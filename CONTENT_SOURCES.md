@@ -7,7 +7,9 @@ The initial site is an editorial starting point. AEEL should review personnel, p
 - Researcher names, roles, and interests: https://shimgrp.korea.ac.kr/researchers/
 - Photovoltaics description: https://shimgrp.korea.ac.kr/cpt_research/organic-photovoltaics/
 - DRAM description: https://shimgrp.korea.ac.kr/cpt_research/dram-capacitor/
-- 2025 photodetector paper: https://shimgrp.korea.ac.kr/notices/%EB%85%BC%EB%AC%B8-%EA%B2%8C%EC%9E%AC-ultra-sensitive-short-wave-infrared-organic-photodetectors-enabled-by-a-%CF%80-conjugation-extended-proquinoid-electron-acceptor-advanced-functional-materia/
-- 2024 photodetector paper: https://shimgrp.korea.ac.kr/notices/%EB%85%BC%EB%AC%B8-%EA%B2%8C%EC%9E%AC-atto-scale-noise-near-infrared-organic-photodetectors-enabled-by-controlling-interfacial-energetic-offset-through-enhanced-anchoring-ability-advanced-materi/
+- Perovskite memristor paper (ACS Nano, 2026): https://doi.org/10.1021/acsnano.6c02822
+- Self-filtering photodetector paper (Nature Communications, 2026): https://doi.org/10.1038/s41467-026-74407-z
+- Short-wave infrared photodetector paper (Advanced Functional Materials, 2026): https://doi.org/10.1002/adfm.202517337
+- Atto-scale noise photodetector paper (Advanced Materials, 2024): https://doi.org/10.1002/adma.202403647
 
-The 2026 paper titles and news dates are drawn from the current site's homepage notices. The site does not supply full author lists or DOI links for those entries, so those fields remain empty rather than guessed.
+The news dates are drawn from the current site's homepage notices. Publication years and DOI links use the publishers' records; the Advanced Functional Materials paper was announced on the old site in 2025 but published in the journal's 2026 issue. Full author lists remain empty until the lab reviews them.

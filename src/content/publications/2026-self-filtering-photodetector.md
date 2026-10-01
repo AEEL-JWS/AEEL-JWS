@@ -4,5 +4,5 @@ journal: "Nature Communications"
 year: 2026
 area: "Photodetection"
 featured: true
-link: "https://shimgrp.korea.ac.kr/"
+doi: "https://doi.org/10.1038/s41467-026-74407-z"
 ---

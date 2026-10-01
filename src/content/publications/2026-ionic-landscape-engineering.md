@@ -4,5 +4,5 @@ journal: "ACS Nano"
 year: 2026
 area: "Memory devices"
 featured: true
-link: "https://shimgrp.korea.ac.kr/"
+doi: "https://doi.org/10.1021/acsnano.6c02822"
 ---
