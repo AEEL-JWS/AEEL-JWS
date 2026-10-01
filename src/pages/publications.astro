@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const publications = (await getCollection('publications')).sort((a,b) => b.data.year - a.data.year || a.data.title.localeCompare(b.data.title));
+const years = [...new Set(publications.map(item => item.data.year))];
+const areas = [...new Set(publications.map(item => item.data.area).filter(Boolean))].sort();
+---
+<BaseLayout title="Publications" active="publications" description="Publications from AEEL, Korea University.">
+  <section class="page-hero"><div class="shell page-heading"><span class="eyebrow">Publications</span><h1>Work that moves<br />the field forward.</h1><p>Explore papers across electronic devices, photodetection, and energy conversion.</p></div></section>
+  <section class="section"><div class="shell"><div class="section-head"><div><span class="eyebrow">Research output</span><h2>Selected publications</h2><p>Use the search and area filter to find a paper.</p></div></div>
+    <div class="filter-bar"><label for="paper-search">Search publications</label><input id="paper-search" type="search" placeholder="Search title, journal, author, or year" /><label for="area-filter">Research area</label><select id="area-filter"><option value="">All research areas</option>{areas.map(area => <option value={area}>{area}</option>)}</select></div>
+    <div id="paper-results">{years.map(year => <section class="publication-year-group" data-year-group><h3 class="year-heading">{year}</h3><div class="publication-list">{publications.filter(item => item.data.year === year).map(item => <article class="publication-row" data-publication data-search={`${item.data.title} ${item.data.authors || ''} ${item.data.journal} ${item.data.year}`.toLowerCase()} data-area={item.data.area || ''}><span class="publication-year">{year}</span><div><h3>{item.data.title}</h3>{item.data.authors && <p class="publication-authors">{item.data.authors}</p>}<p class="publication-meta">{item.data.journal}{item.data.area ? ` · ${item.data.area}` : ''}</p></div>{(item.data.doi || item.data.link) && <a class="publication-arrow" href={item.data.doi || item.data.link} target="_blank" rel="noopener noreferrer" aria-label={`Open ${item.data.title}`}>↗</a>}</article>)}</div></section>)}</div>
+    <p id="no-results" class="empty-state" hidden>No publications match your search.</p>
+    <p class="source-note">This is an initial selection. The lab can add, update, or remove papers through Pages CMS.</p>
+  </div></section>
+  <script>
+    const search = document.querySelector<HTMLInputElement>('#paper-search');
+    const area = document.querySelector<HTMLSelectElement>('#area-filter');
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-publication]')];
+    function filter() {
+      const query = search?.value.trim().toLowerCase() || '';
+      const selectedArea = area?.value || '';
+      let visible = 0;
+      cards.forEach(card => {
+        const show = (card.dataset.search || '').includes(query) && (!selectedArea || card.dataset.area === selectedArea);
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      document.querySelectorAll<HTMLElement>('[data-year-group]').forEach(group => group.hidden = !group.querySelector('[data-publication]:not([hidden])'));
+      const empty = document.querySelector<HTMLElement>('#no-results');
+      if (empty) empty.hidden = visible > 0;
+    }
+    search?.addEventListener('input', filter);
+    area?.addEventListener('change', filter);
+  </script>
+</BaseLayout>

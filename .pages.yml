@@ -1,0 +1,95 @@
+media:
+  input: public/images
+  output: /images
+  rename: safe
+  categories: [image]
+
+content:
+  - name: research
+    label: Research
+    type: collection
+    path: src/content/research
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, eyebrow, order]
+      primary: title
+      sort: [order, title]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: eyebrow, label: Short label, type: string }
+      - { name: summary, label: Summary, type: text, required: true }
+      - { name: order, label: Display order, type: number }
+      - { name: featured, label: Feature on home, type: boolean }
+      - { name: image, label: Image, type: image }
+      - { name: body, label: Full description, type: rich-text }
+
+  - name: publications
+    label: Publications
+    type: collection
+    path: src/content/publications
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, journal, year, featured]
+      primary: title
+      sort: [year, title]
+      default:
+        sort: year
+        order: desc
+    fields:
+      - { name: title, label: Paper title, type: string, required: true }
+      - { name: authors, label: Authors, type: text }
+      - { name: journal, label: Journal, type: string, required: true }
+      - { name: year, label: Year, type: number, required: true }
+      - { name: doi, label: DOI URL, type: string }
+      - { name: link, label: Article URL, type: string }
+      - { name: area, label: Research area, type: string }
+      - { name: featured, label: Feature on home, type: boolean }
+      - { name: image, label: Cover or graphical abstract, type: image }
+
+  - name: people
+    label: People
+    type: collection
+    path: src/content/people
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [name, role, order]
+      primary: name
+      sort: [order, name]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - { name: name, label: Name, type: string, required: true }
+      - { name: role, label: Role, type: string, required: true }
+      - { name: interests, label: Research interests, type: text }
+      - { name: email, label: Email, type: string }
+      - { name: image, label: Portrait, type: image }
+      - { name: order, label: Display order, type: number }
+
+  - name: news
+    label: News
+    type: collection
+    path: src/content/news
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, date, category]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Headline, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true }
+      - { name: category, label: Category, type: string }
+      - { name: summary, label: Summary, type: text, required: true }
+      - { name: image, label: Image, type: image }
+      - { name: link, label: External or original link, type: string }
+      - { name: body, label: Full story, type: rich-text }

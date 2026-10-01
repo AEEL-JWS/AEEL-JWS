@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { assetUrl } from '../lib/links';
+const people = (await getCollection('people')).sort((a,b) => a.data.order - b.data.order);
+const principal = people.filter(item => /professor|principal investigator/i.test(item.data.role));
+const members = people.filter(item => !principal.includes(item));
+---
+<BaseLayout title="People" active="people" description="Meet the researchers at AEEL, Korea University.">
+  <section class="page-hero"><div class="shell page-heading"><span class="eyebrow">People</span><h1>The people behind<br />the progress.</h1><p>Different backgrounds, shared curiosity, and a commitment to research that matters.</p></div></section>
+  <section class="section"><div class="shell">
+    {principal.length > 0 && <><div class="section-head"><div><span class="eyebrow">Leadership</span><h2>Principal investigator</h2></div></div><div class="people-grid">{principal.map(person => <article class="person-card surface-card"><div class="person-photo">{person.data.image ? <img src={assetUrl(person.data.image)} alt={person.data.name} loading="lazy" /> : <span aria-hidden="true">{person.data.name.split(' ').map(word => word[0]).join('').slice(0,2)}</span>}</div><span class="card-kicker">{person.data.role}</span><h3>{person.data.name}</h3><p>{person.data.interests}</p>{person.data.email && <a href={`mailto:${person.data.email}`}>{person.data.email} ↗</a>}</article>)}</div></>}
+    {members.length > 0 && <div class="people-section"><div class="section-head"><div><span class="eyebrow">Our team</span><h2>Researchers</h2></div></div><div class="people-grid">{members.map(person => <article class="person-card surface-card"><div class="person-photo">{person.data.image ? <img src={assetUrl(person.data.image)} alt={person.data.name} loading="lazy" /> : <span aria-hidden="true">{person.data.name.split(' ').map(word => word[0]).join('').slice(0,2)}</span>}</div><span class="card-kicker">{person.data.role}</span><h3>{person.data.name}</h3><p>{person.data.interests}</p>{person.data.email && <a href={`mailto:${person.data.email}`}>{person.data.email} ↗</a>}</article>)}</div></div>}
+    <p class="source-note">Member information is an initial snapshot from the existing AEEL website and can be maintained through Pages CMS.</p>
+  </div></section>
+</BaseLayout>
