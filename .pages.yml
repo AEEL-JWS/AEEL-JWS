@@ -57,6 +57,8 @@ content:
         type: file
         path: src/data/professor.json
         format: json
+        operations:
+          delete: false
         fields:
           - name: image
             label: Profile image
@@ -628,14 +630,17 @@ content:
               - name: image
                 label: Photo
                 type: image
+                required: true
               - name: caption
                 label: Caption
                 type: text
   - name: contact
-        label: Contact & Recruitment
+    label: Contact & Recruitment
     type: file
     path: src/data/contact.json
     format: json
+    operations:
+      delete: false
     fields:
       - name: labName
         label: Lab name
