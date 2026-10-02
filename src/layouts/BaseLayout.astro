@@ -4,6 +4,7 @@ import contact from '../data/contact.json';
 import '../styles/global.css';
 import '../styles/extended.css';
 import '../styles/refinements.css';
+import '../styles/editorial.css';
 
 interface Props { title: string; description?: string; active?: string; }
 const { title, description = 'Advanced Electronic Device & Energy Conversion System Lab at Korea University.', active = '' } = Astro.props;
@@ -19,7 +20,7 @@ const groups = [
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#111d31" />
   <link rel="icon" type="image/svg+xml" href={assetUrl('/favicon.svg')} /><meta name="description" content={description} /><title>{title} | AEEL</title>
 </head>
-<body>
+<body class={active ? `page-${active}` : 'page-home'}>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="shell header-inner">
   <a class="brand" href={pageUrl()} aria-label="AEEL home"><span class="brand-copy"><strong>AEEL</strong><small>KOREA UNIVERSITY<br />ADVANCED ELECTRONIC DEVICE &amp;<br />ENERGY CONVERSION SYSTEM LAB.</small></span></a>

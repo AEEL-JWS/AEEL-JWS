@@ -2,5 +2,6 @@
 import { pageUrl, assetUrl } from '../lib/links';
 interface Props { id:string; item:{title:string;date:Date;category:string;summary:string;image?:string};}
 const {id,item}=Astro.props;
+const visual=id.includes('photonic')?'/images/editorial/flexible-electronics.webp':id.includes('memristor')||id.includes('acs-nano')?'/images/editorial/neuromorphic-devices.webp':id.includes('photodetector')||id.includes('nature')||id.includes('afm')?'/images/editorial/photodetectors.webp':'/images/editorial/wafer-probing.webp';
 ---
-<a class="news-card surface-card" href={pageUrl(`board/news/${id}`)}><div class="news-card-image">{item.image?<img src={assetUrl(item.image)} alt="" loading="lazy" />:<span aria-hidden="true">AEEL / NEWS</span>}</div><div class="news-card-copy"><span class="card-kicker">{item.category} · {item.date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}</span><h3>{item.title}</h3><p>{item.summary}</p><span class="text-link">Read story</span></div></a>
+<a class="news-card surface-card" href={pageUrl(`board/news/${id}`)}><div class="news-card-image"><img src={assetUrl(item.image||visual)} alt="" loading="lazy" /></div><div class="news-card-copy"><span class="card-kicker">{item.category} · {item.date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}</span><h3>{item.title}</h3><p>{item.summary}</p><span class="text-link">Read story</span></div></a>

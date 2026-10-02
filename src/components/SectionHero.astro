@@ -1,7 +1,19 @@
 ---
-import { pageUrl } from '../lib/links';
-interface Props { section: string; title: string; intro: string; tabs?: [string,string][]; }
-const {section,title,intro,tabs=[]}=Astro.props;
+import { pageUrl, assetUrl } from '../lib/links';
+interface Props { section: string; title: string; intro: string; tabs?: [string,string][]; image?: string; }
+const {section,title,intro,tabs=[],image}=Astro.props;
+const family=section.split('/')[0].trim().toLowerCase();
+const heroImages: Record<string,string>={
+  research:'/images/editorial/materials-tomorrow.webp',
+  members:'/images/editorial/wafer-probing.webp',
+  publications:'/images/editorial/wafer-probing.webp',
+  board:'/images/editorial/materials-tomorrow.webp',
+  contact:'/images/editorial/materials-tomorrow.webp',
+};
+const heroImage=image||heroImages[family];
 ---
-<section class="page-hero"><div class="shell page-heading"><span class="eyebrow">{section}</span><h1>{title}</h1><p>{intro}</p></div></section>
+<section class:list={['page-hero','content-hero',`content-hero--${family}`,{'content-hero--inner':section.includes('/')}]}>
+  {heroImage && <img class="content-hero-image" src={assetUrl(heroImage)} alt="" aria-hidden="true" />}
+  <div class="shell page-heading"><span class="eyebrow">{section}</span><h1>{title}</h1><p>{intro}</p></div>
+</section>
 {tabs.length>0 && <nav class="section-tabs" aria-label={`${section} pages`}><div class="shell">{tabs.map(([label,path]) => <a href={pageUrl(path)} aria-current={Astro.url.pathname===pageUrl(path)?'page':undefined}>{label}</a>)}</div></nav>}

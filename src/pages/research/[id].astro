@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHero from '../../components/SectionHero.astro';
 import { getCollection, render } from 'astro:content';
 import { pageUrl, assetUrl } from '../../lib/links';
 export async function getStaticPaths() {
@@ -9,7 +10,7 @@ const { item } = Astro.props;
 const { Content } = await render(item);
 ---
 <BaseLayout title={item.data.title} active="research" description={item.data.summary}>
-  <section class="page-hero"><div class="shell page-heading"><span class="eyebrow">{item.data.eyebrow || 'Research'}</span><h1>{item.data.title}</h1><p>{item.data.summary}</p></div></section>
+  <SectionHero section={item.data.eyebrow || 'Research'} title={item.data.title} intro={item.data.summary} image={item.data.image || '/images/editorial/wafer-probing.webp'} />
   <article class="shell content-article">
     {item.data.image && <img class="article-image" src={assetUrl(item.data.image)} alt="" />}
     <div class="prose"><Content /></div>
