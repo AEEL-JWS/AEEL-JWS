@@ -438,41 +438,67 @@ content:
         view:
           fields:
             - title
-            - country
             - status
+            - applicationDate
             - order
           primary: title
           sort:
-            - order
+            - applicationDate
           default:
-            sort: order
-            order: asc
+            sort: applicationDate
+            order: desc
         fields:
           - name: title
             label: Patent title
             type: string
             required: true
+          - name: status
+            label: Status
+            type: select
+            required: true
+            options:
+              values:
+                - 출원
+                - 등록
           - name: inventors
             label: Inventors
             type: text
-          - name: country
-            label: Country
+          - name: applicationCountries
+            label: Application countries
             type: string
-          - name: number
-            label: Patent or application number
-            type: string
+            required: true
           - name: applicationDate
             label: Application date
             type: date
+            required: true
+          - name: applicationNumber
+            label: Application number
+            type: string
+            required: true
           - name: registrationDate
             label: Registration date
             type: date
-          - name: status
-            label: Status
+            default: ""
+          - name: registrationNumber
+            label: Registration number
             type: string
-          - name: link
-            label: Link
+          - name: language
+            label: Language
             type: string
+          - name: researchArea
+            label: Research area
+            type: string
+          - name: featured
+            label: Featured
+            type: boolean
+            default: false
+          - name: active
+            label: Show on site
+            type: boolean
+            default: true
+          - name: notes
+            label: Source notes (audit)
+            type: text
           - name: order
             label: Display order
             type: number
@@ -481,49 +507,72 @@ content:
         type: collection
         path: src/content/conferences
         format: yaml-frontmatter
-        filename: "{primary}.md"
+        filename:
+          template: "{year}{month}{day}-{hour}{minute}{second}-{primary}.md"
+          field: create
         view:
           fields:
-            - title
-            - conference
-            - date
+            - event
+            - year
+            - type
             - order
-          primary: title
+          primary: event
           sort:
-            - date
+            - year
           default:
-            sort: date
+            sort: year
             order: desc
         fields:
-          - name: title
-            label: Presentation title
+          - name: year
+            label: Event year
+            type: number
+            required: true
+          - name: month
+            label: Event month
+            type: string
+          - name: event
+            label: Conference / Event
             type: string
             required: true
-          - name: authors
-            label: Authors
-            type: text
-          - name: conference
-            label: Conference name
-            type: string
-          - name: location
-            label: Location
-            type: string
-          - name: date
-            label: Date
-            type: date
-            required: true
-          - name: presentationType
+          - name: type
             label: Presentation type
             type: select
             options:
               values:
-                - Oral
                 - Poster
-                - Invited
-                - Keynote
-          - name: link
-            label: Link
+                - Oral Presentation
+                - Invited Talk
+                - Invited Lecture
+                - Not specified
+          - name: title
+            label: Presentation title
             type: string
+          - name: authors
+            label: Authors
+            type: text
+          - name: location
+            label: Location
+            type: string
+          - name: country
+            label: Country
+            type: string
+          - name: language
+            label: Language
+            type: string
+          - name: sourceYear
+            label: Source year (audit)
+            type: number
+          - name: notes
+            label: Source notes (audit)
+            type: text
+          - name: featured
+            label: Featured
+            type: boolean
+            default: false
+          - name: active
+            label: Show on site
+            type: boolean
+            default: true
           - name: order
             label: Display order
             type: number
