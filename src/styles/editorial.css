@@ -22,8 +22,6 @@ body:not(.page-home) .page-hero:not(.content-hero) .page-heading p{color:#62666b
 .content-hero--inner{min-height:295px;padding:56px 0 62px}
 .content-hero--inner .page-heading h1{font-size:clamp(48px,5.7vw,76px)}
 .content-hero--inner .page-heading p{font-size:16px}
-.content-hero--board .content-hero-image{object-position:center 28%}
-.content-hero--contact .content-hero-image{object-position:center 36%}
 .content-hero--contact::before{background:linear-gradient(90deg,#f8fafafc 0%,#f8fafae8 27%,#f8fafaa2 50%,#f8fafa08 78%)}
 .section-tabs{border-bottom:1px solid #e7e2e1}
 .section-tabs .shell{gap:42px}
