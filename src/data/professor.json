@@ -12,10 +12,7 @@
   "fax": "+82-2-921-0544",
   "office": "Engineering Bldg. 420, 145 Anam-ro, Seongbuk-gu, Seoul, Korea",
   "biography": "Professor Jae Won Shim leads AEEL at Korea University, researching advanced electronic devices and energy conversion systems.",
-  "googleScholar": "",
-  "orcid": "",
-  "researcherProfile": "",
-  "universityProfile": "",
+  "googleScholar": "https://scholar.google.co.kr/citations?user=YPiJZPAAAAAJ&hl=ko",
   "education": [
     {
       "degree": "Ph.D.",
@@ -49,7 +46,6 @@
       "position": "Professor",
       "location": "Seoul, Korea",
       "startYear": 2019,
-      "endYear": null,
       "present": true,
       "order": 1
     },
@@ -59,7 +55,6 @@
       "position": "Adjunct Professor",
       "location": "Seoul, Korea",
       "startYear": 2021,
-      "endYear": null,
       "present": true,
       "order": 2
     },
@@ -69,7 +64,6 @@
       "position": "Director",
       "location": "Seoul, Korea",
       "startYear": 2026,
-      "endYear": null,
       "present": true,
       "order": 3
     },
@@ -79,7 +73,6 @@
       "position": "Visiting Scholar",
       "location": "California, United States",
       "startYear": 2026,
-      "endYear": null,
       "present": true,
       "order": 4
     },
@@ -95,7 +88,6 @@
     },
     {
       "institution": "Samsung Advanced Institute of Technology",
-      "department": "",
       "position": "Research Staff Member",
       "location": "Suwon, Korea",
       "startYear": 2014,
@@ -105,7 +97,6 @@
     },
     {
       "institution": "Siemens VDO",
-      "department": "",
       "position": "Research Staff Member",
       "location": "Cheongwon, Korea",
       "startYear": 2006,
@@ -117,278 +108,195 @@
   "awards": [
     {
       "title": "2023 삼성전자 산학협력 우수특허상 최우수상",
-      "organization": "",
       "year": 2023,
-      "description": "",
       "order": 1
     },
     {
       "title": "Crimson Professor Award of Excellence, College of Engineering, Korea University",
-      "organization": "",
       "year": 2023,
-      "description": "",
       "order": 2
     },
     {
       "title": "Excellent Teaching Award - Electromagnetics (Korea University) (Fall 2022)",
-      "organization": "",
       "year": 2023,
-      "description": "",
       "order": 3
     },
     {
       "title": "고려대학교 최초재임용 우수교원 (2022)",
-      "organization": "",
       "year": 2022,
-      "description": "",
       "order": 4
     },
     {
       "title": "한국전력 2020년 사외공모 기초연구 우수연구자 Award",
-      "organization": "",
       "year": 2020,
-      "description": "",
       "order": 5
     },
     {
       "title": "Excellent Teaching Award - Electric Circuits I (Korea University) (Spring 2020)",
-      "organization": "",
       "year": 2020,
-      "description": "",
       "order": 6
     },
     {
       "title": "The Center for Organic Photonics and Electronics (COPE) Award",
-      "organization": "",
       "year": 2008,
-      "description": "",
       "order": 7
     }
   ],
   "activities": [
     {
       "role": "Photonics and Electromagnetics Research Symposium (PIERS) 2027 Daejeon Organizing Committee",
-      "organization": "",
       "startYear": 2026,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 1
     },
     {
       "role": "The 25th International Conference on Electronics, Information, and Communication (ICEIC 2026) Organizing Committee",
-      "organization": "",
       "startYear": 2025,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 2
     },
     {
       "role": "대한전자공학회 이사",
-      "organization": "",
       "startYear": 2025,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 3
     },
     {
       "role": "Photonics and Electromagnetics Research Symposium (PIERS) 2025 Chiba Organizing Committee",
-      "organization": "",
       "startYear": 2025,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 4
     },
     {
       "role": "한국진공학회 산학연협력위원회 위원",
-      "organization": "",
       "startYear": 2025,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 5
     },
     {
       "role": "The 8th International Conference on Electronic Materials and Nanotechnology for Green Environment (ENGE 2024) committee member",
-      "organization": "",
       "startYear": 2024,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 6
     },
     {
       "role": "Asia Communications & Photonics Conference (ACP) 2023 & The International Photonics & OptoElectronics Meetings TCP member",
-      "organization": "",
       "startYear": 2023,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 7
     },
     {
       "role": "국방기술혁신협의체 분과 위원",
-      "organization": "",
       "startYear": 2022,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 8
     },
     {
       "role": "4기 국가나노기술지도 위원",
-      "organization": "",
       "startYear": 2022,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 9
     },
     {
       "role": "The 20th International Symposium on the Physics of Semiconductors and Applications (ISPSA 2022) 조직위원",
-      "organization": "",
       "startYear": 2021,
       "endYear": 2022,
       "present": false,
-      "description": "",
       "order": 10
     },
     {
       "role": "KJF-International Conference on Organic Materials for Electronic and Photonics (ICOMEP) 2022 Local committee",
-      "organization": "",
       "startYear": 2021,
       "endYear": 2022,
       "present": false,
-      "description": "",
       "order": 11
     },
     {
       "role": "태양광 발전학회 유기 및 나노 태양전지 부문 총무간사",
-      "organization": "",
       "startYear": 2021,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 12
     },
     {
       "role": "전기전자재료학회 학회지편집위원",
-      "organization": "",
       "startYear": 2021,
       "endYear": 2022,
       "present": false,
-      "description": "",
       "order": 13
     },
     {
       "role": "4th International Conference on Bioresources, Energy, Environment, and Materials Technology (BEEM 2020) Local Organizing Committee",
-      "organization": "",
       "startYear": 2020,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 14
     },
     {
       "role": "Engineering Sustainable Development 2020 Conference Steering Committee",
-      "organization": "",
       "startYear": 2020,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 15
     },
     {
       "role": "한국전기화학회 광전기화학분과 학술연구위원",
-      "organization": "",
       "startYear": 2020,
       "endYear": 2022,
       "present": false,
-      "description": "",
       "order": 16
     },
     {
       "role": "한국태양광발전학회 평의원",
-      "organization": "",
       "startYear": 2020,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 17
     },
     {
       "role": "고려대학교 Green Manufacturing Research Center 운영위원",
-      "organization": "",
       "startYear": 2020,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 18
     },
     {
       "role": "고려대학교 반도체기술연구소 실장",
-      "organization": "",
       "startYear": 2019,
-      "endYear": null,
       "present": true,
-      "description": "",
       "order": 19
     },
     {
       "role": "한국태양광발전학회 2019 추계학술대회 조직위원",
-      "organization": "",
       "startYear": 2019,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 20
     },
     {
       "role": "The 5th International Conference on Advanced Electromaterials (ICAE) 조직위원",
-      "organization": "",
       "startYear": 2019,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 21
     },
     {
       "role": "19th International Symposium on the Physics of Semiconductors and Applications (ISPSA 2020) 조직위원",
-      "organization": "",
       "startYear": 2019,
       "endYear": 2020,
       "present": false,
-      "description": "",
       "order": 22
     },
     {
       "role": "The 16th International Meeting on Information display ‘Active-Matrix Displays’ 분과위원",
-      "organization": "",
       "startYear": 2016,
       "endYear": 2017,
       "present": false,
-      "description": "",
       "order": 23
     },
     {
       "role": "The 2012 Center for Organic Photonics and Electronics (COPE) Fellowship: February, 2012",
-      "organization": "",
       "startYear": 2012,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 24
     },
     {
       "role": "Korea Institute of Energy Technology Evaluation and Planning (KETEP) Scholarship",
-      "organization": "",
       "startYear": 2008,
-      "endYear": null,
       "present": false,
-      "description": "",
       "order": 25
     }
   ]
