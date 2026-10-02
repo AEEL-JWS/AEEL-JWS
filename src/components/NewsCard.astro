@@ -3,6 +3,6 @@ import { pageUrl, assetUrl } from '../lib/links';
 interface Props { id:string; item:{title:string;date:Date;category:string;summary:string;image?:string;imageFit?:'cover'|'contain';link?:string};}
 const {id,item}=Astro.props;
 const visual=id.includes('photonic')?'/images/editorial/flexible-electronics.webp':id.includes('memristor')||id.includes('acs-nano')?'/images/editorial/neuromorphic-devices.webp':id.includes('photodetector')||id.includes('nature')||id.includes('afm')?'/images/editorial/photodetectors.webp':'/images/editorial/wafer-probing.webp';
-const external=Boolean(item.link && /^https?:\/\//i.test(item.link));
+const external=Boolean(item.link && /^https?:\/\//i.test(item.link) && (item.category.toLowerCase()==='media' || /^https?:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i.test(item.link)));
 ---
 <a class="news-card surface-card" href={external ? item.link : pageUrl(`board/news/${id}`)} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}><div class:list={['news-card-image',{'news-card-image--contain':item.imageFit==='contain'}]}><img src={assetUrl(item.image||visual)} alt="" loading="lazy" /></div><div class="news-card-copy"><span class="card-kicker">{item.category} · {item.date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}</span><h3>{item.title}</h3><p>{item.summary}</p><span class="text-link">{external?'View media ↗':'Read story'}</span></div></a>

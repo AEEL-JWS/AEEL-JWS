@@ -14,8 +14,8 @@ const areas = [
 const news = (await getCollection('news')).sort((a,b) => b.data.date.getTime()-a.data.date.getTime());
 const notices = (await getCollection('notices')).filter(item => item.data.active).sort((a,b) => b.data.date.getTime()-a.data.date.getTime()).slice(0,4);
 const dateLabel = (date:Date) => date.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-const newsUrl = (item:typeof news[number]) => item.data.link && /^https?:\/\//i.test(item.data.link) ? item.data.link : pageUrl(`board/news/${item.id}`);
-const isExternal = (item:typeof news[number]) => Boolean(item.data.link && /^https?:\/\//i.test(item.data.link));
+const isExternal = (item:typeof news[number]) => Boolean(item.data.link && /^https?:\/\//i.test(item.data.link) && (item.data.category.toLowerCase()==='media' || /^https?:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i.test(item.data.link)));
+const newsUrl = (item:typeof news[number]) => isExternal(item) ? item.data.link : pageUrl(`board/news/${item.id}`);
 ---
 <BaseLayout title="Advanced Electronic Device & Energy Conversion System Lab" active="">
   <section class="editorial-hero">
