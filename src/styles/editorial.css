@@ -46,7 +46,8 @@ body:not(.page-home) .page-hero:not(.content-hero) .page-heading p{color:#62666b
 .directory-card{min-width:0;border:1px solid #e6e6e6;background:#fff;transition:border-color .2s,transform .2s}
 .directory-card:hover{border-color:#ad7a87;transform:translateY(-3px)}
 .directory-card-image{aspect-ratio:1.55;overflow:hidden;background:#e7ebed}
-.directory-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.directory-card-image img{width:100%;height:100%;object-fit:cover;object-position:var(--card-image-position,center);transition:transform .4s}
+@media(max-width:720px){.directory-card-image img{object-position:var(--card-image-position-mobile,center)}}
 .directory-card:hover img{transform:scale(1.025)}
 .directory-card-copy{min-height:174px;padding:25px 30px;display:flex;flex-direction:column;align-items:flex-start}
 .directory-card h2{font-size:clamp(28px,2.6vw,41px);line-height:1.1;margin:14px 0 19px}
