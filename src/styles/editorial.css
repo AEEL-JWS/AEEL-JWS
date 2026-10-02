@@ -94,6 +94,8 @@ body:not(.page-home) .pill{background:#f7f2f3;color:#80505b;margin:7px 6px 0 0;f
 .news-archive-grid{margin-top:24px}
 .news-card{border-radius:0!important}
 .news-card-image{height:auto;aspect-ratio:1.48;background:#e4e7e9}
+.news-card-image--contain{background:#f2f0ed}
+.article-image--contain{width:auto;max-width:100%;height:auto;max-height:700px;object-fit:contain;display:block;margin-left:auto;margin-right:auto}
 .news-card-copy{padding:25px 4px}
 .news-card-copy h3{font-size:clamp(22px,2vw,29px);line-height:1.18}
 .news-card-copy p{font-size:13px;line-height:1.6}

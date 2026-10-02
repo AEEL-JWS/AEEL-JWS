@@ -675,6 +675,15 @@ content:
           - name: image
             label: Thumbnail
             type: image
+            options:
+              path: public/images/news
+          - name: imageFit
+            label: Thumbnail display
+            type: select
+            options:
+              values:
+                - cover
+                - contain
           - name: link
             label: External link
             type: string
@@ -719,6 +728,8 @@ content:
           - name: cover
             label: Cover image
             type: image
+            options:
+              path: public/images/gallery
           - name: order
             label: Display order
             type: number
@@ -734,6 +745,8 @@ content:
                 label: Photo
                 type: image
                 required: true
+                options:
+                  path: public/images/gallery
               - name: caption
                 label: Caption
                 type: text
