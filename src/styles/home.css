@@ -25,6 +25,7 @@
 .editorial-view-all{color:#9d1233;font-size:12px;font-weight:800;white-space:nowrap;padding-bottom:8px}
 .editorial-view-all span{font-size:17px;margin-left:8px}
 .editorial-research{background:#fff;padding-bottom:65px}
+.editorial-research-more{display:flex;justify-content:flex-end;margin-top:24px}
 .editorial-research-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
 .editorial-research-card{position:relative;display:block;min-height:350px;overflow:hidden;background:#d9e2e8;color:#fff}
 .editorial-card-photo,.editorial-card-shade{position:absolute;inset:0}
