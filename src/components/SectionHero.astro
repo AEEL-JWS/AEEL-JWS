@@ -1,7 +1,7 @@
 ---
 import { pageUrl, assetUrl } from '../lib/links';
-interface Props { section: string; title: string; intro: string; tabs?: [string,string][]; image?: string; }
-const {section,title,intro,tabs=[],image}=Astro.props;
+interface Props { section: string; title: string; intro: string; tabs?: [string,string][]; image?: string; imagePosition?: string; mobileImagePosition?: string; }
+const {section,title,intro,tabs=[],image,imagePosition='center 56%',mobileImagePosition='65% center'}=Astro.props;
 const family=section.split('/')[0].trim().toLowerCase();
 const heroImages: Record<string,string>={
   research:'/images/editorial/materials-tomorrow.webp',
@@ -13,7 +13,7 @@ const heroImages: Record<string,string>={
 const heroImage=image||heroImages[family];
 ---
 <section class:list={['page-hero','content-hero',`content-hero--${family}`,{'content-hero--inner':section.includes('/')}]}>
-  {heroImage && <img class="content-hero-image" src={assetUrl(heroImage)} alt="" aria-hidden="true" />}
+  {heroImage && <img class="content-hero-image" src={assetUrl(heroImage)} alt="" aria-hidden="true" style={`--hero-position:${imagePosition};--hero-position-mobile:${mobileImagePosition}`} />}
   <div class="shell page-heading"><span class="eyebrow">{section}</span><h1>{title}</h1><p>{intro}</p></div>
 </section>
 {tabs.length>0 && <nav class="section-tabs" aria-label={`${section} pages`}><div class="shell">{tabs.map(([label,path]) => <a href={pageUrl(path)} aria-current={Astro.url.pathname===pageUrl(path)?'page':undefined}>{label}</a>)}</div></nav>}
