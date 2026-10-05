@@ -8,4 +8,18 @@ const citation=item.status==='Accepted'
   : `${item.journal}${citationDetails ? ` ${citationDetails}` : ''} (${item.year})${item.status ? ` (${item.status})` : ''}`;
 const archiveDetails=`${item.year}${citationDetails ? `, ${citationDetails}` : ''}${item.status ? ` (${item.status})` : ''}${item.publicationType ? ` · ${item.publicationType}` : ''}`;
 ---
-<article class:list={['publication-row',{'publication-row--archive':archive}]} data-publication data-search={`${item.title} ${item.authors||''} ${item.journal} ${item.year} ${item.area||''}`.toLowerCase()} data-journal={item.journal}>{!archive&&<span class="publication-year">{item.year}</span>}<div>{archive&&<p class="publication-venue"><span class="publication-journal">{item.journal}</span><span class="publication-citation">{archiveDetails}</span></p>}<h3>{item.title}</h3>{item.authors&&<p class="publication-authors">{item.authors}</p>}{!archive&&<p class="publication-meta">{citation}{item.publicationType&&` · ${item.publicationType}`}</p>}{item.coverType&&<span class="pill">{item.coverType}</span>}{item.area&&<span class="pill">{item.area}</span>}</div><div class="publication-links">{item.doi&&<a href={item.doi} target="_blank" rel="noopener noreferrer" aria-label={`Open DOI for ${item.title}`}>DOI ↗</a>}{articleUrl&&<a href={articleUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open article for ${item.title}`}>Article ↗</a>}</div></article>
+<article class:list={['publication-row',{'publication-row--archive':archive}]} data-publication data-search={`${item.title} ${item.authors||''} ${item.journal} ${item.year} ${item.area||''}`.toLowerCase()} data-journal={item.journal}>
+  {!archive&&<span class="publication-year">{item.year}</span>}
+  <div>
+    {archive&&<p class="publication-venue"><span class="publication-journal">{item.journal}</span><span class="publication-citation">{archiveDetails}</span></p>}
+    <h3>{item.title}</h3>
+    {item.authors&&<p class="publication-authors">{item.authors}</p>}
+    {!archive&&<p class="publication-meta">{citation}{item.publicationType&&` · ${item.publicationType}`}</p>}
+    {item.coverType&&<span class="pill">{item.coverType}</span>}
+    {item.area&&<span class="pill">{item.area}</span>}
+  </div>
+  <div class="publication-links">
+    {item.doi&&<a class="doi-icon-link" href={item.doi} target="_blank" rel="noopener noreferrer" aria-label={`Open DOI for ${item.title}`} title="View DOI"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a>}
+    {articleUrl&&<a href={articleUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open article for ${item.title}`}>Article ↗</a>}
+  </div>
+</article>

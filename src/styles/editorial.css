@@ -69,6 +69,9 @@ body:not(.page-home) .publication-row--archive .publication-links{grid-column:au
 body:not(.page-home) .publication-year{font:400 19px/1.2 Georgia,serif;color:#9e1736}
 body:not(.page-home) .publication-authors,body:not(.page-home) .publication-meta{font-size:12px;color:#666b72;line-height:1.6}
 body:not(.page-home) .publication-links a{border:0;padding:6px 0;color:#9f1534}
+body:not(.page-home) .publication-links a.doi-icon-link{display:inline-flex;align-items:center;justify-content:center;border:0;background:none;color:#737880;line-height:1}
+body:not(.page-home) .publication-links a.doi-icon-link:hover,body:not(.page-home) .publication-links a.doi-icon-link:focus-visible{color:#9f1534}
+.doi-icon-link svg{display:block;width:16px;height:16px}
 body:not(.page-home) .pill{background:#f7f2f3;color:#80505b;margin:7px 6px 0 0;font-size:9px}
 .archive-paths{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:42px}
 .archive-paths a{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;border-top:2px solid #a10c30;padding:22px 0}

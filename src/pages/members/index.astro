@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
+import DirectoryCards from '../../components/DirectoryCards.astro';
 import {memberTabs} from '../../lib/navigation';
-import {pageUrl,assetUrl} from '../../lib/links';
 import {heroImages} from '../../data/heroImages';
-const cardImages=memberTabs.map(([label])=>heroImages[`Members / ${label}`]);
+const cards=memberTabs.map(([label,path])=>({label,path,...heroImages[`Members / ${label}`]}));
 ---
-<BaseLayout title="Members" active="members"><SectionHero section="Members" title="Members" intro="Meet the faculty, researchers, and alumni of AEEL."/><section class="section directory-section"><div class="shell directory-grid">{memberTabs.map(([label,path],i)=><a class="directory-card" href={pageUrl(path)}><div class="directory-card-image"><img src={assetUrl(cardImages[i].image)} alt="" loading="lazy" style={`--card-image-position:${cardImages[i].position || 'center'};--card-image-position-mobile:${cardImages[i].mobilePosition || cardImages[i].position || 'center'}`} /></div><div class="directory-card-copy"><span class="card-kicker">0{i+1} / Members</span><h2>{label}</h2><span class="text-link">Explore</span></div></a>)}</div></section></BaseLayout>
+<BaseLayout title="Members" active="members"><SectionHero section="Members" title="Members" intro="Meet the faculty, researchers, and alumni of AEEL."/><DirectoryCards section="Members" cards={cards}/></BaseLayout>
