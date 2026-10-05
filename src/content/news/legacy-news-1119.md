@@ -7,6 +7,8 @@ image: /images/news/news-wp-1119.jpg
 imageFit: contain
 ---
 
-“Elastomeric indoor organic photovoltaics with superb photo-thermal endurance”
+<p>&#8220;Elastomeric indoor organic photovoltaics with superb photo-thermal endurance&#8221;</p>
 
-Original AEEL post: [Advanced Functional Materials 표지 논문 선정](https://shimgrp.korea.ac.kr/advanced-functional-materials-%ed%91%9c%ec%a7%80-%eb%85%bc%eb%ac%b8-%ec%84%a0%ec%a0%95/)
+
+
+<figure class="wp-block-image size-large"><img src="../../../images/news/news-wp-1119-body.jpg" alt="" loading="lazy"></figure>

@@ -695,6 +695,8 @@ content:
           - name: body
             label: Full story
             type: rich-text
+            options:
+              format: html
       - name: gallery
         label: Gallery
         type: collection

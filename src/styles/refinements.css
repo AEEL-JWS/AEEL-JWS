@@ -31,5 +31,9 @@
 .notice-article .notice-empty{color:#66717d;font-size:15px;line-height:1.7;margin:0}
 .notice-prose img{width:auto;max-width:100%;height:auto;margin:20px 0}
 .notice-prose iframe{display:block;max-width:100%;aspect-ratio:16/9;height:auto;margin:20px 0}
+.news-article .news-empty{color:#66717d;font-size:15px;line-height:1.7;margin:0}
+.news-prose figure{margin:24px 0}
+.news-prose img{width:auto;max-width:100%;height:auto}
+.news-prose iframe{display:block;width:min(100%,790px);aspect-ratio:16/9;height:auto;border:0;margin:24px 0}
 @media(max-width:950px){.primary-nav{gap:13px}.brand-copy small{max-width:175px}}
 @media(max-width:720px){.header-inner{height:64px}.brand-copy strong{font-size:26px}.brand-copy small{font-size:6px}.primary-nav{top:64px}.primary-nav .nav-link,.primary-nav .nav-contact:last-child{padding:13px}.primary-nav .nav-link.active::after,.primary-nav .nav-link[aria-current="page"]::after,.nav-group.active>.nav-group-head .nav-link::after{bottom:7px}.notice-list .news-item{grid-template-columns:1fr auto}.notice-list .news-date{grid-column:1/-1}.publication-links{justify-content:start;grid-column:1/-1}.alumni-card{padding:20px}}

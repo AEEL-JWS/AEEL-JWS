@@ -7,4 +7,4 @@ image: /images/news/advanced-functional-materials-cover-2026.png
 imageFit: contain
 ---
 
-AEEL's paper, “Ultra-Sensitive Short-Wave Infrared Organic Photodetectors Enabled by a π-Conjugation Extended Proquinoid Electron Acceptor,” was selected for the cover of *Advanced Functional Materials*, Vol. 36, No. 5 (January 15, 2026).
+<p>AEEL's paper, “Ultra-Sensitive Short-Wave Infrared Organic Photodetectors Enabled by a π-Conjugation Extended Proquinoid Electron Acceptor,” was selected for the cover of <em>Advanced Functional Materials</em>, Vol. 36, No. 5 (January 15, 2026).</p>

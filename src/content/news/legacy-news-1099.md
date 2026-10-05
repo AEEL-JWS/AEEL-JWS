@@ -7,6 +7,8 @@ image: /images/news/news-wp-1099.jpg
 imageFit: contain
 ---
 
-“Perovskite Solar Cells: Universal Elaboration of Al-Doped TiO2 as an Electron Extraction Layer in Inorganic–Organic Hybrid Perovskite and Organic Solar Cells”
+<p>&#8220;Perovskite Solar Cells: Universal Elaboration of Al-Doped TiO2 as an Electron Extraction Layer in Inorganic–Organic Hybrid Perovskite and Organic Solar Cells&#8221;</p>
 
-Original AEEL post: [Advanced Materials Interfaces 표지 논문 선정](https://shimgrp.korea.ac.kr/advanced-materials-interfaces-%ed%91%9c%ec%a7%80-%eb%85%bc%eb%ac%b8-%ec%84%a0%ec%a0%95/)
+
+
+<figure class="wp-block-image size-large"><img src="../../../images/news/news-wp-1099-body.jpg" alt="" loading="lazy"></figure>

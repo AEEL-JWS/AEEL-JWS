@@ -7,6 +7,8 @@ image: /images/news/news-wp-1095.jpg
 imageFit: contain
 ---
 
-“Highly Efficient Indoor Organic Photovoltaics with Spectrally Matched Fluorinated Phenylene-Alkoxybenzothiadiazole-Based Wide Bandgap Polymers”
+<p>&#8220;Highly Efficient Indoor Organic Photovoltaics with Spectrally Matched Fluorinated Phenylene-Alkoxybenzothiadiazole-Based Wide Bandgap Polymers&#8221;</p>
 
-Original AEEL post: [Advanced Functional Materials 앞표지 논문 선정](https://shimgrp.korea.ac.kr/front-cover-%ec%84%a0%ec%a0%95/)
+
+
+<figure class="wp-block-image size-large"><img src="../../../images/news/news-wp-1095-body.jpg" alt="" loading="lazy"></figure>
