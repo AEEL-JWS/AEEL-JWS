@@ -1,5 +1,5 @@
 ---
-title: Stretchable devices
+title: Flexible electronics
 eyebrow: Flexible electronics
 summary: Electronic and energy devices designed to function while bending and
   stretching.
