@@ -1,5 +1,5 @@
 ---
-title: Optoelectronic memristors
+title: Neuromorphic devices
 eyebrow: Memory & neuromorphic devices
 summary: Optoelectronic memristive devices integrate electrical and optical
   stimuli to control and modulate their conductance states. Their multimodal
