@@ -373,6 +373,7 @@ content:
             - journal
             - year
             - featured
+            - sortKey
           primary: title
           sort:
             - sortKey
@@ -456,6 +457,7 @@ content:
             - status
             - applicationDate
             - registrationDate
+            - sortKey
           primary: title
           sort:
             - sortKey
@@ -536,6 +538,7 @@ content:
             - eventDate
             - year
             - type
+            - sortKey
           primary: event
           sort:
             - sortKey
