@@ -399,6 +399,7 @@ content:
           - name: sortDate
             label: Publication date (optional, for sorting)
             type: date
+            default: ""
           - name: sortKey
             label: Automatic sort key
             type: string
@@ -549,6 +550,7 @@ content:
           - name: eventDate
             label: Event date
             type: date
+            default: ""
           - name: year
             label: Event year (legacy; optional if date is set)
             type: number
