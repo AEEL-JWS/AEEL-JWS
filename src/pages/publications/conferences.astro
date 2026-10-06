@@ -9,7 +9,9 @@ const talks = (await getCollection('conferences'))
   .filter(item => item.data.active)
   .sort(newestFirst(conferenceSortKey));
 const years = [...new Set(talks.map(item => conferenceYear(item.data)))];
-const eventMonth = (data: typeof talks[number]['data']) => data.month || (data.eventDate ? data.eventDate.toLocaleString('en-US', {month:'long', timeZone:'UTC'}) : '');
+const eventMonth = (data: typeof talks[number]['data']) => data.eventDate
+  ? data.eventDate.toLocaleString('en-US', {month:'long', timeZone:'UTC'})
+  : data.month || '';
 ---
 <BaseLayout title="Conferences" active="publications">
   <SectionHero section="Publications / Conferences" title="Conferences" intro="Conference presentations, invited talks, and posters." tabs={publicationTabs}/>
