@@ -4,6 +4,9 @@ import SectionHero from '../../../components/SectionHero.astro';
 import NewsCard from '../../../components/NewsCard.astro';
 import {boardTabs} from '../../../lib/navigation';
 import {getCollection} from 'astro:content';
+import {researchVideoNewsCardCopy} from '../../../data/listing-copy';
 const news=(await getCollection('news')).sort((a,b)=>b.data.date.getTime()-a.data.date.getTime());
+const cardData=(item:typeof news[number])=>item.id==='2026-aeel-research-video' ? {...item.data,...researchVideoNewsCardCopy} : item.data;
 ---
-<BaseLayout title="News" active="board"><SectionHero section="Board / News" title="News" intro="Recent research highlights, publications, awards, and lab updates." tabs={boardTabs}/><section class="section"><div class="shell"><div class="section-head editorial-section-head"><div><span class="eyebrow">Latest updates</span><h2>Lab news</h2></div></div><div class="news-card-grid editorial-news-grid news-archive-grid">{news.map(item=><NewsCard id={item.id} item={item.data}/>)}</div></div></section></BaseLayout>
+<BaseLayout title="News" active="board"><SectionHero section="Board / News" title="News" intro="Recent research highlights, publications, awards, and lab updates." tabs={boardTabs}/><section class="section"><div class="shell"><div class="section-head editorial-section-head"><div><span class="eyebrow">Latest updates</span><h2>Lab news</h2></div></div><div class="news-card-grid editorial-news-grid news-archive-grid">{news.map(item=><NewsCard id={item.id} item={cardData(item)}/>)}</div></div></section></BaseLayout>
+
