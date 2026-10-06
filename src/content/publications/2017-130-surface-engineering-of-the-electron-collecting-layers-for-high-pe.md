@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.cap.2017.08.014"
 link: "https://doi.org/10.1016/j.cap.2017.08.014"
 featured: false
 order: 130
+sortKey: "2017-1-999869-2017-130-surface-engineering-of-the-electron-collecting-layers-for-high-pe"
 ---

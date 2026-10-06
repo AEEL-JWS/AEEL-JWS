@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.jpowsour.2024.234424"
 link: "https://doi.org/10.1016/j.jpowsour.2024.234424"
 featured: false
 order: 50
+sortKey: "2024-1-999949-2024-050-a-simply-prepared-amine-oxide-molecule-as-a-low-work-function-cat"
 ---

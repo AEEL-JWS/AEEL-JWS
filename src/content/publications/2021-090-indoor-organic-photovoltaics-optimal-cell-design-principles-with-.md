@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/aenm.202003103"
 link: "https://doi.org/10.1002/aenm.202003103"
 featured: false
 order: 90
+sortKey: "2021-1-999909-2021-090-indoor-organic-photovoltaics-optimal-cell-design-principles-with-"
 ---

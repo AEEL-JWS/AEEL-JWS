@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.tsf.2020.138006"
 link: "https://doi.org/10.1016/j.tsf.2020.138006"
 featured: false
 order: 105
+sortKey: "2020-1-999894-2020-105-high-indoor-performance-of-flexible-organic-photovoltaics-using-p"
 ---

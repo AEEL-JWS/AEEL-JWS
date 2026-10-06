@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.202307523"
 link: "https://doi.org/10.1002/adma.202307523"
 featured: false
 order: 57
+sortKey: "2024-1-999942-2024-057-self-powering-sensory-device-with-multi-spectrum-image-realizatio"
 ---

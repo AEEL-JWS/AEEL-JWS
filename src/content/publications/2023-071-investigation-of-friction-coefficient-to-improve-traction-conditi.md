@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1063/5.0131670"
 link: "https://doi.org/10.1063/5.0131670"
 featured: false
 order: 71
+sortKey: "2023-1-999928-2023-071-investigation-of-friction-coefficient-to-improve-traction-conditi"
 ---

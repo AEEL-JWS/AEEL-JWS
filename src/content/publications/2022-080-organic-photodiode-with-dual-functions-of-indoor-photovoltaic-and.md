@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1007/s12200-022-00024-5"
 link: "https://doi.org/10.1007/s12200-022-00024-5"
 featured: false
 order: 80
+sortKey: "2022-1-999919-2022-080-organic-photodiode-with-dual-functions-of-indoor-photovoltaic-and"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/cm301596x"
 link: "https://doi.org/10.1021/cm301596x"
 featured: false
 order: 154
+sortKey: "2012-1-999845-2012-154-zinc-oxide-as-a-model-transparent-conducting-oxide-a-theoretical-"
 ---

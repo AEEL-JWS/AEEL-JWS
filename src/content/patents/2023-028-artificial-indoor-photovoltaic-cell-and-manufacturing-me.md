@@ -9,4 +9,5 @@ language: "English"
 featured: false
 active: true
 order: 28
+sortKey: "20230612-1-999971-2023-028-artificial-indoor-photovoltaic-cell-and-manufacturing-me"
 ---

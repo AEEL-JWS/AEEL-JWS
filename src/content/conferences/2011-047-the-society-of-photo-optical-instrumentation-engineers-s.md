@@ -12,4 +12,5 @@ featured: false
 active: true
 sourceYear: 2011
 order: 47
+sortKey: "2011-1-999952-2011-047-the-society-of-photo-optical-instrumentation-engineers-s"
 ---

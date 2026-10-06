@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adfm.201102968"
 link: "https://doi.org/10.1002/adfm.201102968"
 featured: false
 order: 158
+sortKey: "2012-1-999841-2012-158-oriented-growth-of-al2o3-zno-nanolaminates-for-use-as-electron-se"
 ---

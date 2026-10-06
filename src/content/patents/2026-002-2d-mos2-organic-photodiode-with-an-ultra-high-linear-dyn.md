@@ -9,4 +9,5 @@ language: "English"
 featured: false
 active: true
 order: 2
+sortKey: "20260227-1-999997-2026-002-2d-mos2-organic-photodiode-with-an-ultra-high-linear-dyn"
 ---

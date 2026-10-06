@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/advs.202104743"
 link: "https://doi.org/10.1002/advs.202104743"
 featured: false
 order: 82
+sortKey: "2022-1-999917-2022-082-2d-mxene-a-potential-candidate-for-photovoltaic-cells-a-critical-"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.201305351"
 link: "https://doi.org/10.1002/adma.201305351"
 featured: false
 order: 143
+sortKey: "2014-1-999856-2014-143-defect-driven-interfacial-electronic-structures-at-an-organic-met"
 ---

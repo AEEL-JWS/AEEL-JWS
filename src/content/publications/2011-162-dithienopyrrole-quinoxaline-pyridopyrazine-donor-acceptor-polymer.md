@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/C0JM04290K"
 link: "https://doi.org/10.1039/C0JM04290K"
 featured: false
 order: 162
+sortKey: "2011-1-999837-2011-162-dithienopyrrole-quinoxaline-pyridopyrazine-donor-acceptor-polymer"
 ---

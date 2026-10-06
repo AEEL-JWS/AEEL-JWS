@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/jp106641j"
 link: "https://doi.org/10.1021/jp106641j"
 featured: false
 order: 163
+sortKey: "2010-1-999836-2010-163-electrical-and-optical-properties-of-zno-processed-by-atomic-laye"
 ---

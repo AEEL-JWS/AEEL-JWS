@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.cej.2025.171902"
 link: "https://doi.org/10.1016/j.cej.2025.171902"
 featured: false
 order: 24
+sortKey: "2026-1-999975-2026-024-molecular-spacer-engineering-of-carbazolephosphonic-acid-sams-pro"
 ---

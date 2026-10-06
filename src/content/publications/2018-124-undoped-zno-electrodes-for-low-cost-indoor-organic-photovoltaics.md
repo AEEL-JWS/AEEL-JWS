@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/C8TA08432G"
 link: "https://doi.org/10.1039/C8TA08432G"
 featured: false
 order: 124
+sortKey: "2018-1-999875-2018-124-undoped-zno-electrodes-for-low-cost-indoor-organic-photovoltaics"
 ---

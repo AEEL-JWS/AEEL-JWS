@@ -9,4 +9,5 @@ language: "English"
 featured: false
 active: true
 order: 3
+sortKey: "20260225-1-999996-2026-003-multifunctional-low-power-optoelectronic-memristors-devi"
 ---

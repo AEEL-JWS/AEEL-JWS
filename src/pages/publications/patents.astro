@@ -3,11 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
 import {publicationTabs} from '../../lib/navigation';
 import {getCollection} from 'astro:content';
+import {newestFirst, patentEffectiveDate, patentSortKey} from '../../lib/publicationSort.mjs';
 
 const patents = (await getCollection('patents'))
   .filter(item => item.data.active)
-  .sort((a, b) => b.data.applicationDate.getTime() - a.data.applicationDate.getTime() || a.data.order - b.data.order);
-const years = [...new Set(patents.map(item => item.data.applicationDate.getFullYear()))];
+  .sort(newestFirst(patentSortKey));
+const years = [...new Set(patents.map(item => patentEffectiveDate(item.data).getFullYear()))];
 const date = (value?: Date) => value ? `${value.getFullYear()}.${String(value.getMonth()+1).padStart(2,'0')}.${String(value.getDate()).padStart(2,'0')}` : '';
 ---
 <BaseLayout title="Patents" active="publications">
@@ -22,7 +23,7 @@ const date = (value?: Date) => value ? `${value.getFullYear()}.${String(value.ge
       {years.map(year => <section class="publication-year-group" data-year-group>
         <h2 class="year-heading">{year}</h2>
         <div class="record-list">
-          {patents.filter(item => item.data.applicationDate.getFullYear() === year).map(item => <article class="record-row patent-record" data-patent data-status={item.data.status}>
+          {patents.filter(item => patentEffectiveDate(item.data).getFullYear() === year).map(item => <article class="record-row patent-record" data-patent data-status={item.data.status}>
             <div>
               <span class="record-badge">{item.data.status === '등록' ? 'Registered' : 'Application'}</span>
               <h3>{item.data.title}</h3>

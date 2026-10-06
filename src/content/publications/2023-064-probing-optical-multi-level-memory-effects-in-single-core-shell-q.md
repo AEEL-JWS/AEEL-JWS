@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.202303664"
 link: "https://doi.org/10.1002/adma.202303664"
 featured: false
 order: 64
+sortKey: "2023-1-999935-2023-064-probing-optical-multi-level-memory-effects-in-single-core-shell-q"
 ---

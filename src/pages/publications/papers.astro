@@ -4,7 +4,8 @@ import SectionHero from '../../components/SectionHero.astro';
 import PublicationItem from '../../components/PublicationItem.astro';
 import {publicationTabs} from '../../lib/navigation';
 import {getCollection} from 'astro:content';
-const papers=(await getCollection('publications')).sort((a,b)=>b.data.year-a.data.year||a.data.order-b.data.order||a.data.title.localeCompare(b.data.title));
+import {newestFirst, paperSortKey} from '../../lib/publicationSort.mjs';
+const papers=(await getCollection('publications')).sort(newestFirst(paperSortKey));
 const years=[...new Set(papers.map(item=>item.data.year))];
 ---
 <BaseLayout title="Papers" active="publications"><SectionHero section="Publications / Papers" title="Papers" intro="Peer-reviewed journal publications from AEEL." tabs={publicationTabs}/><section class="section"><div class="shell"><div class="filter-bar"><label for="paper-search">Search papers</label><input id="paper-search" type="search" placeholder="Search title, author, journal or year" /><label for="year-filter">Year</label><select id="year-filter"><option value="">All years</option>{years.map(year=><option value={year}>{year}</option>)}</select></div><div>{years.map(year=><section class="publication-year-group" data-year-group data-year={year}><h2 class="year-heading">{year}</h2><div class="publication-list">{papers.filter(item=>item.data.year===year).map(item=><PublicationItem item={item.data} archive/>)}</div></section>)}</div><p id="no-results" class="empty-state" hidden>No papers match your search.</p></div></section><script>

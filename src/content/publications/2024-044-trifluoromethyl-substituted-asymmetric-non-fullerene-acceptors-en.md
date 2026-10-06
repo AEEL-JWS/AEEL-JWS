@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/D4TA05562D"
 link: "https://doi.org/10.1039/D4TA05562D"
 featured: false
 order: 44
+sortKey: "2024-1-999955-2024-044-trifluoromethyl-substituted-asymmetric-non-fullerene-acceptors-en"
 ---

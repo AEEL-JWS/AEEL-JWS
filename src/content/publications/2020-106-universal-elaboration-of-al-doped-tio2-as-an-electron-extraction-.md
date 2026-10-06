@@ -9,4 +9,5 @@ link: "https://doi.org/10.1002/admi.201902003"
 featured: false
 coverType: "Back Cover"
 order: 106
+sortKey: "2020-1-999893-2020-106-universal-elaboration-of-al-doped-tio2-as-an-electron-extraction-"
 ---

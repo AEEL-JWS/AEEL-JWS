@@ -12,4 +12,5 @@ doi: https://www.sciencedirect.com/science/article/pii/S1385894726098578
 link: https://www.sciencedirect.com/science/article/pii/S1385894726098578
 featured: false
 order: 2
+sortKey: "2026-1-999997-2026-002-high-resolution-near-infrared-imaging-by-systematic-engineering-o"
 ---

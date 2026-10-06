@@ -6,4 +6,5 @@ year: 2026
 status: "Accepted"
 featured: false
 order: 4
+sortKey: "2026-1-999995-2026-004-accelerating-commercialization-and-deployment-of-indoor-photovolt"
 ---

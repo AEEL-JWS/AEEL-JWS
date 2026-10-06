@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1557/jmr.2012.278"
 link: "https://doi.org/10.1557/jmr.2012.278"
 featured: false
 order: 150
+sortKey: "2013-1-999849-2013-150-indium-tin-oxide-modified-by-titanium-dioxide-nanoparticles-dispe"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.dyepig.2018.11.043"
 link: "https://doi.org/10.1016/j.dyepig.2018.11.043"
 featured: false
 order: 121
+sortKey: "2019-1-999878-2019-121-quaternary-indoor-organic-photovoltaic-device-demonstrating-panch"
 ---

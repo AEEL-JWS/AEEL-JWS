@@ -1,0 +1,48 @@
+name: Sync publication CMS order
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/publications/**'
+      - 'src/content/patents/**'
+      - 'src/content/conferences/**'
+      - 'src/lib/publicationSort.mjs'
+      - 'scripts/sync-publication-sort-keys.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publication-sort
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Recompute CMS list keys after content edits
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git checkout -B main origin/main
+            node scripts/sync-publication-sort-keys.mjs
+            if git diff --quiet -- src/content/publications src/content/patents src/content/conferences; then
+              exit 0
+            fi
+            git add src/content/publications src/content/patents src/content/conferences
+            git commit -m 'Sync publication CMS sort keys'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo 'Could not push current publication sort keys' >&2
+          exit 1

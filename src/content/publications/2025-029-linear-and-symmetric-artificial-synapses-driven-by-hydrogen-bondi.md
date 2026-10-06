@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.202511728"
 link: "https://doi.org/10.1002/adma.202511728"
 featured: false
 order: 29
+sortKey: "2025-1-999970-2025-029-linear-and-symmetric-artificial-synapses-driven-by-hydrogen-bondi"
 ---

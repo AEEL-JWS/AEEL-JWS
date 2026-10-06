@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/am2000328"
 link: "https://doi.org/10.1021/am2000328"
 featured: false
 order: 161
+sortKey: "2011-1-999838-2011-161-polydimethylsiloxane-as-a-macromolecular-additive-for-enhanced-pe"
 ---

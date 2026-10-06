@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/D5NR02756J"
 link: "https://doi.org/10.1039/D5NR02756J"
 featured: false
 order: 27
+sortKey: "2025-1-999972-2025-027-specific-detectivity-oriented-low-noise-management-in-organic-pho"
 ---

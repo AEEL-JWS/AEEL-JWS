@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.jpowsour.2019.03.116"
 link: "https://doi.org/10.1016/j.jpowsour.2019.03.116"
 featured: false
 order: 114
+sortKey: "2019-1-999885-2019-114-tailoring-opto-electrical-properties-of-ultra-thin-indium-tin-oxi"
 ---

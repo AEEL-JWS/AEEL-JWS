@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/D0TA07684H"
 link: "https://doi.org/10.1039/D0TA07684H"
 featured: false
 order: 96
+sortKey: "2020-1-999903-2020-096-terminal-alkyl-substitution-in-an-ada-type-nonfullerene-acceptor-"
 ---

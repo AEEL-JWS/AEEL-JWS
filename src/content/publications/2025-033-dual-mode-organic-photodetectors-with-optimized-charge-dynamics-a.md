@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/smll.202503701"
 link: "https://doi.org/10.1002/smll.202503701"
 featured: false
 order: 33
+sortKey: "2025-1-999966-2025-033-dual-mode-organic-photodetectors-with-optimized-charge-dynamics-a"
 ---

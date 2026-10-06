@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adom.202302145"
 link: "https://doi.org/10.1002/adom.202302145"
 featured: false
 order: 59
+sortKey: "2024-1-999940-2024-059-side-chain-engineering-of-y-series-acceptors-with-halogenated-end"
 ---

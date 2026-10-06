@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1109/TED.2025.3612316"
 link: "https://doi.org/10.1109/TED.2025.3612316"
 featured: false
 order: 28
+sortKey: "2025-1-999971-2025-028-ultraviolet-light-driven-artificial-neuromorphic-properties-in-or"
 ---

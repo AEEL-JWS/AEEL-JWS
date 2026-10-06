@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/acs.nanolett.5c01649"
 link: "https://doi.org/10.1021/acs.nanolett.5c01649"
 featured: false
 order: 32
+sortKey: "2025-1-999967-2025-032-achieving-boosted-thermoelectric-power-factor-of-mos2-through-sel"
 ---

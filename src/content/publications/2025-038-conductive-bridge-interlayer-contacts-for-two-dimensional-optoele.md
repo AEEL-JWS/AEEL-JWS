@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1038/s41928-025-01339-9"
 link: "https://doi.org/10.1038/s41928-025-01339-9"
 featured: false
 order: 38
+sortKey: "2025-1-999961-2025-038-conductive-bridge-interlayer-contacts-for-two-dimensional-optoele"
 ---

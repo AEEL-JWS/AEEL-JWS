@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.dyepig.2021.109624"
 link: "https://doi.org/10.1016/j.dyepig.2021.109624"
 featured: false
 order: 88
+sortKey: "2021-1-999911-2021-088-cosensitization-of-metal-based-dyes-for-high-performance-dye-sens"
 ---

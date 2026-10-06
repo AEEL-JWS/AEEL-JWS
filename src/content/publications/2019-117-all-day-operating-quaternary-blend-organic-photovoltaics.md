@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adfm.201900154"
 link: "https://doi.org/10.1002/adfm.201900154"
 featured: false
 order: 117
+sortKey: "2019-1-999882-2019-117-all-day-operating-quaternary-blend-organic-photovoltaics"
 ---

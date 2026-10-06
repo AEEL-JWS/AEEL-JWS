@@ -12,4 +12,5 @@ active: true
 sourceYear: 2017
 notes: "No separate presentation title is supplied; the heading is the conference/event name."
 order: 30
+sortKey: "2017-1-999969-2017-030-the-9th-asian-conference-on-electrochemical-power-source"
 ---

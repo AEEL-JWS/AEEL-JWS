@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.jpowsour.2021.230782"
 link: "https://doi.org/10.1016/j.jpowsour.2021.230782"
 featured: false
 order: 84
+sortKey: "2022-1-999915-2022-084-remarkably-high-performance-of-organic-photovoltaic-devices-with-"
 ---

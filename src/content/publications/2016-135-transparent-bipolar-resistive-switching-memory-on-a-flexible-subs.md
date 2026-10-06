@@ -8,4 +8,5 @@ doi: "https://doi.org/10.3938/jkps.69.1613"
 link: "https://doi.org/10.3938/jkps.69.1613"
 featured: false
 order: 135
+sortKey: "2016-1-999864-2016-135-transparent-bipolar-resistive-switching-memory-on-a-flexible-subs"
 ---

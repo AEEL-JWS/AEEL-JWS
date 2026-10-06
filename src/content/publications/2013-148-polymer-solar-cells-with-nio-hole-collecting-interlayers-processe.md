@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.orgel.2013.07.028"
 link: "https://doi.org/10.1016/j.orgel.2013.07.028"
 featured: false
 order: 148
+sortKey: "2013-1-999851-2013-148-polymer-solar-cells-with-nio-hole-collecting-interlayers-processe"
 ---

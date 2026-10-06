@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2019.04.014"
 link: "https://doi.org/10.1016/j.apsusc.2019.04.014"
 featured: false
 order: 113
+sortKey: "2019-1-999886-2019-113-improved-charge-transport-in-pani-pss-by-uniform-dispersion-of-ag"
 ---

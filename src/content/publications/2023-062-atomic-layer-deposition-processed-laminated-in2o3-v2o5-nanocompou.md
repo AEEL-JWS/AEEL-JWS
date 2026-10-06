@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.jallcom.2023.171951"
 link: "https://doi.org/10.1016/j.jallcom.2023.171951"
 featured: false
 order: 62
+sortKey: "2023-1-999937-2023-062-atomic-layer-deposition-processed-laminated-in2o3-v2o5-nanocompou"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.201201689"
 link: "https://doi.org/10.1002/adma.201201689"
 featured: false
 order: 155
+sortKey: "2012-1-999844-2012-155-stable-solutionprocessed-molecular-nchannel-organic-fieldeffect-t"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.202520984"
 link: "https://doi.org/10.1002/adma.202520984"
 featured: false
 order: 16
+sortKey: "2026-1-999983-2026-016-high-gain-ag2te-mos2-hybrid-photodetectors-for-short-wave-infrare"
 ---

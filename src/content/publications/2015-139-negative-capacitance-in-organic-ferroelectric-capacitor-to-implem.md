@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/acs.nanolett.5b01130"
 link: "https://doi.org/10.1021/acs.nanolett.5b01130"
 featured: false
 order: 139
+sortKey: "2015-1-999860-2015-139-negative-capacitance-in-organic-ferroelectric-capacitor-to-implem"
 ---

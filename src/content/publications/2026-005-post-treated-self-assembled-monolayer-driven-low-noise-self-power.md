@@ -9,4 +9,5 @@ doi: https://onlinelibrary.wiley.com/doi/10.1002/solr.70487
 link: https://onlinelibrary.wiley.com/doi/10.1002/solr.70487
 featured: false
 order: 5
+sortKey: "2026-1-999994-2026-005-post-treated-self-assembled-monolayer-driven-low-noise-self-power"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/acsnano.6c02822"
 link: "https://doi.org/10.1021/acsnano.6c02822"
 featured: false
 order: 14
+sortKey: "2026-1-999985-2026-014-ionic-landscape-engineering-via-perovskite-quantum-dots-for-relia"
 ---

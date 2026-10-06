@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1088/0957-4484/27/7/07LT01"
 link: "https://doi.org/10.1088/0957-4484/27/7/07LT01"
 featured: false
 order: 138
+sortKey: "2016-1-999861-2016-138-transparent-resistive-switching-memory-using-aluminum-oxide-on-a-"
 ---

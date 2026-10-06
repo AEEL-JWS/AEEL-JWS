@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/am501236z"
 link: "https://doi.org/10.1021/am501236z"
 featured: false
 order: 142
+sortKey: "2014-1-999857-2014-142-organic-photovoltaic-cells-with-stable-top-metal-electrodes-modif"
 ---

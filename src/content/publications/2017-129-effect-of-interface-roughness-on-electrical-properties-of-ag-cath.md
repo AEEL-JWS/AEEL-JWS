@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1166/jnn.2017.13905"
 link: "https://doi.org/10.1166/jnn.2017.13905"
 featured: false
 order: 129
+sortKey: "2017-1-999870-2017-129-effect-of-interface-roughness-on-electrical-properties-of-ag-cath"
 ---

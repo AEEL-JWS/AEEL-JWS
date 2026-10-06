@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/am405424k"
 link: "https://doi.org/10.1021/am405424k"
 featured: false
 order: 144
+sortKey: "2014-1-999855-2014-144-systematic-reliability-study-of-top-gate-p-and-n-channel-organic-"
 ---

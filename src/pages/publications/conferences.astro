@@ -3,11 +3,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
 import {publicationTabs} from '../../lib/navigation';
 import {getCollection} from 'astro:content';
+import {conferenceSortKey, conferenceYear, newestFirst} from '../../lib/publicationSort.mjs';
 
 const talks = (await getCollection('conferences'))
   .filter(item => item.data.active)
-  .sort((a, b) => b.data.year - a.data.year || a.data.order - b.data.order);
-const years = [...new Set(talks.map(item => item.data.year))];
+  .sort(newestFirst(conferenceSortKey));
+const years = [...new Set(talks.map(item => conferenceYear(item.data)))];
+const eventMonth = (data: typeof talks[number]['data']) => data.month || (data.eventDate ? data.eventDate.toLocaleString('en-US', {month:'long', timeZone:'UTC'}) : '');
 ---
 <BaseLayout title="Conferences" active="publications">
   <SectionHero section="Publications / Conferences" title="Conferences" intro="Conference presentations, invited talks, and posters." tabs={publicationTabs}/>
@@ -15,14 +17,14 @@ const years = [...new Set(talks.map(item => item.data.year))];
     {talks.length ? years.map(year => <section class="publication-year-group">
       <h2 class="year-heading">{year}</h2>
       <div class="record-list">
-        {talks.filter(item => item.data.year === year).map(item => <article class="record-row conference-record">
+        {talks.filter(item => conferenceYear(item.data) === year).map(item => <article class="record-row conference-record">
           <div>
             {item.data.title ? <p class="record-event">{item.data.event}</p> : <h3 class="record-event-primary">{item.data.event}</h3>}
             {item.data.title && <h3>{item.data.title}</h3>}
             {item.data.authors && <p class="record-authors">{item.data.authors}</p>}
             <div class="record-details">
               {item.data.type && item.data.type !== 'Not specified' && <span class="record-badge">{item.data.type}</span>}
-              <span>{[item.data.month, String(item.data.year)].filter(Boolean).join(' ')}</span>
+              <span>{[eventMonth(item.data), String(conferenceYear(item.data))].filter(Boolean).join(' ')}</span>
               {(item.data.location || item.data.country) && <span>{item.data.location || item.data.country}</span>}
             </div>
           </div>

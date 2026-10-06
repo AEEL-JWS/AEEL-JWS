@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/adma.202309028"
 link: "https://doi.org/10.1002/adma.202309028"
 featured: false
 order: 58
+sortKey: "2024-1-999941-2024-058-ultra-low-noise-level-infrared-quantum-dot-photodiodes-with-self-"
 ---

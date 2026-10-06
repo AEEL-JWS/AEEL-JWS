@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/bkcs.10923"
 link: "https://doi.org/10.1002/bkcs.10923"
 featured: false
 order: 136
+sortKey: "2016-1-999863-2016-136-effects-of-p-type-nickel-oxide-semiconductor-and-gold-bilayer-on-"
 ---

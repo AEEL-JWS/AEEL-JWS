@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1155/2023/3367579"
 link: "https://doi.org/10.1155/2023/3367579"
 featured: false
 order: 68
+sortKey: "2023-1-999931-2023-068-dim-indoor-light-photovoltaic-performance-improvement-of-y-series"
 ---

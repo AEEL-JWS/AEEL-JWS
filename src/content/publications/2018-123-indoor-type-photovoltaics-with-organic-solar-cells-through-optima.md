@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.dyepig.2018.06.025"
 link: "https://doi.org/10.1016/j.dyepig.2018.06.025"
 featured: false
 order: 123
+sortKey: "2018-1-999876-2018-123-indoor-type-photovoltaics-with-organic-solar-cells-through-optima"
 ---

@@ -9,4 +9,5 @@ year: 2026
 status: Accepted
 featured: false
 order: 1
+sortKey: "2026-1-999998-unveiling-the-structural-origin-of-low-frequency-noise-in-organic-photodetectors"
 ---

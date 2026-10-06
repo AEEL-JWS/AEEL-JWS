@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1088/2515-7655/ad307d"
 link: "https://doi.org/10.1088/2515-7655/ad307d"
 featured: false
 order: 51
+sortKey: "2024-1-999948-2024-051-enhancing-the-indoor-performance-of-organic-photovoltaic-devices-"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/acsnano.6c10190"
 link: "https://doi.org/10.1021/acsnano.6c10190"
 featured: false
 order: 9
+sortKey: "2026-1-999990-2026-009-dopant-mediated-stokes-shifting-in-perovskite-quantum-dots-for-en"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/bkcs.10668"
 link: "https://doi.org/10.1002/bkcs.10668"
 featured: false
 order: 137
+sortKey: "2016-1-999862-2016-137-a-silica-colloidal-mask-for-randomly-surface-textured-indium-dope"
 ---

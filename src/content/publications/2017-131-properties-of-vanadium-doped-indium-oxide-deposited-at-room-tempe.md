@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1007/s11664-017-5605-7"
 link: "https://doi.org/10.1007/s11664-017-5605-7"
 featured: false
 order: 131
+sortKey: "2017-1-999868-2017-131-properties-of-vanadium-doped-indium-oxide-deposited-at-room-tempe"
 ---

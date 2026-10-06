@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1109/TED.2023.3287812"
 link: "https://doi.org/10.1109/TED.2023.3287812"
 featured: false
 order: 65
+sortKey: "2023-1-999934-2023-065-leakage-current-minimization-of-tio2-based-metal-insulator-metal-"
 ---

@@ -1,4 +1,7 @@
 # AEEL content editor configuration
+settings:
+  content:
+    merge: true
 media:
   input: public/images
   output: /images
@@ -361,7 +364,9 @@ content:
         type: collection
         path: src/content/publications
         format: yaml-frontmatter
-        filename: "{primary}.md"
+        filename:
+          template: "{year}{month}{day}-{hour}{minute}{second}-{primary}.md"
+          field: false
         view:
           fields:
             - title
@@ -370,9 +375,9 @@ content:
             - featured
           primary: title
           sort:
-            - year
+            - sortKey
           default:
-            sort: year
+            sort: sortKey
             order: desc
         fields:
           - name: title
@@ -390,6 +395,13 @@ content:
             label: Year
             type: number
             required: true
+          - name: sortDate
+            label: Publication date (optional, for sorting)
+            type: date
+          - name: sortKey
+            label: Automatic sort key
+            type: string
+            hidden: true
           - name: volume
             label: Volume
             type: string
@@ -427,25 +439,28 @@ content:
             label: Feature on home
             type: boolean
           - name: order
-            label: Display order
+            label: Legacy order (preserved)
             type: number
+            hidden: true
       - name: patents
         label: Patents
         type: collection
         path: src/content/patents
         format: yaml-frontmatter
-        filename: "{primary}.md"
+        filename:
+          template: "{year}{month}{day}-{hour}{minute}{second}-{primary}.md"
+          field: false
         view:
           fields:
             - title
             - status
             - applicationDate
-            - order
+            - registrationDate
           primary: title
           sort:
-            - applicationDate
+            - sortKey
           default:
-            sort: applicationDate
+            sort: sortKey
             order: desc
         fields:
           - name: title
@@ -499,9 +514,14 @@ content:
           - name: notes
             label: Source notes (audit)
             type: text
+          - name: sortKey
+            label: Automatic sort key
+            type: string
+            hidden: true
           - name: order
-            label: Display order
+            label: Legacy order (preserved)
             type: number
+            hidden: true
       - name: conferences
         label: Conferences
         type: collection
@@ -509,24 +529,26 @@ content:
         format: yaml-frontmatter
         filename:
           template: "{year}{month}{day}-{hour}{minute}{second}-{primary}.md"
-          field: create
+          field: false
         view:
           fields:
             - event
+            - eventDate
             - year
             - type
-            - order
           primary: event
           sort:
-            - year
+            - sortKey
           default:
-            sort: year
+            sort: sortKey
             order: desc
         fields:
+          - name: eventDate
+            label: Event date
+            type: date
           - name: year
-            label: Event year
+            label: Event year (legacy; optional if date is set)
             type: number
-            required: true
           - name: month
             label: Event month
             type: string
@@ -573,9 +595,14 @@ content:
             label: Show on site
             type: boolean
             default: true
+          - name: sortKey
+            label: Automatic sort key
+            type: string
+            hidden: true
           - name: order
-            label: Display order
+            label: Legacy order (preserved)
             type: number
+            hidden: true
   - name: board
     label: Board
     type: group

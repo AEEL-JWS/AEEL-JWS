@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/D0RA07865D"
 link: "https://doi.org/10.1039/D0RA07865D"
 featured: false
 order: 97
+sortKey: "2020-1-999902-2020-097-highly-effective-organic-light-emitting-diodes-containing-thermal"
 ---

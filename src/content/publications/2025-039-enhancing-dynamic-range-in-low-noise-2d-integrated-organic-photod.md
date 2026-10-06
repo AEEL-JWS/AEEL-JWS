@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1021/acsnano.4c15041"
 link: "https://doi.org/10.1021/acsnano.4c15041"
 featured: false
 order: 39
+sortKey: "2025-1-999960-2025-039-enhancing-dynamic-range-in-low-noise-2d-integrated-organic-photod"
 ---

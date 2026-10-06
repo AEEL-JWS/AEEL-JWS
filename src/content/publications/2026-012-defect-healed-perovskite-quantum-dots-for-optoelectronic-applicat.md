@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/smll.74660"
 link: "https://doi.org/10.1002/smll.74660"
 featured: false
 order: 12
+sortKey: "2026-1-999987-2026-012-defect-healed-perovskite-quantum-dots-for-optoelectronic-applicat"
 ---

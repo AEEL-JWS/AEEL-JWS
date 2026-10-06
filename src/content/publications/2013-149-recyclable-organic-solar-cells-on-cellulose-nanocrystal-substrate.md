@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1038/srep01536"
 link: "https://doi.org/10.1038/srep01536"
 featured: false
 order: 149
+sortKey: "2013-1-999850-2013-149-recyclable-organic-solar-cells-on-cellulose-nanocrystal-substrate"
 ---

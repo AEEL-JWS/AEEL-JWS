@@ -12,4 +12,5 @@ featured: false
 active: true
 sourceYear: 2022
 order: 3
+sortKey: "2022-1-999996-2022-003-global-photovoltaic-conference-gpvc-2022"
 ---

@@ -12,4 +12,5 @@ featured: false
 active: true
 sourceYear: 2009
 order: 48
+sortKey: "2009-1-999951-2009-048-device-research-conference-drc"
 ---

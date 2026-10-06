@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1088/1361-6528/ab0eea"
 link: "https://doi.org/10.1088/1361-6528/ab0eea"
 featured: false
 order: 116
+sortKey: "2019-1-999883-2019-116-precise-control-of-nanoscale-spacing-between-electrodes-using-dif"
 ---

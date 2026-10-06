@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.dyepig.2021.109626"
 link: "https://doi.org/10.1016/j.dyepig.2021.109626"
 featured: false
 order: 87
+sortKey: "2021-1-999912-2021-087-recent-developments-in-dye-sensitized-photovoltaic-cells-under-am"
 ---

@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1088/1361-6528/ab98ba"
 link: "https://doi.org/10.1088/1361-6528/ab98ba"
 featured: false
 order: 102
+sortKey: "2020-1-999897-2020-102-influence-of-flexible-substrate-in-low-temperature-polycrystallin"
 ---

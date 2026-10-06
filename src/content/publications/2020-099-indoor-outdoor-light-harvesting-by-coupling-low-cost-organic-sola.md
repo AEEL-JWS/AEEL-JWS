@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.solener.2020.06.104"
 link: "https://doi.org/10.1016/j.solener.2020.06.104"
 featured: false
 order: 99
+sortKey: "2020-1-999900-2020-099-indoor-outdoor-light-harvesting-by-coupling-low-cost-organic-sola"
 ---

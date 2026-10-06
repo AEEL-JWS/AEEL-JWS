@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1002/pip.3301"
 link: "https://doi.org/10.1002/pip.3301"
 featured: false
 order: 103
+sortKey: "2020-1-999896-2020-103-organic-tandem-solar-cells-under-indoor-light-illumination"
 ---

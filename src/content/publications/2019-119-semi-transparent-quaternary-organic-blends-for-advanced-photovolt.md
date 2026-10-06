@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1016/j.nanoen.2019.01.090"
 link: "https://doi.org/10.1016/j.nanoen.2019.01.090"
 featured: false
 order: 119
+sortKey: "2019-1-999880-2019-119-semi-transparent-quaternary-organic-blends-for-advanced-photovolt"
 ---

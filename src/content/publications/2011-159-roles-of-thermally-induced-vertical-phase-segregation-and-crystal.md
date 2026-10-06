@@ -8,4 +8,5 @@ doi: "https://doi.org/10.1039/C1EE01316E"
 link: "https://doi.org/10.1039/C1EE01316E"
 featured: false
 order: 159
+sortKey: "2011-1-999840-2011-159-roles-of-thermally-induced-vertical-phase-segregation-and-crystal"
 ---
