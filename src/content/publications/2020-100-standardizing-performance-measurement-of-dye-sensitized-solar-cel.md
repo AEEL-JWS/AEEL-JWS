@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1109/ACCESS.2020.3003242"
 link: "https://doi.org/10.1109/ACCESS.2020.3003242"
 featured: false
 order: 100
-sortKey: "2020-1-999899-2020-100-standardizing-performance-measurement-of-dye-sensitized-solar-cel"
+sortKey: "2020-1-999899-2020-100-5cdf8b39c3"
 ---

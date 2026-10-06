@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1109/ACP/POEM59049.2023.10369033"
 link: "https://doi.org/10.1109/ACP/POEM59049.2023.10369033"
 featured: false
 order: 61
-sortKey: "2023-1-999938-2023-061-performance-of-cspbi3-photovoltaics-for-indoor-light-harvesting"
+sortKey: "2023-1-999938-2023-061-6db4d2deca"
 ---

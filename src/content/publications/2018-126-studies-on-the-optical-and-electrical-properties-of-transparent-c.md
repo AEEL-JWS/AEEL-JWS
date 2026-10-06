@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1166/jno.2018.2389"
 link: "https://doi.org/10.1166/jno.2018.2389"
 featured: false
 order: 126
-sortKey: "2018-1-999873-2018-126-studies-on-the-optical-and-electrical-properties-of-transparent-c"
+sortKey: "2018-1-999873-2018-126-524b473e78"
 ---

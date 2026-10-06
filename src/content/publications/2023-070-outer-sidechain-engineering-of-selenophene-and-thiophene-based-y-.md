@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2023.157140"
 link: "https://doi.org/10.1016/j.apsusc.2023.157140"
 featured: false
 order: 70
-sortKey: "2023-1-999929-2023-070-outer-sidechain-engineering-of-selenophene-and-thiophene-based-y-"
+sortKey: "2023-1-999929-2023-070-d4c38f4a58"
 ---

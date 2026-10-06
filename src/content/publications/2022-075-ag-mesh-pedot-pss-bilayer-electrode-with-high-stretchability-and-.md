@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1109/ICTC55196.2022.9952847"
 link: "https://doi.org/10.1109/ICTC55196.2022.9952847"
 featured: false
 order: 75
-sortKey: "2022-1-999924-2022-075-ag-mesh-pedot-pss-bilayer-electrode-with-high-stretchability-and-"
+sortKey: "2022-1-999924-2022-075-44e137b9d7"
 ---

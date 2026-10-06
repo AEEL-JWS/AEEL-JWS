@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/aenm.201400048"
 link: "https://doi.org/10.1002/aenm.201400048"
 featured: false
 order: 141
-sortKey: "2014-1-999858-2014-141-inverted-tandem-polymer-solar-cells-with-polyethylenimine-modifie"
+sortKey: "2014-1-999858-2014-141-fa76bbe1bf"
 ---

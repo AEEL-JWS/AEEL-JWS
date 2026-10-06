@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1109/JPHOTOV.2021.3074077"
 link: "https://doi.org/10.1109/JPHOTOV.2021.3074077"
 featured: false
 order: 92
-sortKey: "2021-1-999907-2021-092-investigating-the-indoor-performance-of-planar-heterojunction-bas"
+sortKey: "2021-1-999907-2021-092-3ad0612624"
 ---

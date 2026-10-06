@@ -9,5 +9,5 @@ link: "https://doi.org/10.1039/D3TA06624J"
 featured: false
 coverType: "Front Cover"
 order: 55
-sortKey: "2024-1-999944-2024-055-enhancing-the-performance-of-indoor-organic-photovoltaics-through"
+sortKey: "2024-1-999944-2024-055-8aa40af681"
 ---

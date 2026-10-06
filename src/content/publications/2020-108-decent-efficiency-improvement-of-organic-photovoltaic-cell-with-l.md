@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2020.145700"
 link: "https://doi.org/10.1016/j.apsusc.2020.145700"
 featured: false
 order: 108
-sortKey: "2020-1-999891-2020-108-decent-efficiency-improvement-of-organic-photovoltaic-cell-with-l"
+sortKey: "2020-1-999891-2020-108-236a704bcf"
 ---

@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/chem.202200266"
 link: "https://doi.org/10.1002/chem.202200266"
 featured: false
 order: 81
-sortKey: "2022-1-999918-2022-081-perovskite-photovoltaics-for-artificial-light-harvesting"
+sortKey: "2022-1-999918-2022-081-05f7c54889"
 ---

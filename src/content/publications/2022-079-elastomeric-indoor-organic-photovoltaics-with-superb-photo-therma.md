@@ -9,5 +9,5 @@ link: "https://doi.org/10.1002/adfm.202201921"
 featured: false
 coverType: "Back Cover"
 order: 79
-sortKey: "2022-1-999920-2022-079-elastomeric-indoor-organic-photovoltaics-with-superb-photo-therma"
+sortKey: "2022-1-999920-2022-079-1310879708"
 ---

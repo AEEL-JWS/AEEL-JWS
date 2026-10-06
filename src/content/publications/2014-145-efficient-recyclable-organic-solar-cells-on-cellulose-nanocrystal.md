@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.orgel.2013.12.018"
 link: "https://doi.org/10.1016/j.orgel.2013.12.018"
 featured: false
 order: 145
-sortKey: "2014-1-999854-2014-145-efficient-recyclable-organic-solar-cells-on-cellulose-nanocrystal"
+sortKey: "2014-1-999854-2014-145-6a8e4c8d78"
 ---

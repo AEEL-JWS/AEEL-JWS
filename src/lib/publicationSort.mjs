@@ -1,3 +1,5 @@
+import {createHash} from 'node:crypto';
+
 // These keys are also stored in frontmatter so Pages CMS (which sorts one field)
 // shows the same order as the site. The site always recomputes the key from data.
 const pad = (value, length) => String(value).padStart(length, '0');
@@ -9,7 +11,10 @@ const datePart = (value) => {
 const creationPart = (id) => /^\d{14}-/.exec(id)?.[0].slice(0, -1) ?? '';
 const legacyPart = (order) => order === undefined || order === null || order === ''
   ? '000000' : pad(999999 - Number(order), 6);
-const tie = (id) => String(id).toLowerCase();
+const tie = (id) => {
+  const slug = String(id).toLowerCase();
+  return `${slug.slice(0, 8)}-${createHash('sha256').update(slug).digest('hex').slice(0, 10)}`;
+};
 
 export function paperSortKey(data, id) {
   const year = pad(data.year, 4);

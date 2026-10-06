@@ -9,5 +9,5 @@ language: "English"
 featured: false
 active: true
 order: 17
-sortKey: "20240815-1-999982-2024-017-perovskite-quantum-dot-based-indoor-photovoltaic-cell-an"
+sortKey: "20240815-1-999982-2024-017-7a1cb69f1a"
 ---

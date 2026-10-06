@@ -12,5 +12,5 @@ active: true
 sourceYear: 2021
 notes: "No separate presentation title is supplied; the heading is the conference/event name."
 order: 9
-sortKey: "2021-1-999990-2021-009-global-photovoltaic-conference-2021-gpvc-2021"
+sortKey: "2021-1-999990-2021-009-8ce8b8008f"
 ---

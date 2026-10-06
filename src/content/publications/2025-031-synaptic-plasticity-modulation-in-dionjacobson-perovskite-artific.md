@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/smll.202504328"
 link: "https://doi.org/10.1002/smll.202504328"
 featured: false
 order: 31
-sortKey: "2025-1-999968-2025-031-synaptic-plasticity-modulation-in-dionjacobson-perovskite-artific"
+sortKey: "2025-1-999968-2025-031-618a558beb"
 ---

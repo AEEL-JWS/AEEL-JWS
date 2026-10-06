@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1039/C2CP42448G"
 link: "https://doi.org/10.1039/C2CP42448G"
 featured: false
 order: 156
-sortKey: "2012-1-999843-2012-156-direct-correlation-between-work-function-of-indium-tin-oxide-elec"
+sortKey: "2012-1-999843-2012-156-35da56045f"
 ---

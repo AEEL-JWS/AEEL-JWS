@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1021/acsnano.6c10554"
 link: "https://doi.org/10.1021/acsnano.6c10554"
 featured: false
 order: 3
-sortKey: "2026-1-999996-2026-003-mitigating-the-trade-off-between-bandgap-narrowing-and-trap-limit"
+sortKey: "2026-1-999996-2026-003-d36920c64f"
 ---

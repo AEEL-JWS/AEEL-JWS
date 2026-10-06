@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1039/D2NR05688G"
 link: "https://doi.org/10.1039/D2NR05688G"
 featured: false
 order: 69
-sortKey: "2023-1-999930-2023-069-charge-transport-transition-of-pedot-pss-thin-film-for-temperatur"
+sortKey: "2023-1-999930-2023-069-35fa65da22"
 ---

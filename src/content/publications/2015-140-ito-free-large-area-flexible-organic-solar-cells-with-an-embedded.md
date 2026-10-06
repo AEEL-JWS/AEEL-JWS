@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.orgel.2014.12.029"
 link: "https://doi.org/10.1016/j.orgel.2014.12.029"
 featured: false
 order: 140
-sortKey: "2015-1-999859-2015-140-ito-free-large-area-flexible-organic-solar-cells-with-an-embedded"
+sortKey: "2015-1-999859-2015-140-ff9e33313b"
 ---

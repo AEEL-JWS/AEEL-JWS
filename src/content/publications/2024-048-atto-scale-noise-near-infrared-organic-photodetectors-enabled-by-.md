@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/adma.202403647"
 link: "https://doi.org/10.1002/adma.202403647"
 featured: false
 order: 48
-sortKey: "2024-1-999951-2024-048-atto-scale-noise-near-infrared-organic-photodetectors-enabled-by-"
+sortKey: "2024-1-999951-2024-048-9902f5a29a"
 ---

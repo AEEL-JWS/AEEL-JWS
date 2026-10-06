@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/marc.202200279"
 link: "https://doi.org/10.1002/marc.202200279"
 featured: false
 order: 78
-sortKey: "2022-1-999921-2022-078-revisiting-the-classical-wide-bandgap-homo-and-random-copolymers-"
+sortKey: "2022-1-999921-2022-078-6de852f7fa"
 ---

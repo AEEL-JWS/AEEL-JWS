@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/adfm.202421080"
 link: "https://doi.org/10.1002/adfm.202421080"
 featured: false
 order: 40
-sortKey: "2025-1-999959-2025-040-intermediate-layer-assisted-trap-density-reduction-in-low-power-o"
+sortKey: "2025-1-999959-2025-040-61dab254ac"
 ---

@@ -9,5 +9,5 @@ link: "https://doi.org/10.1002/adfm.201901171"
 featured: false
 coverType: "Front Cover"
 order: 112
-sortKey: "2019-1-999887-2019-112-highly-efficient-indoor-organic-photovoltaics-with-spectrally-mat"
+sortKey: "2019-1-999887-2019-112-f9c814b0dc"
 ---

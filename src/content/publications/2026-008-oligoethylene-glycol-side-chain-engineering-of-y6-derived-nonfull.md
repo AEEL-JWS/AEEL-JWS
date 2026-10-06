@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/adfm.78303"
 link: "https://doi.org/10.1002/adfm.78303"
 featured: false
 order: 8
-sortKey: "2026-1-999991-2026-008-oligoethylene-glycol-side-chain-engineering-of-y6-derived-nonfull"
+sortKey: "2026-1-999991-2026-008-4b3e81ab68"
 ---

@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1038/s41427-021-00310-2"
 link: "https://doi.org/10.1038/s41427-021-00310-2"
 featured: false
 order: 93
-sortKey: "2021-1-999906-2021-093-undoped-tin-dioxide-transparent-electrodes-for-efficient-and-cost"
+sortKey: "2021-1-999906-2021-093-3ac527887e"
 ---

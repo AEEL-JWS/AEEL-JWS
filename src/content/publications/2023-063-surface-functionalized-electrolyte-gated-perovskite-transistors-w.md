@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2023.158297"
 link: "https://doi.org/10.1016/j.apsusc.2023.158297"
 featured: false
 order: 63
-sortKey: "2023-1-999936-2023-063-surface-functionalized-electrolyte-gated-perovskite-transistors-w"
+sortKey: "2023-1-999936-2023-063-c08971775e"
 ---

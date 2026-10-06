@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.jpowsour.2019.02.015"
 link: "https://doi.org/10.1016/j.jpowsour.2019.02.015"
 featured: false
 order: 118
-sortKey: "2019-1-999881-2019-118-highly-efficient-flexible-organic-photovoltaics-using-quasi-amorp"
+sortKey: "2019-1-999881-2019-118-c0376988b6"
 ---

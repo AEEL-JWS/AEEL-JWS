@@ -12,5 +12,5 @@ featured: false
 active: true
 sourceYear: 2012
 order: 42
-sortKey: "2012-1-999957-2012-042-international-conference-on-science-and-technology-of-sy"
+sortKey: "2012-1-999957-2012-042-3782992a9c"
 ---

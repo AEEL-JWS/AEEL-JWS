@@ -12,5 +12,5 @@ active: true
 sourceYear: 2017
 notes: "No separate presentation title is supplied; the heading is the conference/event name."
 order: 29
-sortKey: "2017-1-999970-2017-029-the-society-of-photo-optical-instrumentation-engineers-s"
+sortKey: "2017-1-999970-2017-029-7c176b503d"
 ---

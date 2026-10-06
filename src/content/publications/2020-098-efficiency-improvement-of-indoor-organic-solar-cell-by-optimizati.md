@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.dyepig.2020.108719"
 link: "https://doi.org/10.1016/j.dyepig.2020.108719"
 featured: false
 order: 98
-sortKey: "2020-1-999901-2020-098-efficiency-improvement-of-indoor-organic-solar-cell-by-optimizati"
+sortKey: "2020-1-999901-2020-098-1153c674e7"
 ---

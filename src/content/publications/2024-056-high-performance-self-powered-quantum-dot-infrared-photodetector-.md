@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/smll.202308375"
 link: "https://doi.org/10.1002/smll.202308375"
 featured: false
 order: 56
-sortKey: "2024-1-999943-2024-056-high-performance-self-powered-quantum-dot-infrared-photodetector-"
+sortKey: "2024-1-999943-2024-056-f10dde1486"
 ---

@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/adfm.202423796"
 link: "https://doi.org/10.1002/adfm.202423796"
 featured: false
 order: 37
-sortKey: "2025-1-999962-2025-037-strategic-selection-of-functional-groups-for-ligand-passivation-t"
+sortKey: "2025-1-999962-2025-037-4dbf3c7e71"
 ---

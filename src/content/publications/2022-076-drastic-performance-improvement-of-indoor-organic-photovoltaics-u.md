@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1039/D2TA04022K"
 link: "https://doi.org/10.1039/D2TA04022K"
 featured: false
 order: 76
-sortKey: "2022-1-999923-2022-076-drastic-performance-improvement-of-indoor-organic-photovoltaics-u"
+sortKey: "2022-1-999923-2022-076-300d1eb6fb"
 ---

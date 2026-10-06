@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1021/acsami.0c21222"
 link: "https://doi.org/10.1021/acsami.0c21222"
 featured: false
 order: 95
-sortKey: "2021-1-999904-2021-095-frequency-doubler-and-universal-logic-gate-based-on-two-dimension"
+sortKey: "2021-1-999904-2021-095-33bae912c8"
 ---

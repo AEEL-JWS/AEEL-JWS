@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/smll.202510935"
 link: "https://doi.org/10.1002/smll.202510935"
 featured: false
 order: 23
-sortKey: "2026-1-999976-2026-023-noise-suppression-in-organic-photodiodes-a-comprehensive-review-o"
+sortKey: "2026-1-999976-2026-023-f6581fd2ed"
 ---

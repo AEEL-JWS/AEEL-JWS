@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1109/ACCESS.2018.2877844"
 link: "https://doi.org/10.1109/ACCESS.2018.2877844"
 featured: false
 order: 125
-sortKey: "2018-1-999874-2018-125-interdigitated-horizontal-electrodes-for-organic-solar-cells"
+sortKey: "2018-1-999874-2018-125-53d7053722"
 ---

@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/chem.201900041"
 link: "https://doi.org/10.1002/chem.201900041"
 featured: false
 order: 115
-sortKey: "2019-1-999884-2019-115-ternary-blend-strategy-for-achieving-high-efficiency-organic-phot"
+sortKey: "2019-1-999884-2019-115-e4b5bfc6d9"
 ---

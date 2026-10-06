@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.tsf.2020.137921"
 link: "https://doi.org/10.1016/j.tsf.2020.137921"
 featured: false
 order: 107
-sortKey: "2020-1-999892-2020-107-utilization-of-poly-4-styrenesulfonic-acid-doped-polyaniline-as-a"
+sortKey: "2020-1-999892-2020-107-5c253c7a36"
 ---

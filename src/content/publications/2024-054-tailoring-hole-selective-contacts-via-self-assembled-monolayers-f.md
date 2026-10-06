@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.cej.2023.148481"
 link: "https://doi.org/10.1016/j.cej.2023.148481"
 featured: false
 order: 54
-sortKey: "2024-1-999945-2024-054-tailoring-hole-selective-contacts-via-self-assembled-monolayers-f"
+sortKey: "2024-1-999945-2024-054-0789a0fb2a"
 ---

@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.cej.2025.166091"
 link: "https://doi.org/10.1016/j.cej.2025.166091"
 featured: false
 order: 30
-sortKey: "2025-1-999969-2025-030-high-resolution-infrared-quantum-dot-photodiode-array-via-aerosol"
+sortKey: "2025-1-999969-2025-030-77a3bcf090"
 ---

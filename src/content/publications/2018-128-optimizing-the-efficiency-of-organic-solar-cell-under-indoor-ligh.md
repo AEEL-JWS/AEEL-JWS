@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1080/15421406.2018.1456077"
 link: "https://doi.org/10.1080/15421406.2018.1456077"
 featured: false
 order: 128
-sortKey: "2018-1-999871-2018-128-optimizing-the-efficiency-of-organic-solar-cell-under-indoor-ligh"
+sortKey: "2018-1-999871-2018-128-629303bbe8"
 ---

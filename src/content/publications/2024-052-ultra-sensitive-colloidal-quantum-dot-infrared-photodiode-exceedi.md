@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1039/D3NH00456B"
 link: "https://doi.org/10.1039/D3NH00456B"
 featured: false
 order: 52
-sortKey: "2024-1-999947-2024-052-ultra-sensitive-colloidal-quantum-dot-infrared-photodiode-exceedi"
+sortKey: "2024-1-999947-2024-052-d31ade6c84"
 ---

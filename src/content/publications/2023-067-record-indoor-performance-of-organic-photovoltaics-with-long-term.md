@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.nanoen.2023.108429"
 link: "https://doi.org/10.1016/j.nanoen.2023.108429"
 featured: false
 order: 67
-sortKey: "2023-1-999932-2023-067-record-indoor-performance-of-organic-photovoltaics-with-long-term"
+sortKey: "2023-1-999932-2023-067-43cf27258a"
 ---

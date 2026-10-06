@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1063/1.4745772"
 link: "https://doi.org/10.1063/1.4745772"
 featured: false
 order: 153
-sortKey: "2012-1-999846-2012-153-polyvinylpyrrolidone-modified-indium-tin-oxide-as-an-electron-col"
+sortKey: "2012-1-999846-2012-153-fc128a7a9c"
 ---

@@ -12,5 +12,5 @@ active: true
 sourceYear: 2017
 notes: "No separate presentation title is supplied; the heading is the conference/event name."
 order: 34
-sortKey: "2017-1-999965-2017-034-global-photovoltaic-conference-gpvc-2017"
+sortKey: "2017-1-999965-2017-034-84115540a9"
 ---

@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2022.155558"
 link: "https://doi.org/10.1016/j.apsusc.2022.155558"
 featured: false
 order: 73
-sortKey: "2023-1-999926-2023-073-high-efficiency-over-33-indoor-organic-photovoltaics-with-band-al"
+sortKey: "2023-1-999926-2023-073-6c1f58548a"
 ---

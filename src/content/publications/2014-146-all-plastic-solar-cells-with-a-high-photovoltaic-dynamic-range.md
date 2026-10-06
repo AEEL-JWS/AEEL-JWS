@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1039/C3TA15073A"
 link: "https://doi.org/10.1039/C3TA15073A"
 featured: false
 order: 146
-sortKey: "2014-1-999853-2014-146-all-plastic-solar-cells-with-a-high-photovoltaic-dynamic-range"
+sortKey: "2014-1-999853-2014-146-76476b18ac"
 ---

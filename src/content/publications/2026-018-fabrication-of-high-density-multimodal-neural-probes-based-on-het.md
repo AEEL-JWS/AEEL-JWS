@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/advs.202524260"
 link: "https://doi.org/10.1002/advs.202524260"
 featured: false
 order: 18
-sortKey: "2026-1-999981-2026-018-fabrication-of-high-density-multimodal-neural-probes-based-on-het"
+sortKey: "2026-1-999981-2026-018-46dc717e15"
 ---

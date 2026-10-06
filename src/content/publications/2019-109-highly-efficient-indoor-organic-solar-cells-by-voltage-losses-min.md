@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1021/acsami.9b12018"
 link: "https://doi.org/10.1021/acsami.9b12018"
 featured: false
 order: 109
-sortKey: "2019-1-999890-2019-109-highly-efficient-indoor-organic-solar-cells-by-voltage-losses-min"
+sortKey: "2019-1-999890-2019-109-1df7f39823"
 ---

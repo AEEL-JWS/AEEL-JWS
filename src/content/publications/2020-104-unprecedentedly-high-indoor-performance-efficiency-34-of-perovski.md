@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.nanoen.2020.104984"
 link: "https://doi.org/10.1016/j.nanoen.2020.104984"
 featured: false
 order: 104
-sortKey: "2020-1-999895-2020-104-unprecedentedly-high-indoor-performance-efficiency-34-of-perovski"
+sortKey: "2020-1-999895-2020-104-369d9ad84a"
 ---

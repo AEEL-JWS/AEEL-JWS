@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1109/TED.2024.3408773"
 link: "https://doi.org/10.1109/TED.2024.3408773"
 featured: false
 order: 47
-sortKey: "2024-1-999952-2024-047-fine-tuning-hole-collection-via-metal-pseudo-halogenated-thin-fil"
+sortKey: "2024-1-999952-2024-047-a1701769e6"
 ---

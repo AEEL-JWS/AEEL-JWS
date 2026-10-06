@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/bkcs.11069"
 link: "https://doi.org/10.1002/bkcs.11069"
 featured: false
 order: 134
-sortKey: "2017-1-999865-2017-134-performance-improvement-in-polymer-based-thin-film-transistors-us"
+sortKey: "2017-1-999865-2017-134-6d100f4eae"
 ---

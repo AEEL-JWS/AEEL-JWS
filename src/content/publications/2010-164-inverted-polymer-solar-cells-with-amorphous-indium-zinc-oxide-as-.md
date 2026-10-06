@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1364/OE.18.00A506"
 link: "https://doi.org/10.1364/OE.18.00A506"
 featured: false
 order: 164
-sortKey: "2010-1-999835-2010-164-inverted-polymer-solar-cells-with-amorphous-indium-zinc-oxide-as-"
+sortKey: "2010-1-999835-2010-164-3865d930bb"
 ---

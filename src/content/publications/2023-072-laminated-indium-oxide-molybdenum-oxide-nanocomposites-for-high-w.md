@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2022.155526"
 link: "https://doi.org/10.1016/j.apsusc.2022.155526"
 featured: false
 order: 72
-sortKey: "2023-1-999927-2023-072-laminated-indium-oxide-molybdenum-oxide-nanocomposites-for-high-w"
+sortKey: "2023-1-999927-2023-072-aef32bc833"
 ---

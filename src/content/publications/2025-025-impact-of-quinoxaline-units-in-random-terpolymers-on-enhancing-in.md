@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/smll.202504603"
 link: "https://doi.org/10.1002/smll.202504603"
 featured: false
 order: 25
-sortKey: "2025-1-999974-2025-025-impact-of-quinoxaline-units-in-random-terpolymers-on-enhancing-in"
+sortKey: "2025-1-999974-2025-025-bb17b65795"
 ---

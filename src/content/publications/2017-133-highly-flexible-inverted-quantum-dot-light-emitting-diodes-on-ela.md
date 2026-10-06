@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1039/C6TC04310K"
 link: "https://doi.org/10.1039/C6TC04310K"
 featured: false
 order: 133
-sortKey: "2017-1-999866-2017-133-highly-flexible-inverted-quantum-dot-light-emitting-diodes-on-ela"
+sortKey: "2017-1-999866-2017-133-9a7a8cae0c"
 ---

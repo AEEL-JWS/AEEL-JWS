@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.apsusc.2018.09.051"
 link: "https://doi.org/10.1016/j.apsusc.2018.09.051"
 featured: false
 order: 122
-sortKey: "2019-1-999877-2019-122-negative-quantum-capacitance-effect-from-bi2te1-5se1-5-with-frequ"
+sortKey: "2019-1-999877-2019-122-0cebf38ca3"
 ---

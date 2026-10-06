@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1002/adfm.202524759"
 link: "https://doi.org/10.1002/adfm.202524759"
 featured: false
 order: 20
-sortKey: "2026-1-999979-2026-020-suppression-of-photo-mediated-traps-in-integrated-organic-photovo"
+sortKey: "2026-1-999979-2026-020-177da107fe"
 ---

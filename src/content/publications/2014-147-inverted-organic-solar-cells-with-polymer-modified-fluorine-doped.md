@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.tsf.2013.05.059"
 link: "https://doi.org/10.1016/j.tsf.2013.05.059"
 featured: false
 order: 147
-sortKey: "2014-1-999852-2014-147-inverted-organic-solar-cells-with-polymer-modified-fluorine-doped"
+sortKey: "2014-1-999852-2014-147-d56526d59f"
 ---

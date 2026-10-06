@@ -8,5 +8,5 @@ doi: "https://doi.org/10.1016/j.cej.2024.157013"
 link: "https://doi.org/10.1016/j.cej.2024.157013"
 featured: false
 order: 43
-sortKey: "2024-1-999956-2024-043-dimerized-non-fullerene-acceptor-based-organic-photovoltaics-for-"
+sortKey: "2024-1-999956-2024-043-d77e0e8023"
 ---

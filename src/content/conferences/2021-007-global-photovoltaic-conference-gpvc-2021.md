@@ -12,5 +12,5 @@ featured: false
 active: true
 sourceYear: 2021
 order: 7
-sortKey: "2021-1-999992-2021-007-global-photovoltaic-conference-gpvc-2021"
+sortKey: "2021-1-999992-2021-007-741e82581b"
 ---
