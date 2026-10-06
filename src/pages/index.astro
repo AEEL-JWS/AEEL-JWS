@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { pageUrl, assetUrl } from '../lib/links';
+import { researchVideoNewsCardCopy } from '../data/listing-copy';
 import '../styles/home.css';
 
 const research = await getCollection('research');
@@ -16,6 +17,7 @@ const notices = (await getCollection('notices')).filter(item => item.data.active
 const dateLabel = (date:Date) => date.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
 const isExternal = (item:typeof news[number]) => Boolean(item.data.link && /^https?:\/\//i.test(item.data.link) && (item.data.category.toLowerCase()==='media' || /^https?:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i.test(item.data.link)));
 const newsUrl = (item:typeof news[number]) => isExternal(item) ? item.data.link : pageUrl(`board/news/${item.id}`);
+const newsCopy = (item:typeof news[number]) => item.id === '2026-aeel-research-video' ? researchVideoNewsCardCopy : item.data;
 ---
 <BaseLayout title="Advanced Electronic Device & Energy Conversion System Lab" active="">
   <section class="editorial-hero">
@@ -34,8 +36,8 @@ const newsUrl = (item:typeof news[number]) => isExternal(item) ? item.data.link 
     <div class="editorial-research-more"><a class="editorial-view-all" href={pageUrl('research')}>View all research areas <span aria-hidden="true">→</span></a></div>
   </div></section>
   <section class="editorial-section editorial-updates"><div class="shell"><div class="editorial-section-heading"><div><span class="editorial-overline">From AEEL</span><h2>News &amp; Notices.</h2></div></div><div class="editorial-updates-grid">
-    <div class="editorial-news-lead"><div class="editorial-column-heading"><h3>News</h3><a href={pageUrl('board/news')}>View all <span aria-hidden="true">↗</span></a></div>{news[0] && <a class="editorial-lead-story" href={newsUrl(news[0])} target={isExternal(news[0])?'_blank':undefined} rel={isExternal(news[0])?'noopener noreferrer':undefined}><div class:list={['editorial-story-image',{'editorial-story-image--contain':news[0].data.imageFit==='contain'}]}>{news[0].data.image ? <img src={assetUrl(news[0].data.image)} alt="" loading="lazy" /> : <span>AEEL <small>Research news</small></span>}</div><span class="editorial-story-date">{dateLabel(news[0].data.date)}</span><h4>{news[0].data.title}</h4><p>{news[0].data.summary}</p><span class="editorial-story-arrow" aria-hidden="true">↗</span></a>}</div>
-    <div class="editorial-news-more"><div class="editorial-column-heading editorial-column-heading-spacer"><span>Latest stories</span></div>{news.slice(1,4).map(item => <a class="editorial-list-story" href={newsUrl(item)} target={isExternal(item)?'_blank':undefined} rel={isExternal(item)?'noopener noreferrer':undefined}><time>{dateLabel(item.data.date)}</time><h4>{item.data.title}</h4><span aria-hidden="true">↗</span></a>)}</div>
+    <div class="editorial-news-lead"><div class="editorial-column-heading"><h3>News</h3><a href={pageUrl('board/news')}>View all <span aria-hidden="true">↗</span></a></div>{news[0] && <a class="editorial-lead-story" href={newsUrl(news[0])} target={isExternal(news[0])?'_blank':undefined} rel={isExternal(news[0])?'noopener noreferrer':undefined}><div class:list={['editorial-story-image',{'editorial-story-image--contain':news[0].data.imageFit==='contain'}]}>{news[0].data.image ? <img src={assetUrl(news[0].data.image)} alt="" loading="lazy" /> : <span>AEEL <small>Research news</small></span>}</div><span class="editorial-story-date">{dateLabel(news[0].data.date)}</span><h4>{newsCopy(news[0]).title}</h4><p>{newsCopy(news[0]).summary}</p><span class="editorial-story-arrow" aria-hidden="true">↗</span></a>}</div>
+    <div class="editorial-news-more"><div class="editorial-column-heading editorial-column-heading-spacer"><span>Latest stories</span></div>{news.slice(1,4).map(item => <a class="editorial-list-story" href={newsUrl(item)} target={isExternal(item)?'_blank':undefined} rel={isExternal(item)?'noopener noreferrer':undefined}><time>{dateLabel(item.data.date)}</time><h4>{newsCopy(item).title}</h4><span aria-hidden="true">↗</span></a>)}</div>
     <div class="editorial-notices"><div class="editorial-column-heading"><h3>Notices</h3><a href={pageUrl('board/notices')}>View all <span aria-hidden="true">↗</span></a></div>{notices.map(item => <a class="editorial-list-story" href={pageUrl(`board/notices/${item.id}`)}><time>{dateLabel(item.data.date)} <span class="editorial-category">{item.data.category || 'Notice'}</span></time><h4>{item.data.title}</h4><span aria-hidden="true">↗</span></a>)}</div>
   </div></div></section>
   <section class="editorial-bottom-banner"><img src={assetUrl('/images/editorial/materials-tomorrow.webp')} alt="Research materials and semiconductor wafers at a laboratory workbench" loading="lazy" /><div class="shell editorial-banner-content"><span class="editorial-overline">Korea University · AEEL Lab</span><p class="editorial-banner-pi">Prof. Jae Won Shim</p><h2>Advancing Electronics.<br />Powering the Future.</h2><p>Advanced Electronic Device &amp; Energy Conversion System Lab.</p></div></section>
