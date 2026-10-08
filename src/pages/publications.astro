@@ -3,11 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHero from '../components/SectionHero.astro';
 import DirectoryCards from '../components/DirectoryCards.astro';
 import {publicationTabs} from '../lib/navigation';
-const images=[
-  '/images/editorial/publications-hero.png',
-  '/images/editorial/patents-card.png',
-  '/images/editorial/conferences-card.png',
-];
-const cards=publicationTabs.map(([label,path],i)=>({label,path,image:images[i]}));
+import {landingImages} from '../data/landingImages';
+const cards=publicationTabs.map(([label,path])=>({label,path,...landingImages.Publications[label]}));
 ---
 <BaseLayout title="Publications" active="publications"><SectionHero section="Publications" title="Publications" intro="Research outputs from the AEEL group."/><DirectoryCards section="Publications" cards={cards}/></BaseLayout>

@@ -147,3 +147,6 @@ body:not(.page-home) .pill{background:#f7f2f3;color:#80505b;margin:7px 6px 0 0;f
 @media(max-width:420px){.contact-details div{grid-template-columns:1fr;gap:5px}.archive-paths{grid-template-columns:1fr}.news-card-copy h3{font-size:24px}}
 @media(max-width:720px){.content-hero--members.content-hero--inner::before{background:linear-gradient(90deg,#f8fafaf4 0%,#f8fafae0 52%,#f8fafa8c 100%)}}
 @media(prefers-reduced-motion:reduce){.research-story-image img,.directory-card,.directory-card-image img{transition:none}}
+
+/* Let the new page-specific photographs remain visible on narrow screens. */
+@media(max-width:720px){.content-hero::before{background:linear-gradient(90deg,#f8fafaea 0%,#f8fafad4 50%,#f8fafa7d 100%)}}

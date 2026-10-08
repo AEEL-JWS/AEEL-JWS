@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
 import DirectoryCards from '../../components/DirectoryCards.astro';
 import {memberTabs} from '../../lib/navigation';
-import {heroImages} from '../../data/heroImages';
-const cards=memberTabs.map(([label,path])=>({label,path,...heroImages[`Members / ${label}`]}));
+import {landingImages} from '../../data/landingImages';
+const cards=memberTabs.map(([label,path])=>({label,path,...landingImages.Members[label]}));
 ---
 <BaseLayout title="Members" active="members"><SectionHero section="Members" title="Members" intro="Meet the faculty, researchers, and alumni of AEEL."/><DirectoryCards section="Members" cards={cards}/></BaseLayout>

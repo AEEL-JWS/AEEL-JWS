@@ -3,12 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
 import DirectoryCards from '../../components/DirectoryCards.astro';
 import {boardTabs} from '../../lib/navigation';
-
-const images=[
-  '/images/editorial/notices-card.png',
-  '/images/editorial/news-card.png',
-  '/images/editorial/gallery-card.png',
-];
-const cards=boardTabs.map(([label,path],i)=>({label,path,image:images[i]}));
+import {landingImages} from '../../data/landingImages';
+const cards=boardTabs.map(([label,path])=>({label,path,...landingImages.Board[label]}));
 ---
 <BaseLayout title="Board" active="board"><SectionHero section="Board" title="Board" intro="Updates and activities from AEEL."/><DirectoryCards section="Board" cards={cards}/></BaseLayout>

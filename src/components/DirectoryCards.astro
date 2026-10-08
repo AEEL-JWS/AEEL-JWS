@@ -5,10 +5,11 @@ interface Card {
   label: string;
   path: string;
   image: string;
+  alt: string;
   position?: string;
   mobilePosition?: string;
 }
 interface Props { section: string; cards: Card[]; }
 const {section,cards}=Astro.props;
 ---
-<section class="section directory-section"><div class="shell directory-grid">{cards.map((card,i)=><a class="directory-card" href={pageUrl(card.path)}><div class="directory-card-image"><img src={assetUrl(card.image)} alt="" loading="lazy" style={`--card-image-position:${card.position || 'center'};--card-image-position-mobile:${card.mobilePosition || card.position || 'center'}`} /></div><div class="directory-card-copy"><span class="card-kicker">0{i+1} / {section}</span><h2>{card.label}</h2><span class="text-link">Explore</span></div></a>)}</div></section>
+<section class="section directory-section"><div class="shell directory-grid">{cards.map((card,i)=><a class="directory-card" href={pageUrl(card.path)}><div class="directory-card-image"><img src={assetUrl(card.image)} alt={card.alt} loading="lazy" style={`--card-image-position:${card.position || 'center'};--card-image-position-mobile:${card.mobilePosition || card.position || 'center'}`} /></div><div class="directory-card-copy"><span class="card-kicker">0{i+1} / {section}</span><h2>{card.label}</h2><span class="text-link">Explore</span></div></a>)}</div></section>
