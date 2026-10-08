@@ -1,10 +1,10 @@
 ---
 title: "Advanced photovoltaics"
-eyebrow: "Energy conversion"
-summary: "Emerging photovoltaic materials and devices for indoor and outdoor light harvesting."
-order: 5
-featured: false
+eyebrow: "ENERGY CONVERSION"
+summary: "Emerging thin-film photovoltaics for efficient indoor and outdoor energy harvesting."
+order: 1
+featured: true
 image: "/images/editorial/photovoltaics.webp"
 ---
 
-We explore organic, perovskite, and quantum dot materials for photovoltaic devices. Our interests include the relationships among light absorption, device architecture, and stable energy conversion.
+We investigate organic, perovskite, and quantum-dot photovoltaic materials for indoor and outdoor energy harvesting. Our research focuses on absorber properties, interface engineering, and device architectures to improve energy conversion efficiency and operational stability.

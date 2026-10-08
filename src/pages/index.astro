@@ -6,12 +6,7 @@ import { researchVideoNewsCardCopy } from '../data/listing-copy';
 import '../styles/home.css';
 
 const research = await getCollection('research');
-const areas = [
-  {id:'advanced-photovoltaics', name:'Photovoltaics'},
-  {id:'nir-photodiodes', name:'Photodetectors'},
-  {id:'optoelectronic-memristors', name:'Neuromorphic Devices'},
-  {id:'stretchable-devices', name:'Flexible Electronics'},
-].map(area => ({...area, entry:research.find(item => item.id === area.id)})).filter(area => area.entry);
+const areas = research.filter(item => item.data.featured).sort((a,b) => a.data.order - b.data.order).slice(0,4);
 const news = (await getCollection('news')).sort((a,b) => b.data.date.getTime()-a.data.date.getTime());
 const notices = (await getCollection('notices')).filter(item => item.data.active).sort((a,b) => b.data.date.getTime()-a.data.date.getTime()).slice(0,4);
 const dateLabel = (date:Date) => date.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
@@ -31,9 +26,8 @@ const newsCopy = (item:typeof news[number]) => item.id === '2026-aeel-research-v
     </div></div>
   </section>
   <section class="editorial-section editorial-research" id="research"><div class="shell">
-    <div class="editorial-section-heading"><div><span class="editorial-overline">Research areas</span><h2>Featured Research Areas<br />for a Brighter Future.</h2></div><a class="editorial-view-all" href={pageUrl('research')}>View all research <span aria-hidden="true">↗</span></a></div>
-    <div class="editorial-research-grid">{areas.map((area,index) => <a class="editorial-research-card" href={pageUrl(`research/${area.entry!.id}`)}><div class="editorial-card-photo"><img src={assetUrl(area.entry!.data.image || '')} alt="" loading="lazy" /></div><div class="editorial-card-shade"></div><div class="editorial-card-copy"><span class="editorial-card-number">{String(index+1).padStart(2,'0')}</span><h3>{area.name}</h3><p>{area.entry!.data.summary}</p><span class="editorial-card-arrow" aria-hidden="true">↗</span></div></a>)}</div>
-    <div class="editorial-research-more"><a class="editorial-view-all" href={pageUrl('research')}>View all research areas <span aria-hidden="true">→</span></a></div>
+    <div class="editorial-section-heading"><div><span class="editorial-overline">Research areas</span><h2>Featured Research Areas<br />for a Brighter Future.</h2></div><a class="editorial-view-all" href={pageUrl('research')}>View all research areas <span aria-hidden="true">→</span></a></div>
+    <div class="editorial-research-grid">{areas.map((area,index) => <a class="editorial-research-card" href={pageUrl(`research/${area.id}`)}><div class="editorial-card-photo"><img src={assetUrl(area.data.image || '')} alt="" loading="lazy" /></div><div class="editorial-card-shade"></div><div class="editorial-card-copy"><span class="editorial-card-number">{String(index+1).padStart(2,'0')}</span><h3>{area.data.title}</h3><p>{area.data.summary}</p><span class="editorial-card-arrow" aria-hidden="true">↗</span></div></a>)}</div>
   </div></section>
   <section class="editorial-section editorial-updates"><div class="shell"><div class="editorial-section-heading"><div><span class="editorial-overline">From AEEL</span><h2>News &amp; Notices.</h2></div></div><div class="editorial-updates-grid">
     <div class="editorial-news-lead"><div class="editorial-column-heading"><h3>News</h3><a href={pageUrl('board/news')}>View all <span aria-hidden="true">↗</span></a></div>{news[0] && <a class="editorial-lead-story" href={newsUrl(news[0])} target={isExternal(news[0])?'_blank':undefined} rel={isExternal(news[0])?'noopener noreferrer':undefined}><div class:list={['editorial-story-image',{'editorial-story-image--contain':news[0].data.imageFit==='contain'}]}>{news[0].data.image ? <img src={assetUrl(news[0].data.image)} alt="" loading="lazy" /> : <span>AEEL <small>Research news</small></span>}</div><span class="editorial-story-date">{dateLabel(news[0].data.date)}</span><h4>{newsCopy(news[0]).title}</h4><p>{newsCopy(news[0]).summary}</p><span class="editorial-story-arrow" aria-hidden="true">↗</span></a>}</div>

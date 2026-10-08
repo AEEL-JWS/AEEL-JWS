@@ -3,18 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
 import { getCollection } from 'astro:content';
 import { pageUrl, assetUrl } from '../../lib/links';
-import { researchAreaCardCopy } from '../../data/listing-copy';
-const research = (await getCollection('research')).sort((a,b) => a.data.order - b.data.order);
-const priority=['advanced-photovoltaics','nir-photodiodes','optoelectronic-memristors','stretchable-devices'];
-const ordered=[...research].sort((a,b)=>{
-  const ai=priority.indexOf(a.id),bi=priority.indexOf(b.id);
-  return (ai<0?priority.length:ai)-(bi<0?priority.length:bi)||a.data.order-b.data.order;
-});
+const ordered = (await getCollection('research')).sort((a,b) => a.data.order - b.data.order);
 ---
 <BaseLayout title="Research" active="research" description="Explore AEEL research in emerging electronic devices and energy conversion.">
   <SectionHero section="Research" title="Research" intro="Our research focuses on advanced materials, electronic devices, and energy conversion systems." />
   <section class="section research-section"><div class="shell"><div class="section-head editorial-section-head"><div><span class="eyebrow">Focus areas</span><h2>Research areas</h2><p>Explore the current research areas of AEEL.</p></div><span class="section-count">{String(ordered.length).padStart(2,'0')} areas</span></div>
-    <div class="research-stories">{ordered.map((item,i) => <a class="research-story" href={pageUrl(`research/${item.id}`)}><div class="research-story-image"><img src={assetUrl(item.data.image||'/images/editorial/wafer-probing.webp')} alt="" loading="lazy" /></div><div class="research-story-copy"><span class="story-number">{String(i+1).padStart(2,'0')}</span><div><span class="card-kicker">{researchAreaCardCopy[item.id]?.category || item.data.eyebrow || 'Research area'}</span><h3>{researchAreaCardCopy[item.id]?.title || item.data.title}</h3><p>{researchAreaCardCopy[item.id]?.description || item.data.summary}</p><span class="text-link">Explore area</span></div></div></a>)}</div>
+    <div class="research-stories">{ordered.map((item,i) => <a class="research-story" href={pageUrl(`research/${item.id}`)}><div class="research-story-image"><img src={assetUrl(item.data.image||'/images/editorial/wafer-probing.webp')} alt="" loading="lazy" /></div><div class="research-story-copy"><span class="story-number">{String(i+1).padStart(2,'0')}</span><div><span class="card-kicker">{item.data.eyebrow || 'Research area'}</span><h3>{item.data.title}</h3><p>{item.data.summary}</p><span class="text-link">Explore area</span></div></div></a>)}</div>
   </div></section>
 </BaseLayout>
 

@@ -22,6 +22,7 @@ body:not(.page-home) .page-hero:not(.content-hero) .page-heading p{color:#62666b
 .content-hero--inner{min-height:295px;padding:56px 0 62px}
 .content-hero--inner .page-heading h1{font-size:clamp(48px,5.7vw,76px)}
 .content-hero--inner .page-heading p{font-size:16px}
+.page-research .content-hero .page-heading h1{overflow-wrap:anywhere}
 .content-hero--contact::before{background:linear-gradient(90deg,#f8fafafc 0%,#f8fafae8 27%,#f8fafaa2 50%,#f8fafa08 78%)}
 .section-tabs{border-bottom:1px solid #e7e2e1}
 .section-tabs .shell{gap:42px}
@@ -29,7 +30,7 @@ body:not(.page-home) .page-hero:not(.content-hero) .page-heading p{color:#62666b
 
 .editorial-section-head{padding-bottom:26px;border-bottom:1px solid #dcdede;margin-bottom:0}
 .section-count{color:#8a8d92;font-size:12px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
-.research-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-top:28px}
+.research-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px;padding-top:28px}
 .research-story{display:flex;flex-direction:column;min-width:0;border:1px solid #e5e5e5;overflow:hidden;background:#fff}
 .research-story-image{aspect-ratio:16/9;overflow:hidden;background:#e5e9eb}
 .research-story-image img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease}
@@ -37,7 +38,9 @@ body:not(.page-home) .page-hero:not(.content-hero) .page-heading p{color:#62666b
 .research-story-copy{display:grid;grid-template-columns:34px minmax(0,1fr);gap:13px;flex:1;min-height:240px;padding:24px}
 .research-story-copy>div{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
 .story-number{font:400 27px/1 Georgia,serif;color:#555d64}
-.research-story h3{font-size:clamp(24px,2.2vw,31px);line-height:1.13;margin:11px 0 13px}
+.research-story h3{font-size:clamp(24px,2.2vw,31px);line-height:1.13;min-height:2.26em;margin:11px 0 13px;overflow-wrap:anywhere}
+.research-story .card-kicker{min-height:2.8em;line-height:1.4}
+@media(min-width:951px){.research-stories{grid-template-columns:repeat(6,minmax(0,1fr))}.research-story{grid-column:span 2}.research-story:nth-child(3n+1):nth-last-child(2){grid-column:2/span 2}}
 .research-story p{font-size:14px;line-height:1.55;color:#62666c;margin-bottom:20px}
 .research-story .text-link{font-size:12px;margin-top:auto}
 

@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHero from '../../components/SectionHero.astro';
 import { getCollection, render } from 'astro:content';
-import { pageUrl, assetUrl } from '../../lib/links';
+import { pageUrl } from '../../lib/links';
 export async function getStaticPaths() {
   return (await getCollection('research')).map(item => ({ params: { id: item.id }, props: { item } }));
 }
@@ -12,7 +12,6 @@ const { Content } = await render(item);
 <BaseLayout title={item.data.title} active="research" description={item.data.summary}>
   <SectionHero section={item.data.eyebrow || 'Research'} title={item.data.title} intro={item.data.summary} image={item.data.image || '/images/editorial/wafer-probing.webp'} />
   <article class="shell content-article">
-    {item.data.image && <img class="article-image" src={assetUrl(item.data.image)} alt="" />}
     <div class="prose"><Content /></div>
     <a class="text-link article-back" href={pageUrl('research')}>Back to research</a>
   </article>

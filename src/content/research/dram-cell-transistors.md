@@ -1,9 +1,10 @@
 ---
 title: "DRAM cell transistors"
-eyebrow: "Semiconductor devices"
-summary: "Material and interface strategies for reliable, high density memory cells."
-order: 4
+eyebrow: "SEMICONDUCTOR DEVICES"
+summary: "Low-resistance contacts and stable interfaces for high-density memory devices."
+order: 5
 featured: false
+image: "/images/editorial/wafer-probing.webp"
 ---
 
-As memory dimensions shrink, resistance and interface stability become increasingly important. Our work considers electrode interfaces and low resistance interconnect strategies for next generation DRAM cell transistors.
+We investigate contact materials, electrode interfaces, and low-resistance interconnects for next-generation DRAM cell transistors. Our research addresses electrical resistance and interface stability as memory devices continue to scale toward higher densities.
