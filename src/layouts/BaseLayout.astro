@@ -29,7 +29,7 @@ const groups = [
     <a class:list={['nav-link',{active:active===''}]} href={pageUrl()} aria-current={active===''?'page':undefined}>Home</a>
     <a class:list={['nav-link',{active:active==='research'}]} href={pageUrl('research')} aria-current={active==='research'?'page':undefined}>Research</a>
     {groups.map(group => <div class:list={['nav-group',{active:active===group.path}]} data-nav-group>
-      <div class="nav-group-head"><a class="nav-link" href={pageUrl(group.path)} aria-current={active===group.path?'page':undefined}>{group.label}</a><button class="nav-expand" type="button" aria-label={`Expand ${group.label} submenu`} aria-expanded="false" aria-controls={`submenu-${group.path}`}>⌄</button></div>
+      <div class="nav-group-head"><a class="nav-link" href={pageUrl(group.path)} aria-current={active===group.path?'page':undefined}>{group.label}</a><button class="nav-expand" type="button" aria-label={`Expand ${group.label} submenu`} aria-expanded="false" aria-controls={`submenu-${group.path}`}><span class="nav-chevron" aria-hidden="true"></span></button></div>
       <div class="nav-dropdown" id={`submenu-${group.path}`}>{group.children.map(([label,path]) => <a href={pageUrl(path)}>{label}</a>)}</div>
     </div>)}
     <a class:list={['nav-link','nav-contact',{active:active==='contact'}]} href={pageUrl('contact')} aria-current={active==='contact'?'page':undefined}>Contact</a>
