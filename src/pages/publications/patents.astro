@@ -54,16 +54,16 @@ const date = (value?: Date) => value ? `${value.getFullYear()}.${String(value.ge
 
 <style>
   .patent-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:33px}
-  .patent-filters button{border:1px solid #d9e1e8;background:#fff;color:#526174;padding:9px 17px;font-size:12px;font-weight:800;border-radius:3px}
+  .patent-filters button{border:1px solid #d9e1e8;background:#fff;color:#526174;padding:9px 17px;font-size:var(--type-meta);font-weight:800;border-radius:3px}
   .patent-filters button:hover,.patent-filters button[aria-pressed="true"]{background:#a62135;border-color:#a62135;color:#fff}
   .patent-filters button:focus-visible{outline:2px solid #a62135;outline-offset:2px}
   .patent-record[hidden],.publication-year-group[hidden]{display:none}
   .patent-record>div{min-width:0;width:100%}
   .patent-record h3{font-size:clamp(18px,2vw,22px);line-height:1.38;margin:11px 0 9px;overflow-wrap:anywhere}
   .patent-record .record-authors{font-size:14px;color:#4f5f70;line-height:1.6;margin:0 0 15px;overflow-wrap:anywhere}
-  .record-badge{display:inline-block;background:#f4e9ec;color:#8f1d35;border:1px solid #ead5da;border-radius:2px;padding:5px 8px;font:800 10px/1.2 Manrope,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+  .record-badge{display:inline-block;background:#f4e9ec;color:#8f1d35;border:1px solid #ead5da;border-radius:2px;padding:5px 8px;font:800 var(--type-label)/1.2 Manrope,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}
   .patent-metadata{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 25px;max-width:830px}
-  .patent-metadata p{display:flex;gap:11px;margin:0;line-height:1.55;font-size:12px;overflow-wrap:anywhere}
+  .patent-metadata p{display:flex;gap:11px;margin:0;line-height:1.55;font-size:var(--type-meta);overflow-wrap:anywhere}
   .patent-metadata strong{color:#687789;min-width:104px;font-weight:700}
   .patent-metadata span{color:#405166}
   @media(max-width:720px){.patent-metadata{grid-template-columns:1fr}}
