@@ -10,7 +10,7 @@ const { item } = Astro.props;
 const { Content } = await render(item);
 ---
 <BaseLayout title={item.data.title} active="research" description={item.data.summary}>
-  <SectionHero section={item.data.eyebrow || 'Research'} title={item.data.title} intro={item.data.summary} image={item.data.image || '/images/editorial/wafer-probing.webp'} />
+  <SectionHero section={item.data.eyebrow || 'Research'} title={item.data.title} intro={item.data.summary} image={item.data.image || '/images/editorial/wafer-probing.webp'} imagePosition="center" mobileImagePosition="center" />
   <article class="shell content-article">
     <div class="prose"><Content /></div>
     <a class="text-link article-back" href={pageUrl('research')}>Back to research</a>
