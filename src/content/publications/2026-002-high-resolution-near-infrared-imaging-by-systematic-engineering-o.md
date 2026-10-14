@@ -7,10 +7,11 @@ authors: Byoung-Soo Yu†, Hyun Woo Ko†, Tae Hyuk Kim†, Sungchul Mun†, Je-
   Shim*, Min-Chul Park*, and Do Kyung Hwang*
 journal: Chemical Engineering Journal
 year: 2026
-status: In press
 doi: https://www.sciencedirect.com/science/article/pii/S1385894726098578
 link: https://www.sciencedirect.com/science/article/pii/S1385894726098578
 featured: false
 order: 2
-sortKey: "2026-1-999997-2026-002-43db3f271e"
+sortKey: 2026-1-999997-2026-002-43db3f271e
+volume: "549"
+pages: "182394"
 ---
