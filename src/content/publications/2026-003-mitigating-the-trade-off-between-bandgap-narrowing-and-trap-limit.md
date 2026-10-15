@@ -6,7 +6,6 @@ authors: Ohhyun Kwon†, Un-Hak Lee†, Gyeong Min Lee, Seunghyun Oh, Se Jeong P
   SungWoo Nam, Seo-jin Ko* and Jae Won Shim*
 journal: ACS Nano
 year: 2026
-status: ASAP
 doi: https://doi.org/10.1021/acsnano.6c10554
 link: https://doi.org/10.1021/acsnano.6c10554
 featured: false
