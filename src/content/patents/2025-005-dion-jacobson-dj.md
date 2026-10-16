@@ -11,7 +11,7 @@ active: true
 notes: Source says '등록', but registration date/number is blank. Do not infer;
   verify before final CMS publication.
 order: 5
-sortKey: 20251002-1-999994-2025-005-c425e6e10d
+sortKey: "20261001-1-999994-2025-005-c425e6e10d"
 registrationDate: 2026-10-01
 registrationNumber: 10-3029712
 ---
