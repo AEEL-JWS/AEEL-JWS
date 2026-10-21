@@ -6,7 +6,9 @@ authors: >
   Jung Park, and Jae Won Shim*
 journal: ACS Nano
 year: 2026
-status: Accepted
+status: ASAP
+doi: https://doi.org/10.1021/acsnano.6c15105
+link: https://doi.org/10.1021/acsnano.6c15105
 featured: false
 order: 1
 sortKey: "2026-1-999998-unveilin-d4bbd41644"
