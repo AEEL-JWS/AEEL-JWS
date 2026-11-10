@@ -7,6 +7,6 @@ bibliography: "38, 1, e12209"
 doi: "https://doi.org/10.1002/adma.202512209"
 link: "https://doi.org/10.1002/adma.202512209"
 featured: false
-order: 10
-sortKey: "2026-1-999989-2026-010-f7537a8158"
+order: 12
+sortKey: "2026-1-999987-2026-010-f7537a8158"
 ---

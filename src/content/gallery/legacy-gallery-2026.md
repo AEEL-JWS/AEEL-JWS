@@ -1,11 +1,15 @@
 ---
 title: AEEL Gallery Archive (2026 uploads)
-date: 2026-09-29
+date: 2026-11-10
 description: Photos from the former AEEL Gallery, grouped by WordPress upload
   year. The album date is the latest available media upload date, not an event
   date.
-cover: /images/gallery/gallery-2026-2617.jpg
+cover: /images/gallery/gallery-2026-2647.jpg
 photos:
+  - image: /images/gallery/gallery-2026-2649.png
+    caption: Nature 논문 게재 축하 현수막
+  - image: /images/gallery/gallery-2026-2647.jpg
+    caption: 2026년도 기초연구실 지원사업(BRL) 워크숍 단체사진
   - image: /images/gallery/gallery-2026-2617.jpg
   - image: /images/gallery/shl.jpg
   - image: /images/gallery/gallery-2026-2529.jpg

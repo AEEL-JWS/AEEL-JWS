@@ -7,6 +7,6 @@ bibliography: "20, 21, 15336–15346"
 doi: "https://doi.org/10.1021/acsnano.6c02822"
 link: "https://doi.org/10.1021/acsnano.6c02822"
 featured: false
-order: 14
-sortKey: "2026-1-999985-2026-014-2dda696490"
+order: 16
+sortKey: "2026-1-999983-2026-014-2dda696490"
 ---
