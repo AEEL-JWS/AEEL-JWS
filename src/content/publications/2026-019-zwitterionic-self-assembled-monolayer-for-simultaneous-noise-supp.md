@@ -1,6 +1,6 @@
 ---
 title: "Zwitterionic Self-Assembled Monolayer for Simultaneous Noise Suppression and Hole Extraction in High-Performance Near-Infrared Organic Photodetectors"
-authors: "Jiyoung Shin†, Gyeong Min Lee†,Juyeon Shin, Jaewoong Kim, Tae Hyuk Kim, Do Yeon Kim, Kyeounghak Kim*, Jae Won Shim*, and In Hwan Jung*"
+authors: "Jiyoung Shin†, Gyeong Min Lee†, Juyeon Shin, Jaewoong Kim, Tae Hyuk Kim, Do Yeon Kim, Myeong In Kim, Kyeounghak Kim*, Jae Won Shim*, and In Hwan Jung*"
 journal: "Advanced Functional Materials"
 year: 2026
 bibliography: "36, 39, e24099"

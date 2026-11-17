@@ -11,5 +11,7 @@ link: https://doi.org/10.1021/acsnano.6c10554
 featured: false
 order: 6
 sortKey: "2026-1-999993-2026-003-d36920c64f"
-volume: " 20, 40, 27235–27250"
+volume: "20"
+issue: "40"
+pages: 27235–27250
 ---
