@@ -6,7 +6,8 @@ authors: Min Jong Lee†, Hyoungwook Cho†, Sang Heon Lee, Ohhyun Kwon, Minil K
   and Jae Won Shim*
 journal: Advanced Materials
 year: 2026
-status: Early View
+volume: "38"
+issue: "64"
 pages: e75308
 doi: https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.75308
 link: https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.75308
