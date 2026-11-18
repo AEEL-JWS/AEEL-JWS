@@ -8,14 +8,8 @@ cover: /images/gallery/gallery-2026-2658.jpg
 photos:
   - image: /images/gallery/gallery-2026-2666.jpg
     caption: 2026 한국전기전자재료학회 추계학술대회
-  - image: /images/gallery/gallery-2026-2664.jpg
-    caption: 2026 한국전기전자재료학회 추계학술대회
-  - image: /images/gallery/gallery-2026-2661.jpg
-    caption: 2026 한국전기전자재료학회 추계학술대회
   - image: /images/gallery/gallery-2026-2658.jpg
     caption: Nature 논문 게재 축하 기념사진
-  - image: /images/gallery/gallery-2026-2649.png
-    caption: Nature 논문 게재 축하 현수막
   - image: /images/gallery/gallery-2026-2647.jpg
     caption: 2026년도 기초연구실 지원사업(BRL) 워크숍 단체사진
   - image: /images/gallery/gallery-2026-2617.jpg
