@@ -1,10 +1,10 @@
 ---
 title: "Optoelectronic memristors"
 eyebrow: "NEUROMORPHIC DEVICES"
-summary: "Light- and electrically controlled memory devices for energy-efficient sensing and computing."
+summary: "Electrically and optically programmable memristors for energy-efficient neuromorphic computing."
 order: 3
 featured: true
 image: "/images/research/optoelectronic-memristors.png"
 ---
 
-We investigate optoelectronic memristors that modulate conductance in response to electrical and optical stimuli. Our research focuses on controllable analog memory states, synaptic functionality, and energy-efficient neuromorphic sensing and computing.
+We develop electrically and optically programmable memristors based on perovskites and emerging hybrid materials. Through defect, ion-migration, and interface engineering, we control analog conductance states and synaptic plasticity for energy-efficient neuromorphic computing and optoelectronic information processing.

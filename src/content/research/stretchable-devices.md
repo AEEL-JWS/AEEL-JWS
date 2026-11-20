@@ -1,10 +1,10 @@
 ---
-title: "Flexible electronics"
+title: "Flexible & Stretchable Electronics"
 eyebrow: "FLEXIBLE ELECTRONICS"
-summary: "Conductive materials and devices engineered to perform under bending and stretching."
+summary: "Printable conductors, transparent electrodes, and robust interconnects for flexible and stretchable electronics."
 order: 4
 featured: true
 image: "/images/research/flexible-electronics.png"
 ---
 
-We develop conductive materials and device architectures that maintain electrical performance under bending and stretching. Our research emphasizes mechanically robust interconnections and reliable operation in flexible and stretchable electronic systems.
+We develop printable conductors, transparent electrodes, and robust interconnects for flexible and stretchable electronics. By engineering conductive networks, material interfaces, and device structures, we aim to maintain electrical performance and mechanical reliability under repeated bending and stretching.

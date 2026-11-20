@@ -7,6 +7,6 @@ bibliography: "527, 171902"
 doi: "https://doi.org/10.1016/j.cej.2025.171902"
 link: "https://doi.org/10.1016/j.cej.2025.171902"
 featured: false
-order: 26
-sortKey: "2026-1-999973-2026-024-e74f28caaf"
+order: 27
+sortKey: "2026-1-999972-2026-024-e74f28caaf"
 ---

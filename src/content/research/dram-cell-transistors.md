@@ -1,10 +1,10 @@
 ---
 title: "DRAM cell transistors"
-eyebrow: "SEMICONDUCTOR DEVICES"
-summary: "Low-resistance contacts and stable interfaces for high-density memory devices."
+eyebrow: "SEMICONDUCTOR MEMORY"
+summary: "Contact materials and metal–semiconductor interfaces for reliable next-generation DRAM cell transistors."
 order: 5
 featured: false
 image: "/images/research/dram-cell-transistors.png"
 ---
 
-We investigate contact materials, electrode interfaces, and low-resistance interconnects for next-generation DRAM cell transistors. Our research addresses electrical resistance and interface stability as memory devices continue to scale toward higher densities.
+We investigate contact materials and metal–semiconductor interfaces for next-generation DRAM cell transistors. By controlling interfacial properties and parasitic resistance, we aim to enable reliable transistor operation as device dimensions shrink and memory integration density increases.
